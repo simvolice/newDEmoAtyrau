@@ -1,0 +1,171 @@
+<div class="row" ng-controller="BudgetCtrl">
+    <div class="col-md-12">
+        <md-content layout="column" flex class="custom__md-content__categ">
+
+
+            <md-card>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="title text-center" style="text-transform: uppercase">Основные показатели бюджета</h3>
+
+                    </div>
+
+                </div>
+
+            </md-card>
+
+        <md-card>
+
+
+
+
+
+            <div class="row">
+                <div class="col-md-12 custom__label__date text-right">
+                    <span class="label" ng-click="selectDate('2014')" ng-class="{bg__color__active__date : activeMenu === '2014'}">2014</span>
+                    <span class="label" ng-click="selectDate('2015')" ng-class="{bg__color__active__date : activeMenu === '2015'}">2015</span>
+                    <span class="label" ng-click="selectDate('2016')" ng-class="{bg__color__active__date : activeMenu === '2016'}">2016</span>
+                    <span class="label" ng-click="selectDate('2017')" ng-class="{bg__color__active__date : activeMenu === '2017'}">2017</span>
+                    <span class="label" ng-click="selectDate('2018')" ng-class="{bg__color__active__date : activeMenu === '2018'}">2018</span>
+                    <span class="label" ng-click="selectDate('2019')" ng-class="{bg__color__active__date : activeMenu === '2019'}">2019</span>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-1 custom__title__chart">
+
+                    <h3><a href="" style="color: grey; text-decoration-line: none">Расходы</a></h3>
+
+                </div>
+
+
+                <div class="col-md-10">
+
+                    <div class="custom__label__chart" id="label1">
+
+
+                        <p>{{label1}}</p>
+                        <p>млн. тенге</p>
+
+                    </div>
+
+
+                    <div class="custom__label__chart2" id="label2">
+
+
+                        <p>{{label2}}</p>
+                        <p>млн. тенге</p>
+
+                    </div>
+
+
+
+
+                    <div id="chartbudget"></div>
+
+                </div>
+
+
+
+                <div class="col-md-1 custom__title__chart2">
+
+                        <h3><a href="" style="color: grey; text-decoration-line: none">Доходы</a></h3>
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </md-card>
+
+
+            <md-card>
+
+                <style type="text/css">
+                    .tg  {border-collapse:collapse;border-spacing:0; width: 100%}
+                    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                    .tg .tg-s6z2{text-align:center}
+                    .tg .tg-baqh{text-align:center;vertical-align:top}
+                    .tg .tg-hgcj{font-weight:bold;text-align:center}
+                    .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+                    .tg .tg-yw4l{vertical-align:top; text-align: right}
+                </style>
+                <table class="tg table-striped">
+                    <tr>
+                        <th class="tg-hgcj"></th>
+                        <th class="tg-hgcj">2014</th>
+                        <th class="tg-hgcj">2015</th>
+                        <th class="tg-amwm">2016</th>
+                        <th class="tg-amwm">2017</th>
+                        <th class="tg-amwm">2018</th>
+                        <th class="tg-amwm">2019</th>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">Доходы</td>
+                        <td class="tg-yw4l">194 718 996</td>
+                        <td class="tg-yw4l">186 988 010</td>
+                        <td class="tg-yw4l">234 138 861</td>
+                        <td class="tg-yw4l">315 480 315</td>
+                        <td class="tg-yw4l">205 349 433</td>
+                        <td class="tg-yw4l">215 730 358</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">Изменение +/- к предыдущему году</td>
+                        <td class="tg-s6z2">20,08%</td>
+                        <td class="tg-s6z2">3,97%</td>
+                        <td class="tg-baqh">25,22%</td>
+                        <td class="tg-baqh">34,74%</td>
+                        <td class="tg-baqh">-34,91%</td>
+                        <td class="tg-baqh">5,06%</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">Расходы</td>
+                        <td class="tg-yw4l">194 718 996</td>
+                        <td class="tg-yw4l">186 988 010</td>
+                        <td class="tg-yw4l">234 138 861</td>
+                        <td class="tg-yw4l">315 480 315</td>
+                        <td class="tg-yw4l">205 349 433</td>
+                        <td class="tg-yw4l">215 730 358</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">Изменение +/- к предыдущему году</td>
+                        <td class="tg-baqh">20,08%</td>
+                        <td class="tg-baqh">3,97%</td>
+                        <td class="tg-baqh">25,22%</td>
+                        <td class="tg-baqh">34,74%</td>
+                        <td class="tg-baqh">-34,91%</td>
+                        <td class="tg-baqh">5,06%</td>
+                    </tr>
+                </table>
+
+            </md-card>
+
+
+
+
+
+
+
+        </md-content>
+    </div>
+
+
+
+
+
+</div>
