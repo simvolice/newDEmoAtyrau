@@ -111,6 +111,10 @@ angular.module('app').controller('structuDohod', function ($scope, $timeout) {
                     .enter().append('path')
                     .attr('fill', function(d) { return colour(d.data[category]); })
                     .attr('d', arc);
+
+
+
+
                 // ===========================================================================================
 
                 // ===========================================================================================
@@ -156,7 +160,7 @@ angular.module('app').controller('structuDohod', function ($scope, $timeout) {
 
                         } else {
 
-                            return  d.data[category] + '<tspan>' + ruFormat(d.data[variable]) + " (" +d.data['Persent'] + ")" + '</tspan>';
+                            return  d.data[category] + " " + '<tspan>' + ruFormat(d.data[variable]) + " (" +d.data['Persent'] + ")" + '</tspan>';
 
 
                         }
