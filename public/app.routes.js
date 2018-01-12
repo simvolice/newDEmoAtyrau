@@ -60,6 +60,14 @@ app.config(function($stateProvider, $urlRouterProvider) {
       })
 
 
+      .state('rashodplan', {
+          url: '/rashodplan',
+          templateUrl: 'components/rashodplan/rashodplanView.html',
+
+
+      })
+
+
 
 
 
