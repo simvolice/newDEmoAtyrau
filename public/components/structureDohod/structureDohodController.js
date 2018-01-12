@@ -123,7 +123,7 @@ angular.module('app').controller('structuDohod', function ($scope, $timeout) {
 
 
 
-                        if (d.data[category].length > 21) {
+                        if (d.data[category].length > 20) {
 
                             let svgResult = "";
                             let otherLine = "";
@@ -147,7 +147,7 @@ angular.module('app').controller('structuDohod', function ($scope, $timeout) {
                             }
 
 
-                            return '<tspan>' + svgResult + '</tspan>' + '<tspan x="0" dy="15">' + otherLine + ": " + ruFormat(d.data[variable]) + '</tspan>';
+                            return '<tspan>' + svgResult + '</tspan>' + '<tspan x="0" dy="15">' + otherLine + ruFormat(d.data[variable]) + " (" +d.data['Persent'] + ")" +'</tspan>';
 
 
 
@@ -156,7 +156,7 @@ angular.module('app').controller('structuDohod', function ($scope, $timeout) {
 
                         } else {
 
-                            return  d.data[category] + ': <tspan>' + ruFormat(d.data[variable]) + '</tspan>';
+                            return  d.data[category] + '<tspan>' + ruFormat(d.data[variable]) + " (" +d.data['Persent'] + ")" + '</tspan>';
 
 
                         }
@@ -241,20 +241,13 @@ angular.module('app').controller('structuDohod', function ($scope, $timeout) {
                 // and returns the html string key: value
                 function toolTipHTML(data) {
 
-                    var tip = '',
-                        i   = 0;
+                    var tip = '';
 
-                    for (var key in data.data) {
 
-                        // if value is a number, format it as a percentage
-                        var value = (!isNaN(parseFloat(data.data[key]))) ? percentFormat(data.data[key]) : data.data[key];
+                        tip += '<tspan x="0" dy="1.2em">' + data.data[category] + '</tspan>';
+                        tip += '<tspan x="0" dy="1.3em">' + ruFormat(data.data[variable]) + '</tspan>';
+                        tip += '<tspan x="0" dy="1.4em">' + data.data['Persent'] + '</tspan>';
 
-                        // leave off 'dy' attr for first tspan so the 'dy' attr on text element works. The 'dy' attr on
-                        // tspan effectively imitates a line break.
-                        if (i === 0) tip += '<tspan x="0">' + value + '</tspan>';
-                        else tip += '<tspan x="0" dy="1.2em">' + value + '</tspan>';
-                        i++;
-                    }
 
                     return tip;
                 }
@@ -336,32 +329,19 @@ angular.module('app').controller('structuDohod', function ($scope, $timeout) {
 
 
     donut = donutChart()
-        .width(1060)
+        .width(960)
         .height(500)
         .cornerRadius(3) // sets how rounded the corners are on each slice
         .padAngle(0) // effectively dictates the gap between slices
         .variable('DataVal')
         .category('DataName');
 
-    /*d3.tsv('test.tsv', function(error, data) {
-        if (error) throw error;
-        d3.select('#chartstructure')
-            .datum(data) // bind data to the div
-            .call(donut); // draw chart in div
-    });*/
 
 
-    data = [
 
-        {DataName: "Поступления от продажи основного капитала", DataVal: "2835512", Persent: "1,27%"},
+    data = [{DataName: "Налоговое поступление", DataVal: "57546988", Persent: "99,48%"},
+        {DataName: "Неналоговое поступление", DataVal: "298612", Persent: "0,52%"}];
 
-        {DataName: "Трансферты", DataVal: "48231633", Persent: "21,68%"},
-
-        {DataName: "Налоговое поступление", DataVal: "168354979", Persent: "75,68%"},
-
-        {DataName: "Неналоговое поступление", DataVal: "3021438", Persent: "1,36%"},
-
-    ];
 
 
     d3.select('#chartstructure')
@@ -387,7 +367,6 @@ angular.module('app').controller('structuDohod', function ($scope, $timeout) {
 
                 $("#chartstructure").empty();
                 donut = null;
-
                 data = [{DataName: "Трансферты", DataVal: "69016591", Persent: "56,34%"},
                     {DataName: "Налоговое поступление", DataVal: "52867580", Persent: "43,16%"},
                     {DataName: "Неналоговое поступление", DataVal: "608019", Persent: "0,5%"},
