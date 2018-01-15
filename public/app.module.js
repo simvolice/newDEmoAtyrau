@@ -106,7 +106,7 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
         $("#titlesighnup").css("margin-left", "200px");
         $("#chartbudget").css("left", "0");
         $("#label1").css("left", "31%");
-        $("#label2").css("left", "56%");
+        $("#label2").css("left", "62%");
         $("#chartstructure").css("left", "5%");
 
     });
@@ -119,7 +119,7 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
         $("#chartbudget").css("left", "8%");
 
         $("#label1").css("left", "33%");
-        $("#label2").css("left", "54%");
+        $("#label2").css("left", "58%");
         $("#chartstructure").css("left", "15%");
 
 

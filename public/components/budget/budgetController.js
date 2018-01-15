@@ -92,6 +92,7 @@ angular.module('app').controller('BudgetCtrl', function ($scope, $timeout) {
 
 
            tooltip: {
+               show: false,
                format: {
                         title: function (d) { return 'Итого'; },
                         value: d3.format(",d")
@@ -105,6 +106,10 @@ angular.module('app').controller('BudgetCtrl', function ($scope, $timeout) {
 
 
 
+
+
+
+      d3.select('.bb-target-Доходы').attr("transform", "translate(50, 0)");
 
 
     }, 50);

@@ -758,7 +758,7 @@ table.md-table:not(.md-row-select) td.md-cell:nth-child(n+2):nth-last-child(n+2)
     font-weight: bold;
     position: relative;
     top: 300px;
-    left: 56%;
+    left: 62%;
 
 
 
@@ -815,12 +815,16 @@ polyline{
 .labelName tspan {
     font-style: normal;
     font-weight: 700;
+
 }
 
 /* In biology we generally italicise species names. */
 .labelName {
     font-style: normal;
     font-weight: 700;
+
+
+
 }
 
 

@@ -68,6 +68,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
       })
 
 
+      .state('structureRashod', {
+          url: '/structurerashod',
+          templateUrl: 'components/structureRashod/structureRashodView.html',
+
+
+      })
+
+
+
 
 
 
