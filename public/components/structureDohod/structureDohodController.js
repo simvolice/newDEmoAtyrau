@@ -76,7 +76,7 @@ angular.module('app').controller('structuDohod', function ($scope, $timeout) {
                 // contructs and arc generator. This will be used for the donut. The difference between outer and inner
                 // radius will dictate the thickness of the donut
                 var arc = d3.arc()
-                    .outerRadius(radius * 0.8)
+                    .outerRadius(radius * 0.9)
                     .innerRadius(radius * 0.6)
                     .cornerRadius(cornerRadius)
                     .padAngle(padAngle);
