@@ -857,3 +857,8 @@ polyline{
     color: #222;
 }
 
+#tooltip {
+    position: absolute;
+    left: 51%;
+    top: 420px;
+}

@@ -75,6 +75,14 @@ app.directive('ngFiles', ['$parse', function ($parse) {
 
 app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $rootScope) {
 
+
+
+
+
+
+
+
+
     $('.drawer').drawer({
 
         iscroll: {
@@ -95,6 +103,8 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
     $('.drawer').drawer('open');
 
 
+
+
     }, 100);
 
 
@@ -109,6 +119,7 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
         $("#label2").css("left", "62%");
         $("#chartstructure").css("left", "5%");
 
+
     });
 
     $('.drawer').on('drawer.closed', function(){
@@ -121,6 +132,10 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
         $("#label1").css("left", "33%");
         $("#label2").css("left", "58%");
         $("#chartstructure").css("left", "15%");
+
+
+
+        $("#tooltip").css("left", "25%");
 
 
     });
@@ -185,6 +200,27 @@ $("#budget").on("click", function () {
 
         $("#executionsidebar").css("display", "none");
     })
+
+
+
+    $scope.getColor = function () {
+
+
+
+        $("#mainnavbar").css("background", $scope.colorheader);
+    }
+
+
+
+    $scope.getColorSideBar = function () {
+
+
+
+        $(".drawer-nav").css("background", $scope.colorsidebar);
+    }
+
+
+
 
 
 

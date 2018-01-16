@@ -42,276 +42,6 @@ angular.module('app').controller('StructuRashodCtrl', function ($scope, $timeout
     d3.formatDefaultLocale(locale);
 
 
-    function wrap(text, width) {
-
-
-
-        text.each(function() {
-            var text = d3.select(this),
-                words = text.text().split(/\s+/).reverse(),
-                word,
-                line = [],
-                lineNumber = 0,
-                lineHeight = 0.9, // ems
-                y = text.attr("y"),
-                dy = parseFloat(text.attr("dy")),
-                tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
-            while (word = words.pop()) {
-                line.push(word);
-                tspan.text(line.join(" "));
-                if (tspan.node().getComputedTextLength() > width) {
-                    line.pop();
-                    tspan.text(line.join(" "));
-                    line = [word];
-                    tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
-                }
-            }
-        });
-    }
-
-
-    function donutChart() {
-
-        var div = d3.select("body").append("div").attr("class", "toolTip");
-
-
-        var width,
-            height,
-            margin = {top: 10, right: 10, bottom: 10, left: 10},
-            colour = d3.scaleOrdinal(d3.schemeCategory10), // colour scheme
-            variable, // value in data that will dictate proportions on chart
-            category, // compare data by
-            padAngle, // effectively dictates the gap between slices
-            floatFormat = d3.format('.4r'),
-            ruFormat = d3.format(',d'),
-            cornerRadius, // sets how rounded the corners are on each slice
-            percentFormat = d3.format(',.2%');
-
-        function chart(selection){
-            selection.each(function(data) {
-                // generate chart
-
-                // ===========================================================================================
-                // Set up constructors for making donut. See https://github.com/d3/d3-shape/blob/master/README.md
-                var radius = Math.min(width, height) / 2;
-
-                // creates a new pie generator
-                var pie = d3.pie()
-                    .value(function(d) { return floatFormat(d[variable]); })
-                    .sort(null);
-
-                // contructs and arc generator. This will be used for the donut. The difference between outer and inner
-                // radius will dictate the thickness of the donut
-
-                var arc1 = d3.arc()
-                    .outerRadius(radius * 0.8)
-                    .innerRadius(radius * 0.4);
-
-                var arc = d3.arc()
-                    .outerRadius(radius * 0.9)
-                    .innerRadius(radius * 0.6)
-                    .cornerRadius(cornerRadius)
-                    .padAngle(padAngle);
-
-                // this arc is used for aligning the text labels
-                var outerArc = d3.arc()
-                    .outerRadius(radius * 0.9)
-                    .innerRadius(radius * 0.9);
-                // ===========================================================================================
-
-                // ===========================================================================================
-                // append the svg object to the selection
-                var svg = selection.append('svg')
-                    .attr('width', width + margin.left + margin.right)
-                    .attr('height', height + margin.top + margin.bottom)
-                    .append('g')
-                    .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
-                // ===========================================================================================
-
-                // ===========================================================================================
-                // g elements to keep elements within svg modular
-                svg.append('g').attr('class', 'slices');
-                svg.append('g').attr('class', 'labelName');
-                svg.append('g').attr('class', 'lines');
-                // ===========================================================================================
-
-                // ===========================================================================================
-                // add and colour the donut slices
-                var path = svg.select('.slices')
-                    .datum(data).selectAll('path')
-                    .data(pie)
-                    .enter().append('path')
-                    .attr('fill', function(d) { return colour(d.data[category]); })
-                    .attr('d', arc);
-
-
-
-
-
-
-                // ===========================================================================================
-
-                // ===========================================================================================
-                // add text labels
-                /*var label = svg.select('.labelName').selectAll('text')
-                    .data(pie)
-                    .enter().append('text')
-                    .attr('dy', '.35em')
-                    .html(function(d) {
-
-
-
-                        return `${d.data[category].substr(0,60)}: ${ruFormat(d.data[variable])}`;
-
-
-
-                    })
-                    .attr('transform', function(d) {
-
-                        // effectively computes the centre of the slice.
-                        // see https://github.com/d3/d3-shape/blob/master/README.md#arc_centroid
-                        var pos = outerArc.centroid(d);
-
-                        // changes the point to be on left or right depending on where label is.
-                        pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
-                        return 'translate(' + pos + ')';
-                    })
-                    .style('text-anchor', function(d) {
-                        // if slice centre is on the left, anchor text to start, otherwise anchor to end
-                        return (midAngle(d)) < Math.PI ? 'start' : 'end';
-                    }).call(wrap, 260);*/
-                // ===========================================================================================
-
-                // ===========================================================================================
-                // add lines connecting labels to slice. A polyline creates straight lines connecting several points
-                /*var polyline = svg.select('.lines')
-                    .selectAll('polyline')
-                    .data(pie)
-                    .enter().append('polyline')
-                    .attr('points', function(d) {
-
-                        // see label transform function for explanations of these three lines.
-                        var pos = outerArc.centroid(d);
-                        pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
-                        return [arc.centroid(d), outerArc.centroid(d), pos]
-                    });*/
-                // ===========================================================================================
-
-                // ===========================================================================================
-                // add tooltip to mouse events on slices and labels
-                d3.selectAll('.labelName text, .slices path').call(toolTip);
-                // ===========================================================================================
-
-                // ===========================================================================================
-                // Functions
-
-                // calculates the angle for the middle of a slice
-                function midAngle(d) { return d.startAngle + (d.endAngle - d.startAngle) / 2; }
-
-                // function that creates and adds the tool tip to a selected element
-                function toolTip(selection) {
-
-                    // add tooltip (svg circle element) when mouse enters label or slice
-                    selection.on('mouseenter', function (data) {
-
-                        div.style("display", "block");
-
-                        div.style("left", 660+"px");
-                        div.style("top", 420+"px");
-                        div.style("position", "absolute");
-
-                        div.html("<div style='text-align: center; width: 200px; word-wrap: break-word; font-family: Roboto Black; font-size: 18px '>"+ (data.data[category]) + "<br>" + (ruFormat(data.data[variable])) + "<br>" + (data.data.Persent)+"%" + "</div>");
-
-                    });
-
-
-
-
-                    // remove the tooltip when mouse leaves the slice/label
-                    selection.on('mouseout', function () {
-                        div.style("display", "none");
-
-                    });
-                }
-
-                // function to create the HTML string for the tool tip. Loops through each key in data object
-                // and returns the html string key: value
-                function toolTipHTML(data) {
-
-                    var tip = '';
-
-
-                       /* tip += '<tspan x="0" dy="1.2em">' + data.data[category] + '</tspan>';
-                        tip += '<tspan x="0" dy="1.3em">' + ruFormat(data.data[variable]) + '</tspan>';
-                        tip += '<tspan x="0" dy="1.4em">' + data.data['Persent'] + '</tspan>';
-*/
-
-
-                    return data.data[category];
-                }
-                // ===========================================================================================
-
-            });
-        }
-
-        // getter and setter functions. See Mike Bostocks post "Towards Reusable Charts" for a tutorial on how this works.
-        chart.width = function(value) {
-            if (!arguments.length) return width;
-            width = value;
-            return chart;
-        };
-
-        chart.height = function(value) {
-            if (!arguments.length) return height;
-            height = value;
-            return chart;
-        };
-
-        chart.margin = function(value) {
-            if (!arguments.length) return margin;
-            margin = value;
-            return chart;
-        };
-
-        chart.radius = function(value) {
-            if (!arguments.length) return radius;
-            radius = value;
-            return chart;
-        };
-
-        chart.padAngle = function(value) {
-            if (!arguments.length) return padAngle;
-            padAngle = value;
-            return chart;
-        };
-
-        chart.cornerRadius = function(value) {
-            if (!arguments.length) return cornerRadius;
-            cornerRadius = value;
-            return chart;
-        };
-
-        chart.colour = function(value) {
-            if (!arguments.length) return colour;
-            colour = value;
-            return chart;
-        };
-
-        chart.variable = function(value) {
-            if (!arguments.length) return variable;
-            variable = value;
-            return chart;
-        };
-
-        chart.category = function(value) {
-            if (!arguments.length) return category;
-            category = value;
-            return chart;
-        };
-
-        return chart;
-    }
-
 
 
 
@@ -326,13 +56,7 @@ angular.module('app').controller('StructuRashodCtrl', function ($scope, $timeout
 
 
 
-    donut = donutChart()
-        .width(960)
-        .height(500)
-        .cornerRadius(3) // sets how rounded the corners are on each slice
-        .padAngle(0.02) // effectively dictates the gap between slices
-        .variable('DataVal')
-        .category('DataName');
+
 
 
 
@@ -361,18 +85,77 @@ angular.module('app').controller('StructuRashodCtrl', function ($scope, $timeout
 
 
 
-    $timeout(function () {
+
+
+
+   $timeout(function () {
+
+
+       var diameter = 460,
+           format = d3.format(",d"),
+           color = d3.scaleOrdinal(d3.schemeCategory10);
+
+       var bubble = d3.pack()
+           .size([diameter, diameter])
+           .padding(1.5);
+
+       var svg = d3.select("#chart").append("svg")
+           .attr("width", diameter)
+           .attr("height", diameter)
+           .attr("class", "bubble");
+
+       d3.json("flare.json", function(error, data) {
+           if (error) throw error;
+
+           var root = d3.hierarchy(classes(data))
+               .sum(function(d) { return d.value; })
+               .sort(function(a, b) { return b.value - a.value; });
+
+           bubble(root);
+           var node = svg.selectAll(".node")
+               .data(root.children)
+               .enter().append("g")
+               .attr("class", "node")
+               .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+
+           node.append("title")
+               .text(function(d) { return d.data.className + ": " + format(d.value); });
+
+           node.append("circle")
+               .attr("r", function(d) { return d.r; })
+               .style("fill", function(d) {
+                   return color(d.data.packageName);
+               });
+
+           node.append("text")
+               .attr("dy", ".3em")
+               .style("text-anchor", "middle")
+               .text(function(d) { return d.data.className.substring(0, d.r / 3); });
+       });
+
+// Returns a flattened hierarchy containing all leaf nodes under the root.
+       function classes(root) {
+           var classes = [];
+
+           function recurse(name, node) {
+               if (node.children) node.children.forEach(function(child) { recurse(node.name, child); });
+               else classes.push({packageName: name, className: node.name, value: node.size});
+           }
+
+           recurse(null, root);
+           return {children: classes};
+       }
+
+       d3.select(self.frameElement).style("height", diameter + "px");
+
+
+
+   }, 100);
 
 
 
 
 
-        d3.select('#chartstructurerashod')
-            .datum(data) // bind data to the div
-            .call(donut);
-
-
-    }, 50);
 
 
 

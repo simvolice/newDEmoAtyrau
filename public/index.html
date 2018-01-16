@@ -60,7 +60,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
 </head>
 
-<body ng-controller="MainCtrl as ctrl" ng-cloak class="drawer drawer--left ">
+<body ng-controller="MainCtrl" ng-cloak class="drawer drawer--left ">
 
 	<div class="wrapper">
 
@@ -110,13 +110,24 @@
 
 
 
+
+
+
 				</div>
 
 				<div class="collapse navbar-collapse" id="example-navbar-primary">
+
+
+
+
 					<ul class="nav navbar-nav navbar-right">
 
 
+						<li>
 
+							<label for="colorheader">Выбрать цвет для заголовка</label>
+							<input id="colorheader" type="color" style="margin-top: 10px" ng-model="colorheader" ng-change="getColor()">
+						</li>
 
 
 						<li>
@@ -268,7 +279,20 @@
 
 
 
+
+
 			</ul>
+
+
+
+					<label for="colorsidebar" style="color: grey">Выбрать цвет для Фона</label>
+			<input id="colorsidebar" type="color" style="margin-top: 10px" ng-model="colorsidebar" ng-change="getColorSideBar()">
+
+
+
+
+
+
 		</nav>
 
 
@@ -499,6 +523,7 @@
 	<script src="components/rashodplan/rashodplanService.js"></script>
 	<script src="components/structureRashod/structureRashodController.js"></script>
 	<script src="components/structureRashod/structureRashodService.js"></script>
+
 
 
 
