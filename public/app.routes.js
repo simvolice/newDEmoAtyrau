@@ -75,6 +75,19 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
       })
 
+      .state('cubeInProgramm', {
+          url: '/cubeinprogramm',
+          templateUrl: 'components/cubeInProgramm/cubeInProgrammView.html',
+
+
+      })
+
+      .state('cubeInAdmin', {
+          url: '/cubeinadmin',
+          templateUrl: 'components/cubeInAdmin/cubeInAdminView.html',
+
+
+      })
 
 
 

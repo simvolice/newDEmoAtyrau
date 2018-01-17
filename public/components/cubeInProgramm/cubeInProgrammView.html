@@ -1,0 +1,105 @@
+<div class="row" ng-controller="CubeInProgrammCtrl">
+    <div class="col-md-12">
+        <md-content layout="column" flex class="custom__md-content__categ">
+
+            <md-card>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="title text-center" style="text-transform: uppercase">В разрезе программ</h3>
+
+                    </div>
+
+                </div>
+
+            </md-card>
+
+            <md-card>
+
+
+
+
+
+                <div class="row">
+                    <div class="col-md-12 custom__label__date text-right">
+                        <span class="label" ng-click="selectDate('2017')" ng-class="{bg__color__active__date : activeMenu === '2017'}">2017</span>
+                        <span class="label" ng-click="selectDate('2018')" ng-class="{bg__color__active__date : activeMenu === '2018'}">2018</span>
+                        <span class="label" ng-click="selectDate('2019')" ng-class="{bg__color__active__date : activeMenu === '2019'}">2019</span>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-12">
+
+
+
+                        <div id="tabledata2">
+
+                            <style type="text/css">
+                                .tg  {border-collapse:collapse;border-spacing:0; width: 100%; margin-top: 20px}
+                                .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                                .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                                .tg .tg-0ord{text-align:right}
+                                .tg .tg-lqy6{text-align:left; width: 600px;}
+                                .tg .tg-lqy8{text-align:center; width: 300px}
+                                .tg .tg-hgcj{font-weight:bold;text-align:center}
+                                .tg .tg-yw4l{vertical-align:top}
+                            </style>
+                            <table class="tg table-striped">
+
+
+                                <tr ng-repeat="x in dataTable">
+                                    <td class="tg-lqy6" ng-click="goToModal(x, $event)">{{x.name}}</td>
+                                    <td class="tg-lqy8">
+
+
+                                        <md-progress-linear md-mode="determinate" value="{{x.prg}}"></md-progress-linear>
+
+
+                                    </td>
+
+                                    <td class="tg-0ord">{{x.value | ruFormat2}}</td>
+                                </tr>
+
+                            </table>
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </md-card>
+
+
+
+
+
+
+        </md-content>
+    </div>
+
+
+
+
+
+</div>

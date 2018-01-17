@@ -1,0 +1,124 @@
+<md-dialog class="fullscreen-dialog" aria-label="Создать мероприятие">
+
+
+
+
+
+
+
+    <md-toolbar class="md-toolbar-tools">
+
+        <h2>{{title}}</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="closeDialog()">
+            <i class="material-icons">close</i>
+        </md-button>
+
+    </md-toolbar>
+
+
+    <md-dialog-content>
+        <div class="md-dialog-content">
+
+
+
+
+           <div class="row">
+               <div class="col-md-12">
+
+                   <style type="text/css">
+                       .tg  {border-collapse:collapse;border-spacing:0; width: 100%}
+                       .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                       .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                       .tg .tg-s6z2{text-align:center}
+                       .tg .tg-baqh{text-align:center;vertical-align:top}
+                       .tg .tg-e3zv{font-weight:bold}
+                       .tg .tg-hgcj{font-weight:bold;text-align:center}
+                       .tg .tg-yw4l{vertical-align:top}
+                   </style>
+                   <table class="tg table-striped">
+                       <tr>
+                           <th class="tg-e3zv" rowspan="2">№</th>
+                           <th class="tg-e3zv" rowspan="2">Наименование</th>
+                           <th class="tg-e3zv" rowspan="2">Ед. изм.</th>
+                           <th class="tg-hgcj" colspan="7">Исполнение</th>
+                           <th class="tg-hgcj" rowspan="2">Информация об исполнении не исполнении, эффект программ</th>
+                       </tr>
+                       <tr>
+                           <td class="tg-hgcj">Планна 2016г.</td>
+                           <td class="tg-hgcj">Факт на 2016г.</td>
+                           <td class="tg-hgcj">План на 2017г.</td>
+                           <td class="tg-hgcj">Факт на 2017г.</td>
+                           <td class="tg-hgcj">План на 2018г.</td>
+                           <td class="tg-hgcj">Факт на 2018г.</td>
+                           <td class="tg-hgcj">План на 2019г.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-031e">1</td>
+                           <td class="tg-031e">Объем инвестиций в основной капитал обрабатывающей промышленности</td>
+                           <td class="tg-031e">млрд.долл.США</td>
+                           <td class="tg-s6z2">127</td>
+                           <td class="tg-s6z2">127</td>
+                           <td class="tg-s6z2">140,5</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">277,0</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">304,6</td>
+                           <td class="tg-031e"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-031e">2</td>
+                           <td class="tg-031e">Производительность труда в обрабатывающей промышленности</td>
+                           <td class="tg-031e">тыс.долл.США/чел.</td>
+                           <td class="tg-s6z2">39</td>
+                           <td class="tg-s6z2">35,8</td>
+                           <td class="tg-s6z2">40,1</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">40,5</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">40,5</td>
+                           <td class="tg-031e"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l">3</td>
+                           <td class="tg-yw4l">Объем экспорта несырьевых товаров</td>
+                           <td class="tg-yw4l">%</td>
+                           <td class="tg-baqh">64</td>
+                           <td class="tg-baqh">71,7</td>
+                           <td class="tg-baqh">84</td>
+                           <td class="tg-baqh"></td>
+                           <td class="tg-baqh">101,4</td>
+                           <td class="tg-baqh"></td>
+                           <td class="tg-baqh">183,8</td>
+                           <td class="tg-yw4l"></td>
+                       </tr>
+                   </table>
+               </div>
+
+           </div>
+
+
+
+
+
+
+        </div>
+    </md-dialog-content>
+
+
+
+
+    <md-dialog-actions layout="row">
+
+        <span flex></span>
+
+
+        <md-button class="md-raised md-primary" ng-click="closeDialog()">
+            Закрыть
+        </md-button>
+
+    </md-dialog-actions>
+
+
+
+</md-dialog>

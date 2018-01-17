@@ -1640,6 +1640,8 @@ angular.module('app').controller('StructuRashodCtrl', function ($scope, $timeout
 
 
 
+
+
             $scope.dataTable = classes(data).children;
             $("#chartstructurerashod").empty();
 
