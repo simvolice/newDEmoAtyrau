@@ -67,7 +67,11 @@ app.directive('ngFiles', ['$parse', function ($parse) {
 } ]);
 
 
-
+app.filter('ruFormat', function() {
+    return function(x) {
+        return d3.format(",.2f")(x);
+    };
+});
 
 
 
