@@ -1,0 +1,217 @@
+<md-dialog class="fullscreen-dialog" aria-label="Создать мероприятие">
+
+
+
+
+
+
+
+    <md-toolbar class="md-toolbar-tools">
+
+        <h2>{{title}}</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="closeDialog()">
+            <i class="material-icons">close</i>
+        </md-button>
+
+    </md-toolbar>
+
+
+    <md-dialog-content>
+        <div class="md-dialog-content">
+
+
+
+
+           <div class="row">
+               <div class="col-md-12">
+
+                   <style type="text/css">
+                       .tg  {border-collapse:collapse;border-spacing:0; width: 100%}
+                       .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                       .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                       .tg .tg-baqh{text-align:center;vertical-align:top}
+                       .tg .tg-e3zv{font-weight:bold}
+                       .tg .tg-lqy6{text-align:right;vertical-align:top}
+                       .tg .tg-hgcj{font-weight:bold;text-align:center}
+                       .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+                       .tg .tg-yw4l{vertical-align:top}
+                   </style>
+                   <table class="tg table-striped">
+                       <tr>
+                           <th class="tg-hgcj" rowspan="2">№</th>
+                           <th class="tg-hgcj" rowspan="2">Наименование</th>
+                           <th class="tg-hgcj" rowspan="2">Ед. изм.</th>
+                           <th class="tg-e3zv" rowspan="2">Источник финансирования</th>
+                           <th class="tg-amwm" colspan="7">Исполнение</th>
+                           <th class="tg-hgcj" rowspan="2">Информация об исполнении/не исполнении</th>
+                       </tr>
+                       <tr>
+                           <td class="tg-hgcj">План на 2016г.</td>
+                           <td class="tg-hgcj">Факт на 2016г.</td>
+                           <td class="tg-hgcj">План на 2017г.</td>
+                           <td class="tg-hgcj">Освоение<br>на 1 ноября<br>2017 года</td>
+                           <td class="tg-hgcj">План<br>на 2018г.</td>
+                           <td class="tg-hgcj">План на 2019г.</td>
+                           <td class="tg-hgcj">План на 2020г.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-031e"></td>
+                           <td class="tg-hgcj" colspan="11">Программа развитие регионов</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-amwm" colspan="11">«Развитие регионов» по направлению «Финансовая поддержка местного самоуправления»</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Мероприятия по развитию СНП и улучшению жизнеобеспечения сельского населения</td>
+                           <td class="tg-yw4l">млн. тенге</td>
+                           <td class="tg-baqh">МБ</td>
+                           <td class="tg-lqy6">263,023</td>
+                           <td class="tg-lqy6">218,294</td>
+                           <td class="tg-lqy6">263,023</td>
+                           <td class="tg-lqy6">133,192</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-yw4l">На 1 ноября текущего года в 59 сельских населенных пунктах реализовано 73 проекта (текущий ремонт объектов спорта, текущий ремонт объектов водоснабжения, освещение, озеленение, обустройство полигонов твердых бытовых отходов, установка дворовых детских игровых площадок, мероприятия по благоустройству населенных пунктов).</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-amwm" colspan="11">«Развитие регионов» по направлению повышение кадрового потенциала сельской местности</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Бюджетный кредит</td>
+                           <td class="tg-031e" rowspan="2">млн. тенге</td>
+                           <td class="tg-baqh">РБ</td>
+                           <td class="tg-lqy6">127,260</td>
+                           <td class="tg-lqy6">127,260</td>
+                           <td class="tg-lqy6">173,579</td>
+                           <td class="tg-lqy6">170,941</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-yw4l">По состоянию на 1 ноября текущего года выданы бюджетные кредиты на приобретение жилья 51 специалисту.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">подъемное пособие</td>
+                           <td class="tg-baqh">МБ</td>
+                           <td class="tg-lqy6">16,902</td>
+                           <td class="tg-lqy6">16,898</td>
+                           <td class="tg-lqy6">20,182</td>
+                           <td class="tg-lqy6">10,234</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-yw4l">По состоянию на 1 ноября текущего года выплачены подъемные пособия 64 специалистам</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-amwm" colspan="11">Развитие моногорода Кульсары</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-031e" rowspan="2">Развитие моногорода Кульсары</td>
+                           <td class="tg-031e" rowspan="2">млн. тенге</td>
+                           <td class="tg-baqh">РБ</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-lqy6">589,5</td>
+                           <td class="tg-lqy6">589,5</td>
+                           <td class="tg-lqy6">1121,1</td>
+                           <td class="tg-lqy6">1921,9</td>
+                           <td class="tg-lqy6">12492,5</td>
+                           <td class="tg-031e" rowspan="2">За 9 месяцев т.г. проведена реконструкция 7,9 км. автодорог</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-baqh">МБ</td>
+                           <td class="tg-lqy6">528</td>
+                           <td class="tg-lqy6">528</td>
+                           <td class="tg-lqy6">148,5</td>
+                           <td class="tg-lqy6">71,3</td>
+                           <td class="tg-lqy6">399,7</td>
+                           <td class="tg-lqy6">491,1</td>
+                           <td class="tg-lqy6">1000,0</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-amwm" colspan="11">Жилищно-коммунальное хозяйство</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-031e" rowspan="2">Модернизация ЖКХ</td>
+                           <td class="tg-031e" rowspan="2">млн. тенге</td>
+                           <td class="tg-baqh">МБ</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-lqy6">458,2</td>
+                           <td class="tg-lqy6">458,2</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-yw4l">В текущем году проведен ремонт в 11 многоэтажных жилых домах.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-baqh">ВС (возвратные средства)</td>
+                           <td class="tg-lqy6">246,2</td>
+                           <td class="tg-lqy6">246,2</td>
+                           <td class="tg-lqy6">188,2</td>
+                           <td class="tg-lqy6">139,9</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-yw4l">В 2016 году проведен ремонт в 5 многоэтажных жилых домах. В текущем году поведен ремонт в 4 многоэтажных жилых домах.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-amwm" colspan="11">Ақ бұлақ</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Водоснабжение</td>
+                           <td class="tg-yw4l">млн. тенге</td>
+                           <td class="tg-baqh">МБ</td>
+                           <td class="tg-lqy6">1800,376</td>
+                           <td class="tg-lqy6">1800,376</td>
+                           <td class="tg-lqy6">1907,828</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-baqh">-</td>
+                           <td class="tg-lqy6">1780,256</td>
+                           <td class="tg-yw4l">По программе с 2016 года и по состоянию 01.11.2017 года завершено и сдано 13 объектов водоснабжения. До конца текущего года планируется завершить еще 6 объектов. А также разрабатывается проектно-сметная документация по 9 проектам.</td>
+                       </tr>
+                   </table>
+               </div>
+
+           </div>
+
+
+
+
+
+
+        </div>
+    </md-dialog-content>
+
+
+
+
+    <md-dialog-actions layout="row">
+
+        <span flex></span>
+
+
+        <md-button class="md-raised md-primary" ng-click="closeDialog()">
+            Закрыть
+        </md-button>
+
+    </md-dialog-actions>
+
+
+
+</md-dialog>

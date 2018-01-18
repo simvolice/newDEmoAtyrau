@@ -1,0 +1,247 @@
+<md-dialog class="fullscreen-dialog" aria-label="Создать мероприятие">
+
+
+
+
+
+
+
+    <md-toolbar class="md-toolbar-tools">
+
+        <h2>{{title}}</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="closeDialog()">
+            <i class="material-icons">close</i>
+        </md-button>
+
+    </md-toolbar>
+
+
+    <md-dialog-content>
+        <div class="md-dialog-content">
+
+
+
+
+           <div class="row">
+               <div class="col-md-12">
+
+                   <style type="text/css">
+                       .tg  {border-collapse:collapse;border-spacing:0; width: 100%}
+                       .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                       .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                       .tg .tg-e3zv{font-weight:bold}
+                       .tg .tg-lqy6{text-align:right;vertical-align:top}
+                       .tg .tg-hgcj{font-weight:bold;text-align:center}
+                       .tg .tg-yw4l{vertical-align:top}
+                       .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+                   </style>
+                   <table class="tg table-striped">
+                       <tr>
+                           <th class="tg-e3zv" rowspan="2">№</th>
+                           <th class="tg-hgcj" rowspan="2">Наименование</th>
+                           <th class="tg-hgcj" rowspan="2">Ед. изм.</th>
+                           <th class="tg-hgcj" colspan="4">Исполнение</th>
+                           <th class="tg-hgcj" colspan="3">Финансирование млн.тенге</th>
+                           <th class="tg-hgcj">Информация об исполнении не исполнении, эффект программ</th>
+                       </tr>
+                       <tr>
+                           <td class="tg-hgcj">План на 2016г.</td>
+                           <td class="tg-hgcj">Факт на 2016г.</td>
+                           <td class="tg-hgcj">План на 2017г.</td>
+                           <td class="tg-hgcj">Факт на 2017г.</td>
+                           <td class="tg-hgcj">План</td>
+                           <td class="tg-hgcj">Факт</td>
+                           <td class="tg-hgcj">Источник финансирования</td>
+                           <td class="tg-hgcj"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-amwm" colspan="10">Направление Агропромышленный комплекс</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Субсидирование развития племенного животноводства, повышение продуктивности и качества продукции животноводства</td>
+                           <td class="tg-yw4l">тыс.тенге</td>
+                           <td class="tg-lqy6">1 003 179</td>
+                           <td class="tg-lqy6">1 003 179</td>
+                           <td class="tg-lqy6">1 542 152</td>
+                           <td class="tg-lqy6">515 500</td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Частичное гарантирование по микркредитам в рамках Программы развития продуктивной занятости и массоаого предпринимательства</td>
+                           <td class="tg-yw4l">тыс.тенге</td>
+                           <td class="tg-lqy6">0</td>
+                           <td class="tg-lqy6">0</td>
+                           <td class="tg-lqy6">61 556</td>
+                           <td class="tg-lqy6">30 778</td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Субсидирование операционных затрат микрофинансовых организаций в рамках программы развития продуктивной занятости и массового предпринимательства</td>
+                           <td class="tg-yw4l">тыс.тенге</td>
+                           <td class="tg-lqy6">0</td>
+                           <td class="tg-lqy6">0</td>
+                           <td class="tg-lqy6">9 057</td>
+                           <td class="tg-lqy6">0</td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Предоставаление бюджетных кредитов для содействия развитию предпринимательства в рамках Программы развития продуктивной занятости и массового предпринимательства</td>
+                           <td class="tg-yw4l">тыс.тенге</td>
+                           <td class="tg-lqy6">915 632</td>
+                           <td class="tg-lqy6">915 632</td>
+                           <td class="tg-lqy6">587 000</td>
+                           <td class="tg-lqy6">587 000</td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Поддержка семеноводства</td>
+                           <td class="tg-yw4l">тыс.тенге</td>
+                           <td class="tg-lqy6">0</td>
+                           <td class="tg-lqy6">0</td>
+                           <td class="tg-lqy6">20 000</td>
+                           <td class="tg-lqy6">0</td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Субсидирование повышения урожайности и качества продукции растениеводства, удешевление стоимости горюче-смазочных материалов и других товарно-материальных ценностей, необходимых для проведения весенне-полевых и уборочных работ, путем субсидирования производства приоритетных культур</td>
+                           <td class="tg-yw4l">тыс.тенге</td>
+                           <td class="tg-lqy6">103 436</td>
+                           <td class="tg-lqy6">103 436</td>
+                           <td class="tg-lqy6">56 878</td>
+                           <td class="tg-lqy6">56 878</td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Выделенное средство освоено полностью. Удовлетверено 44 заявок, просубсидировано 29 сельхозтоваро-производителей</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Субсидирование стоимости услуг по доставке воды сельскохозяйственным товаропроизводителям</td>
+                           <td class="tg-yw4l">тыс.тенге</td>
+                           <td class="tg-lqy6">49 247</td>
+                           <td class="tg-lqy6">49 247</td>
+                           <td class="tg-lqy6">65 000</td>
+                           <td class="tg-lqy6">61 946</td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Просубсидировано 108 сельхоз товар о пройзводителей</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Удешевление сельхозтоваропроизводителям стоимости гербицидов, биоагентов (энтомагов) и биопрепаратов, преднахначенных для обработки сельскохозяйственных культур в целях защиты растений</td>
+                           <td class="tg-yw4l">тыс.тенге</td>
+                           <td class="tg-lqy6">1 250</td>
+                           <td class="tg-lqy6">1 250</td>
+                           <td class="tg-lqy6">2 000</td>
+                           <td class="tg-lqy6">0</td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Выделенное средство освоено полностью. Удовлетверено 5 заявок, просубсидировано 5 сельхозтоваро-производителей</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Субсидирование стоимости удобрений (за исключением органических)</td>
+                           <td class="tg-yw4l">тыс.тенге</td>
+                           <td class="tg-lqy6">28 249</td>
+                           <td class="tg-lqy6">28 249</td>
+                           <td class="tg-lqy6">35 036</td>
+                           <td class="tg-lqy6">35 036</td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Выделенное средство освоено полностью. Удовлетверено 76 заявок, просубсидировано 76 сельхозтоваро-производителей</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Возмещение части расходов, понесенных субъектам агропромышленного комплекска, при инвестиционных вложениях</td>
+                           <td class="tg-yw4l">тыс.тенге</td>
+                           <td class="tg-lqy6">1 278 155</td>
+                           <td class="tg-lqy6">1 278 155</td>
+                           <td class="tg-lqy6">1 127 780</td>
+                           <td class="tg-lqy6">1 127 682</td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Субсидирование заготовительным организациям в сфере агропромышленного комплекса суммы нолога на добавленную стоимость, уплаченного в бюджет, в пределах исчисленного налога на добавленную стоимость</td>
+                           <td class="tg-yw4l">тыс.тенге</td>
+                           <td class="tg-lqy6">0</td>
+                           <td class="tg-lqy6">0</td>
+                           <td class="tg-lqy6">94 527</td>
+                           <td class="tg-lqy6">6 500</td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l">Субсидирование ставок вознаграждения при кредитовании, а также лизинге на приобретение сельскохозяйственных животных, техники и технологического оборудования</td>
+                           <td class="tg-yw4l">тыс.тенге</td>
+                           <td class="tg-lqy6">66 328</td>
+                           <td class="tg-lqy6">66 328</td>
+                           <td class="tg-lqy6">98 818</td>
+                           <td class="tg-lqy6">70 600,5</td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                           <td class="tg-yw4l"></td>
+                       </tr>
+                   </table>
+               </div>
+
+           </div>
+
+
+
+
+
+
+        </div>
+    </md-dialog-content>
+
+
+
+
+    <md-dialog-actions layout="row">
+
+        <span flex></span>
+
+
+        <md-button class="md-raised md-primary" ng-click="closeDialog()">
+            Закрыть
+        </md-button>
+
+    </md-dialog-actions>
+
+
+
+</md-dialog>

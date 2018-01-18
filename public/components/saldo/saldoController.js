@@ -4,10 +4,10 @@
 
 
 
-angular.module('app').controller('CleanBudgetCtrl', function ($scope, $timeout) {
+angular.module('app').controller('SaldoCtrl', function ($scope, $timeout) {
 
     var chartDohod = null;
-    $scope.menuItems = ['ТАЗА БЮДЖЕТТІК КРЕДИТ БЕРУ', 'БЮДЖЕТТІК КРЕДИТТЕР', 'БЮДЖЕТТІК КРЕДИТТЕРДІ ӨТЕУ', "Жалпы"];
+    $scope.menuItems = ['Мемлекеттің қаржылық активтерін сатудан түскен түсімдер', 'Қаржылық активтерді сатып алу', 'Қаржылық активтермен болатын операциялар бойынша сальдо', 'Жалпы'];
 
 
 
@@ -45,7 +45,7 @@ angular.module('app').controller('CleanBudgetCtrl', function ($scope, $timeout) 
 
             data: {
                 columns: [
-                    ['data1', 3544546, 1989724,	3303792, 3679844],
+                    ['data1', 13077962, 8728297, 2746582, 1263412],
 
                 ],
                 type: 'bar',
@@ -108,38 +108,26 @@ angular.module('app').controller('CleanBudgetCtrl', function ($scope, $timeout) 
 
         $scope.activeMenu = param;
 
-        if (param === "ТАЗА БЮДЖЕТТІК КРЕДИТ БЕРУ") {
+        if (param === "Жалпы") {
 
 
 
 
             chartDohod.load({
                 columns: [
-                    ['data1', 1563608, 761234,	1141795, 226283],
+                    ['data1', 13077962, 8728297, 2746582, 1263412],
 
                 ]
             });
 
 
 
-        } else if (param === "БЮДЖЕТТІК КРЕДИТТЕР") {
+        } else if (param === "Қаржылық активтермен болатын операциялар бойынша сальдо") {
 
 
             chartDohod.load({
                 columns: [
-                    ['data1', 1772273, 994862,	1651896, 1613639],
-
-                ]
-            });
-
-
-
-
-        } else if (param === "БЮДЖЕТТІК КРЕДИТТЕРДІ ӨТЕУ") {
-
-            chartDohod.load({
-                columns: [
-                    ['data1', 208665, 233628, 510101, 1839922],
+                    ['data1', 6520013, 4336596,	1358291, 625730],
 
                 ]
             });
@@ -147,12 +135,24 @@ angular.module('app').controller('CleanBudgetCtrl', function ($scope, $timeout) 
 
 
 
-
-        }else if (param === "Жалпы") {
+        } else if (param === "Қаржылық активтерді сатып алу") {
 
             chartDohod.load({
                 columns: [
-                    ['data1', 3544546, 1989724,	3303792, 3679844],
+                    ['data1', 6538981, 4391701,	1373291, 631706],
+
+                ]
+            });
+
+
+
+
+
+        }else if (param === "Мемлекеттің қаржылық активтерін сатудан түскен түсімдер") {
+
+            chartDohod.load({
+                columns: [
+                    ['data1', 18968, 55105,	55105, 5976],
 
                 ]
             });

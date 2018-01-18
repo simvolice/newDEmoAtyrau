@@ -111,16 +111,6 @@ function DialogController($scope, title) {
 
 
 
-
-
-
-
-
-
-
-
-
-
     $scope.closeDialog = function () {
 
 

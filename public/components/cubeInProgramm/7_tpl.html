@@ -1,0 +1,419 @@
+<md-dialog class="fullscreen-dialog" aria-label="Создать мероприятие">
+
+
+
+
+
+
+
+    <md-toolbar class="md-toolbar-tools">
+
+        <h2>{{title}}</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="closeDialog()">
+            <i class="material-icons">close</i>
+        </md-button>
+
+    </md-toolbar>
+
+
+    <md-dialog-content>
+        <div class="md-dialog-content">
+
+
+
+
+           <div class="row">
+               <div class="col-md-12">
+
+                   <style type="text/css">
+                       .tg  {border-collapse:collapse;border-spacing:0; width: 100%}
+                       .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                       .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                       .tg .tg-s6z2{text-align:center}
+                       .tg .tg-hgcj{font-weight:bold;text-align:center}
+                   </style>
+                   <table class="tg table-striped">
+                       <colgroup>
+                           <col style="width: 27px">
+                           <col style="width: 426px">
+                           <col style="width: 39px">
+                           <col style="width: 50px">
+                           <col style="width: 50px">
+                           <col style="width: 50px">
+                           <col style="width: 50px">
+                           <col style="width: 45px">
+                           <col style="width: 43px">
+                           <col style="width: 173px">
+                           <col style="width: 97px">
+                       </colgroup>
+                       <tr>
+                           <th class="tg-hgcj" rowspan="2">№</th>
+                           <th class="tg-hgcj" rowspan="2">Наименование</th>
+                           <th class="tg-hgcj" rowspan="2">Ед. изм.</th>
+                           <th class="tg-hgcj" colspan="4">Исполнение</th>
+                           <th class="tg-hgcj" colspan="3">Финансирование млн.тенге</th>
+                           <th class="tg-hgcj" rowspan="2">Информация об исполнении не исполнении, эффект программ</th>
+                       </tr>
+                       <tr>
+                           <td class="tg-hgcj">План на 2016г.</td>
+                           <td class="tg-hgcj">Факт на 2016г.</td>
+                           <td class="tg-hgcj">План на 2017г.</td>
+                           <td class="tg-hgcj">Факт на 2017г.</td>
+                           <td class="tg-hgcj">План</td>
+                           <td class="tg-hgcj">Факт</td>
+                           <td class="tg-hgcj">Источник финансирования</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-hgcj" colspan="10">обеспечение равного доступа к качественному дошкольному воспитанию и обучению;</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-hgcj" colspan="10">Цель: Обеспечение равного доступа к качественному дошкольному воспитанию и обучению</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля детей 3-6 лет, охваченных дошкольным воспитанием и обучением по обновленному содержанию</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">84</td>
+                           <td class="tg-s6z2">85,7</td>
+                           <td class="tg-s6z2">87,1</td>
+                           <td class="tg-s6z2">93,1</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Уменьшение потребности в местах в дошкольные организации от общей потребности 2014 года (194,6 тыс.мест)</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">55,9</td>
+                           <td class="tg-s6z2">59,5</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля дошкольных организаций с полным днем пребывания от общего количества всех типов и видов</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">54,2</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля мини-центров с кратковременным днем пребывания от общего их количества</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">100</td>
+                           <td class="tg-s6z2">100</td>
+                           <td class="tg-s6z2">100</td>
+                           <td class="tg-s6z2">100</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля мест в частных дошкольных организациях от общего количества предоставленных мест</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля дошкольных организаций, создавших условия для воспитания и обучения детей с особыми образовательными потребностями</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля педагогических работников дошкольных организаций с высшим и техническо-профессиональным образованием по специальности «Дошкольное воспитание и обучение»</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-hgcj" colspan="10">обеспечение равного доступа к качественному среднему образованию, формирование интеллектуально,физически, духовно развитого и успешного гражданина</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-hgcj" colspan="10">Цель: Обеспечение равного доступа к качественному среднему образованию, формирование интеллектуально, физически, духовно развитого и успешного гражданина</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля учащихся с успеваемостью на «хорошо» и «отлично» (качество обучения)</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">52,1</td>
+                           <td class="tg-s6z2">52,2</td>
+                           <td class="tg-s6z2">57,3</td>
+                           <td class="tg-s6z2">57,6</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля аварийных школ от общего количества школ</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">3,1</td>
+                           <td class="tg-s6z2">3,1</td>
+                           <td class="tg-s6z2">1,6</td>
+                           <td class="tg-s6z2">1,6</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля школ, ведущих занятия в три смены</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">0</td>
+                           <td class="tg-s6z2">0</td>
+                           <td class="tg-s6z2">0</td>
+                           <td class="tg-s6z2">4,6</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля молодых педагогов от общего количества педагогов</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">2,0</td>
+                           <td class="tg-s6z2">3,0</td>
+                           <td class="tg-s6z2">2,1</td>
+                           <td class="tg-s6z2">3,9</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля педагогов с высшей и первой категориями от общего количества педагогов</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">47</td>
+                           <td class="tg-s6z2">48,7</td>
+                           <td class="tg-s6z2">48</td>
+                           <td class="tg-s6z2">48,7</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Всего школ создавшие условие инклюз образование</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">30</td>
+                           <td class="tg-s6z2">30,5</td>
+                           <td class="tg-s6z2">59</td>
+                           <td class="tg-s6z2">59,5</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля школ, применяющих ИКТ в образовательном процессе</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">50</td>
+                           <td class="tg-s6z2">50</td>
+                           <td class="tg-s6z2">100</td>
+                           <td class="tg-s6z2">100</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля школьников, охваченных дополнительным образованием</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">52</td>
+                           <td class="tg-s6z2">52,0</td>
+                           <td class="tg-s6z2">53</td>
+                           <td class="tg-s6z2">63,7</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля обучающихся, охваченных спортивными секциями общеобразовательных школ, в том числе республиканскими детско-юношескими спортивными турнирами (спартакиада школьников и др.)</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">27</td>
+                           <td class="tg-s6z2">26,5</td>
+                           <td class="tg-s6z2">27,5</td>
+                           <td class="tg-s6z2">80</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля школьников, охваченных детско-юношеским движением, в том числе движениями «Жас ұлан», «Жас қыран»</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">38</td>
+                           <td class="tg-s6z2">39</td>
+                           <td class="tg-s6z2">40</td>
+                           <td class="tg-s6z2">43</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-hgcj" colspan="10">социально-экономическая интеграция молодежи через создание условий для получения технического и профессионального образования</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-hgcj" colspan="10">Цель: Социально-экономическая интеграция молодежи через создание условий для получения технического и профессионального образования</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля государственных колледжей, прошедших процедуру аккредитации</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">3,5</td>
+                           <td class="tg-s6z2">11,1</td>
+                           <td class="tg-s6z2">7</td>
+                           <td class="tg-s6z2">16,6</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля выпускников учебных заведений ТиПО, обучившихся по государственному образовательному заказу, трудоустроенных и занятых в первый год после окончания обучения</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">52</td>
+                           <td class="tg-s6z2">54</td>
+                           <td class="tg-s6z2">56</td>
+                           <td class="tg-s6z2">57,5</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля организаций ТиПО, создавших равные условия и безбарьерный доступ для студентов с особыми образовательными потребностями</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">20</td>
+                           <td class="tg-s6z2">21</td>
+                           <td class="tg-s6z2">25</td>
+                           <td class="tg-s6z2">20</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля колледжей, внедривших основные принципы дуального обучения по технологическим и сельскохозяйственным специальностям</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">50</td>
+                           <td class="tg-s6z2">60</td>
+                           <td class="tg-s6z2">60</td>
+                           <td class="tg-s6z2">60</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля обучающихся ТиПО, охваченных спортивными секциями</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">50</td>
+                           <td class="tg-s6z2">60</td>
+                           <td class="tg-s6z2">60</td>
+                           <td class="tg-s6z2">60</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля обучающихся в организациях ТиПО, вовлеченных в общественно-полезную деятельность (волонтерство, участие в деятельности комитетов по делам молодежи и др.)</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">35</td>
+                           <td class="tg-s6z2">40</td>
+                           <td class="tg-s6z2">40</td>
+                           <td class="tg-s6z2">42</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                   </table>
+               </div>
+
+           </div>
+
+
+
+
+
+
+        </div>
+    </md-dialog-content>
+
+
+
+
+    <md-dialog-actions layout="row">
+
+        <span flex></span>
+
+
+        <md-button class="md-raised md-primary" ng-click="closeDialog()">
+            Закрыть
+        </md-button>
+
+    </md-dialog-actions>
+
+
+
+</md-dialog>

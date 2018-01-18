@@ -4,15 +4,15 @@
 
 
 
-angular.module('app').controller('CleanBudgetCtrl', function ($scope, $timeout) {
+angular.module('app').controller('FinanceDeficitCtrl', function ($scope, $timeout) {
 
     var chartDohod = null;
-    $scope.menuItems = ['ТАЗА БЮДЖЕТТІК КРЕДИТ БЕРУ', 'БЮДЖЕТТІК КРЕДИТТЕР', 'БЮДЖЕТТІК КРЕДИТТЕРДІ ӨТЕУ', "Жалпы"];
+    $scope.menuItems = ['Бюджет қаражаттарының қолданылатын қалдықтары', 'Қарыздарды өтеу', 'Қарыздардың тізімі', 'Бюджеттердің тапшылығын қаржыландыру (прфицитті пайдалану)','Жалпы'];
 
 
 
 
-    $scope.activeMenu = $scope.menuItems[3];
+    $scope.activeMenu = $scope.menuItems[4];
 
 
 
@@ -45,7 +45,7 @@ angular.module('app').controller('CleanBudgetCtrl', function ($scope, $timeout) 
 
             data: {
                 columns: [
-                    ['data1', 3544546, 1989724,	3303792, 3679844],
+                    ['data1', 41317626, 21573372, 22340396, 82773844],
 
                 ],
                 type: 'bar',
@@ -108,38 +108,30 @@ angular.module('app').controller('CleanBudgetCtrl', function ($scope, $timeout) 
 
         $scope.activeMenu = param;
 
-        if (param === "ТАЗА БЮДЖЕТТІК КРЕДИТ БЕРУ") {
+        if (param === "Жалпы") {
 
 
 
 
             chartDohod.load({
                 columns: [
-                    ['data1', 1563608, 761234,	1141795, 226283],
+                    ['data1', 41317626, 21573372, 22340396, 82773844],
 
                 ]
             });
 
 
 
-        } else if (param === "БЮДЖЕТТІК КРЕДИТТЕР") {
+        } else if (param === "Бюджеттердің тапшылығын қаржыландыру (прфицитті пайдалану)") {
 
 
             chartDohod.load({
                 columns: [
-                    ['data1', 1772273, 994862,	1651896, 1613639],
-
-                ]
-            });
-
-
-
-
-        } else if (param === "БЮДЖЕТТІК КРЕДИТТЕРДІ ӨТЕУ") {
-
-            chartDohod.load({
-                columns: [
-                    ['data1', 208665, 233628, 510101, 1839922],
+                    ['data1', 19768919
+                        , 9831890
+                        ,	10006242
+                        , 39315130
+                    ],
 
                 ]
             });
@@ -147,12 +139,53 @@ angular.module('app').controller('CleanBudgetCtrl', function ($scope, $timeout) 
 
 
 
-
-        }else if (param === "Жалпы") {
+        } else if (param === "Қарыздардың тізімі") {
 
             chartDohod.load({
                 columns: [
-                    ['data1', 3544546, 1989724,	3303792, 3679844],
+                    ['data1', 22855448
+                        , 1936985
+                        ,	3240280
+                        , 2911690
+                    ],
+
+                ]
+            });
+
+
+
+
+
+        }else if (param === "Қарыздарды өтеу") {
+
+            chartDohod.load({
+                columns: [
+                    ['data1', 889894
+                        , 954796
+                        ,	1163956
+                        , 2071792
+                    ],
+
+                ]
+            });
+
+
+
+
+
+        }else if (param === "Бюджет қаражаттарының қолданылатын қалдықтары") {
+
+            chartDohod.load({
+                columns: [
+                    ['data1', 17803365
+
+                        , 8849701
+
+                        ,	7929918
+
+                        , 38475232
+
+                    ],
 
                 ]
             });

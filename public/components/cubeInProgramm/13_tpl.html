@@ -1,0 +1,101 @@
+<md-dialog class="fullscreen-dialog" aria-label="Создать мероприятие">
+
+
+
+
+
+
+
+    <md-toolbar class="md-toolbar-tools">
+
+        <h2>{{title}}</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="closeDialog()">
+            <i class="material-icons">close</i>
+        </md-button>
+
+    </md-toolbar>
+
+
+    <md-dialog-content>
+        <div class="md-dialog-content">
+
+
+
+
+           <div class="row">
+               <div class="col-md-12">
+
+                   <style type="text/css">
+                       .tg  {border-collapse:collapse;border-spacing:0; width: 100%}
+                       .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                       .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                       .tg .tg-0ord{text-align:right}
+                       .tg .tg-baqh{text-align:center;vertical-align:top}
+                       .tg .tg-lqy6{text-align:right;vertical-align:top}
+                       .tg .tg-hgcj{font-weight:bold;text-align:center}
+                       .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+                       .tg .tg-yw4l{vertical-align:top}
+                   </style>
+                   <table class="tg">
+                       <tr>
+                           <th class="tg-hgcj" rowspan="2">№</th>
+                           <th class="tg-hgcj" rowspan="2">Наименование</th>
+                           <th class="tg-hgcj" rowspan="2">Ед. изм.</th>
+                           <th class="tg-amwm" colspan="4">Исполнение</th>
+                           <th class="tg-amwm" colspan="3">Финансирование млн.тенге</th>
+                           <th class="tg-hgcj" rowspan="2">Информация об исполнении не исполнении, эффект программ</th>
+                       </tr>
+                       <tr>
+                           <td class="tg-hgcj">План на 2016г.</td>
+                           <td class="tg-hgcj">Факт на 2016г.</td>
+                           <td class="tg-hgcj">План на 2017г.</td>
+                           <td class="tg-hgcj">Факт на 2017г.</td>
+                           <td class="tg-hgcj">План</td>
+                           <td class="tg-hgcj">Факт</td>
+                           <td class="tg-hgcj">Источник финансирования</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-031e"></td>
+                           <td class="tg-031e">Программа развития продуктивной занятости и социальных программ</td>
+                           <td class="tg-0ord">%</td>
+                           <td class="tg-lqy6">-</td>
+                           <td class="tg-lqy6">-</td>
+                           <td class="tg-lqy6">16 730</td>
+                           <td class="tg-lqy6">20 560</td>
+                           <td class="tg-lqy6">2335,2</td>
+                           <td class="tg-lqy6">1736,7</td>
+                           <td class="tg-baqh">Республиканский бюджет</td>
+                           <td class="tg-yw4l"></td>
+                       </tr>
+                   </table>
+
+               </div>
+
+           </div>
+
+
+
+
+
+
+        </div>
+    </md-dialog-content>
+
+
+
+
+    <md-dialog-actions layout="row">
+
+        <span flex></span>
+
+
+        <md-button class="md-raised md-primary" ng-click="closeDialog()">
+            Закрыть
+        </md-button>
+
+    </md-dialog-actions>
+
+
+
+</md-dialog>

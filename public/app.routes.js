@@ -97,6 +97,37 @@ app.config(function($stateProvider, $urlRouterProvider) {
       })
 
 
+      .state('cubeInSphete', {
+          url: '/cubeinsphete',
+          templateUrl: 'components/cubeInSphere/cubeInSpheteView.html',
+
+
+      })
+
+
+      .state('cubeInTown', {
+          url: '/cubeintown',
+          templateUrl: 'components/cubeInTown/cubeInTownView.html',
+
+
+      })
+
+
+      .state('saldo', {
+          url: '/saldo',
+          templateUrl: 'components/saldo/saldoView.html',
+
+
+      })
+
+      .state('financeDeficit', {
+          url: '/financedeficit',
+          templateUrl: 'components/financeDeficit/financeDeficitView.html',
+
+
+      })
+
+
 
 
 

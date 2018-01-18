@@ -175,7 +175,7 @@
 
 		<nav class="drawer-nav" role="navigation">
 			<ul class="drawer-menu">
-				<li class="custom__sidebar__img"><a ui-sref="main"><img src="assets/img/Coat_of_arms_of_Atyrau.png" alt="Логотип" height="100"></a></li>
+				<li class="custom__sidebar__img"><img src="assets/img/fon7.jpg" alt="Фон" height="150" width="232"></li>
 
 
 
@@ -299,12 +299,12 @@
 
 		<nav class="drawer-nav" role="navigation" id="budgetsidebar" style="display: none;">
 			<ul class="drawer-menu">
-				<li class="custom__sidebar__img" id="backbtn"><i class="material-icons">keyboard_backspace</i> <span class="custom__back_btn">Назад</span></li>
+				<li class="custom__back_btn" id="backbtn"><i class="material-icons">keyboard_backspace</i><span>Назад</span></li>
 
 
 
 
-				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" ui-sref="budget">Бюджет</a>
+				<li class="drawer-dropdown" style="margin-top: 50px"><a class="drawer-menu-item" data-toggle="dropdown" ui-sref="budget">Бюджет</a>
 				</li>
 
 
@@ -322,8 +322,8 @@
 
 				<li><a class="drawer-dropdown-menu-item" ui-sref="cubeInProgramm">В разрезе программ</a></li>
 				<li><a class="drawer-dropdown-menu-item" ui-sref="cubeInAdmin">В разрезе администраторов</a></li>
-				<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">В разрезе направлений (отраслей)</a></li>
-				<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">В разрезе районов</a></li>
+				<li><a class="drawer-dropdown-menu-item" ui-sref="cubeInSphete">В разрезе направлений (отраслей)</a></li>
+				<li><a class="drawer-dropdown-menu-item" ui-sref="cubeInTown">В разрезе районов</a></li>
 
 				</ul>
 
@@ -331,8 +331,8 @@
 
 
 				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" ui-sref="cleanBudget">Чистое бюджетное кредитование</a></li>
-				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" href="?#!/adminedit">Сальдо по операциям с финансовыми активами</a></li>
-				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" href="?#!/adminedit">Финансирование дефицита (использование профицита) бюджета</a></li>
+				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" ui-sref="saldo">Сальдо по операциям с финансовыми активами</a></li>
+				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" ui-sref="financeDeficit">Финансирование дефицита (использование профицита) бюджета</a></li>
 
 
 
@@ -357,12 +357,13 @@
 
 		<nav class="drawer-nav" role="navigation" id="executionsidebar" style="display: none">
 			<ul class="drawer-menu">
-				<li class="custom__sidebar__img" id="backbtnexecution"><i class="material-icons">keyboard_backspace</i> <span class="custom__back_btn">Назад</span></li>
+
+				<li class="custom__back_btn" id="backbtnexecution"><i class="material-icons">keyboard_backspace</i><span>Назад</span></li>
 
 
 
 
-				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" href="?#!/adminedit">Основные показатели исполнения бюджета</a>
+				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" href="?#!/adminedit" style="margin-top: 50px">Основные показатели исполнения бюджета</a>
 				</li>
 
 
@@ -530,6 +531,14 @@
 	<script src="components/cubeInAdmin/cubeInAdminService.js"></script>
 	<script src="components/cleanBudget/cleanBudgetController.js"></script>
 	<script src="components/cleanBudget/cleanBudgetService.js"></script>
+	<script src="components/cubeInSphere/cubeInSpheteController.js"></script>
+	<script src="components/cubeInSphere/cubeInSpheteService.js"></script>
+	<script src="components/cubeInTown/cubeInTownController.js"></script>
+	<script src="components/cubeInTown/cubeInTownService.js"></script>
+	<script src="components/saldo/saldoController.js"></script>
+	<script src="components/saldo/saldoService.js"></script>
+	<script src="components/financeDeficit/financeDeficitController.js"></script>
+	<script src="components/financeDeficit/financeDeficitService.js"></script>
 
 
 

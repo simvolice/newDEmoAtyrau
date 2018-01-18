@@ -578,11 +578,12 @@ ul:not(.browser-default) > li {
 .custom__sidebar__img {
 
     margin-bottom: 20px;
-    margin-top: 20px;
-    width: 200px;
 
-    margin-left: 60px;
-    cursor: pointer;
+
+
+
+
+
 
 }
 
@@ -694,11 +695,20 @@ table.md-table:not(.md-row-select) td.md-cell:nth-child(n+2):nth-last-child(n+2)
 
 
 .custom__back_btn {
-    font-size: 18px;
+    font-size: 15px;
     top: 22px;
     position: absolute;
     margin-left: 5px;
     text-transform: uppercase;
+}
+
+
+.custom__back_btn > span {
+
+    top: 2px;
+    position: absolute;
+    cursor: pointer;
+
 }
 
 
