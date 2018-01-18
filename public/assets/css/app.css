@@ -578,14 +578,51 @@ ul:not(.browser-default) > li {
 .custom__sidebar__img {
 
     margin-bottom: 20px;
-
-
-
-
-
-
+    z-index: 400;
 
 }
+
+
+.title__sidebar {
+    position: absolute;
+    margin-bottom: 0;
+    color: white;
+    z-index: 500;
+    left: 13%;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.digit__sidebar {
+    position: absolute;
+    margin-bottom: 0;
+    color: white;
+    z-index: 500;
+    top: 8%;
+    left: 35%;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    text-transform: uppercase;
+
+    font-weight: 500;
+}
+
+.sub__text__sidebar {
+    width: 100px;
+    position: absolute;
+    margin-bottom: 0;
+    color: white;
+    z-index: 500;
+    top: 15%;
+    left: 35%;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    word-wrap: break-word;
+    line-height: 10px;
+}
+
 
 
 

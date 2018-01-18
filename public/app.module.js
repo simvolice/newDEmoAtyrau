@@ -79,6 +79,40 @@ app.filter('ruFormat', function() {
 
 app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $rootScope) {
 
+    var arrDigit = ["400 000", "200 000", "300 000", "652 000"];
+    var arrDigitText = ["Расходы на 2018", "Доходы на 2018", "Образование", "Оборона"];
+
+
+
+
+    setInterval(function () {
+
+        $("#digit").text(arrDigit[Math.floor(Math.random()*arrDigit.length)]);
+        $("#digtext").text(arrDigitText[Math.floor(Math.random()*arrDigitText.length)]);
+
+
+        var tl = new TimelineLite,
+            mySplitText = new SplitText("#digit", {type:"words,chars"}),
+            mySplitText2 = new SplitText("#digtext", {type:"words,chars"}),
+            chars = mySplitText.chars, //an array of all the divs that wrap each character
+            chars2 = mySplitText2.chars; //an array of all the divs that wrap each character
+
+        TweenLite.set("#digit", {perspective:400});
+        TweenLite.set("#digtext", {perspective:400});
+
+        tl.staggerFrom(chars, 0.8, {opacity:0, scale:0, y:80, rotationX:180, transformOrigin:"0% 50% -50",  ease:Back.easeOut}, 0.01, "+=0");
+        tl.staggerFrom(chars2, 0.8, {opacity:0, scale:0, y:80, rotationX:180, transformOrigin:"0% 50% -50",  ease:Back.easeOut}, 0.01, "+=0");
+
+
+
+
+        tl.restart();
+
+
+
+    }, 5000);
+
+
 
 
 
