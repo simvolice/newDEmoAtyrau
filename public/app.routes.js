@@ -89,6 +89,13 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
       })
 
+      .state('cleanBudget', {
+          url: '/cleanbudget',
+          templateUrl: 'components/cleanBudget/cleanBudgetView.html',
+
+
+      })
+
 
 
 
