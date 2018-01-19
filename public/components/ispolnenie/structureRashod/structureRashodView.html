@@ -1,0 +1,167 @@
+<div class="row" ng-controller="StructuRashodCtrl">
+    <div class="col-md-12">
+        <md-content layout="column" flex class="custom__md-content__categ">
+
+
+            <md-card>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="title text-center" style="text-transform: uppercase">Структура расходов бюджета области, тыс. тенге</h3>
+
+                    </div>
+
+                </div>
+
+            </md-card>
+
+        <md-card>
+
+
+
+
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+
+
+                    <md-tabs md-dynamic-height md-border-bottom>
+                        <md-tab label="Расходы с трансфертами" ng-click="tab1()">
+                            <md-content class="md-padding" style="text-align: center">
+
+                                <div class="row">
+                                    <div class="col-md-12 custom__label__date text-right">
+                                        <span class="label" ng-click="selectDate('2014')" ng-class="{bg__color__active__date : activeMenu === '2014'}">2014</span>
+                                        <span class="label" ng-click="selectDate('2015')" ng-class="{bg__color__active__date : activeMenu === '2015'}">2015</span>
+                                        <span class="label" ng-click="selectDate('2016')" ng-class="{bg__color__active__date : activeMenu === '2016'}">2016</span>
+                                        <span class="label" ng-click="selectDate('2017')" ng-class="{bg__color__active__date : activeMenu === '2017'}">2017</span>
+                                        <span class="label" ng-click="selectDate('2018')" ng-class="{bg__color__active__date : activeMenu === '2018'}">2018</span>
+                                        <span class="label" ng-click="selectDate('2019')" ng-class="{bg__color__active__date : activeMenu === '2019'}">2019</span>
+                                        <span class="label" ng-click="selectDate('Все')" ng-class="{bg__color__active__date : activeMenu === 'Все'}">Все</span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div id="chartstructurerashod" style="font-size: 10px; font-family: Roboto;"></div>
+
+
+
+
+                                <div id="tabledata">
+
+                                    <style type="text/css">
+                                        .tg  {border-collapse:collapse;border-spacing:0; width: 100%}
+                                        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                                        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                                        .tg .tg-0ord{text-align:right}
+                                        .tg .tg-lqy6{text-align:left}
+                                        .tg .tg-hgcj{font-weight:bold;text-align:center}
+                                        .tg .tg-yw4l{vertical-align:top}
+                                    </style>
+                                    <table class="tg table-striped">
+                                        <tr>
+                                            <th class="tg-hgcj">Вид</th>
+                                            <th class="tg-hgcj">Сумма</th>
+                                        </tr>
+
+
+
+                                        <tr ng-repeat="x in dataTable">
+                                            <td class="tg-lqy6">{{x.className}}</td>
+                                            <td class="tg-0ord">{{x.value | ruFormat}}</td>
+                                        </tr>
+
+                                    </table>
+
+
+                                </div>
+
+                            </md-content>
+                        </md-tab>
+                        <md-tab label="Структура расходов без трансфертов" ng-click="tab2()">
+                            <md-content class="md-padding" style="text-align: center">
+
+                                <div class="row">
+                                    <div class="col-md-12 custom__label__date text-right">
+                                        <span class="label" ng-click="selectDate2('2014')" ng-class="{bg__color__active__date : activeMenu2 === '2014'}">2014</span>
+                                        <span class="label" ng-click="selectDate2('2015')" ng-class="{bg__color__active__date : activeMenu2 === '2015'}">2015</span>
+                                        <span class="label" ng-click="selectDate2('2016')" ng-class="{bg__color__active__date : activeMenu2 === '2016'}">2016</span>
+                                        <span class="label" ng-click="selectDate2('2017')" ng-class="{bg__color__active__date : activeMenu2 === '2017'}">2017</span>
+                                        <span class="label" ng-click="selectDate2('2018')" ng-class="{bg__color__active__date : activeMenu2 === '2018'}">2018</span>
+                                        <span class="label" ng-click="selectDate2('2019')" ng-class="{bg__color__active__date : activeMenu2 === '2019'}">2019</span>
+                                        <span class="label" ng-click="selectDate2('Все')" ng-class="{bg__color__active__date : activeMenu2 === 'Все'}">Все</span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div id="chartstructurerashod2" style="font-size: 10px; font-family: Roboto;"></div>
+
+
+
+
+                                <div id="tabledata2">
+
+                                    <style type="text/css">
+                                        .tg  {border-collapse:collapse;border-spacing:0; width: 100%}
+                                        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                                        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                                        .tg .tg-0ord{text-align:right}
+                                        .tg .tg-lqy6{text-align:left}
+                                        .tg .tg-hgcj{font-weight:bold;text-align:center}
+                                        .tg .tg-yw4l{vertical-align:top}
+                                    </style>
+                                    <table class="tg table-striped">
+                                        <tr>
+                                            <th class="tg-hgcj">Вид</th>
+                                            <th class="tg-hgcj">Сумма</th>
+                                        </tr>
+
+
+
+                                        <tr ng-repeat="x in dataTable">
+                                            <td class="tg-lqy6">{{x.className}}</td>
+                                            <td class="tg-0ord">{{x.value | ruFormat}}</td>
+                                        </tr>
+
+                                    </table>
+
+
+                                </div>
+
+                            </md-content>
+                        </md-tab>
+
+                    </md-tabs>
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+        </md-card>
+
+
+
+
+
+        </md-content>
+    </div>
+
+
+
+
+
+</div>

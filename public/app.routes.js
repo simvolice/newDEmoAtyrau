@@ -128,6 +128,14 @@ app.config(function($stateProvider, $urlRouterProvider) {
       })
 
 
+      .state('budgetispol', {
+          url: '/budgetispol',
+          templateUrl: 'components/ispolnenie/budget/budgetView.html',
+
+
+      })
+
+
 
 
 

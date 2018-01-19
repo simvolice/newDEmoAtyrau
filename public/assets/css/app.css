@@ -782,8 +782,11 @@ table.md-table:not(.md-row-select) td.md-cell:nth-child(n+2):nth-last-child(n+2)
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
-    top: 350px;
+    top: 200px;
     left: 31%;
+
+
+    margin-top: 50px;
 
 
 
@@ -804,7 +807,7 @@ table.md-table:not(.md-row-select) td.md-cell:nth-child(n+2):nth-last-child(n+2)
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
-    top: 300px;
+    top: 150px;
     left: 62%;
 
 
@@ -915,6 +918,17 @@ polyline{
 
 
 
+
+
+.proficit__custom {
+
+    font-size: 15px;
+    margin-top: 70px;
+    color: #d62728;
+
+
+
+}
 
 
 

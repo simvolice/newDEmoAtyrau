@@ -1,0 +1,149 @@
+<div class="row" ng-controller="CleanBudgetCtrl">
+    <div class="col-md-12">
+        <md-content layout="column" flex class="custom__md-content__categ">
+
+
+
+            <md-card>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="title text-center" style="text-transform: uppercase">Чистое бюджетное кредитование, в тыс. тенге</h3>
+
+                    </div>
+
+                </div>
+
+            </md-card>
+
+
+
+
+
+
+            <div class="row">
+                <div class="col-md-9">
+                    <md-card>
+                    <div id="chartdohod"></div>
+
+                    </md-card>
+                </div>
+
+                <div class="col-md-3">
+
+                    <md-card>
+
+                        <md-list ng-cloak>
+
+
+                            <md-list-item ng-click="getParam('Жалпы')" ng-class="{bg__color__active : activeMenu === 'Жалпы'}">
+
+                                <p>Жалпы</p>
+
+                            </md-list-item>
+
+                            <md-list-item ng-click="getParam('ТАЗА БЮДЖЕТТІК КРЕДИТ БЕРУ')" ng-class="{bg__color__active : activeMenu === 'ТАЗА БЮДЖЕТТІК КРЕДИТ БЕРУ'}">
+
+                                <p>Таза бюджеттік кредит беру</p>
+
+                            </md-list-item>
+
+
+
+                            <md-list-item ng-click="getParam('БЮДЖЕТТІК КРЕДИТТЕР')" ng-class="{bg__color__active : activeMenu === 'БЮДЖЕТТІК КРЕДИТТЕР'}">
+
+                                <p>Бюджеттік кредиттер</p>
+
+                            </md-list-item>
+
+
+                            <md-list-item ng-click="getParam('БЮДЖЕТТІК КРЕДИТТЕРДІ ӨТЕУ')" ng-class="{bg__color__active : activeMenu === 'БЮДЖЕТТІК КРЕДИТТЕРДІ ӨТЕУ'}">
+
+                                <p>Бюджеттік кредиттерді өтеу</p>
+
+                            </md-list-item>
+
+
+
+
+
+
+                        </md-list>
+
+                    </md-card>
+
+
+
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <md-card>
+
+                        <style type="text/css">
+                            .tg  {border-collapse:collapse;border-spacing:0; width: 100%}
+                            .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                            .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                            .tg .tg-baqh{text-align:right;vertical-align:top}
+                            .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+                            .tg .tg-9hbo{font-weight:bold;vertical-align:top}
+                        </style>
+                        <table class="tg table-striped">
+                            <tr>
+                                <th class="tg-031e"></th>
+                                <th class="tg-amwm">2014</th>
+                                <th class="tg-amwm">2015</th>
+                                <th class="tg-amwm">2016</th>
+                                <th class="tg-amwm">2017<br></th>
+                            </tr>
+                            <tr>
+                                <td class="tg-9hbo">Таза бюджеттік кредит беру</td>
+                                <td class="tg-baqh">15 636 08</td>
+                                <td class="tg-baqh">761 234</td>
+                                <td class="tg-baqh">1 141 795</td>
+                                <td class="tg-baqh">226 283</td>
+                            </tr>
+                            <tr>
+                                <td class="tg-9hbo">Бюджеттік кредиттер</td>
+                                <td class="tg-baqh">1 772 273</td>
+                                <td class="tg-baqh">994 862</td>
+                                <td class="tg-baqh">1 651 896</td>
+                                <td class="tg-baqh">1 613 639</td>
+                            </tr>
+                            <tr>
+                                <td class="tg-9hbo">Бюджеттік кредиттерді өтеу</td>
+                                <td class="tg-baqh">208 665</td>
+                                <td class="tg-baqh">233 628</td>
+                                <td class="tg-baqh">510 101</td>
+                                <td class="tg-baqh">1 839 922</td>
+                            </tr>
+                        </table>
+
+
+                    </md-card>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </md-content>
+    </div>
+
+
+
+
+
+</div>

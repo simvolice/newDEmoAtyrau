@@ -1,0 +1,152 @@
+<div class="row" ng-controller="SaldoCtrl">
+    <div class="col-md-12">
+        <md-content layout="column" flex class="custom__md-content__categ">
+
+
+
+            <md-card>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="title text-center" style="text-transform: uppercase">Сальдо по операциям с финансовыми активами, млн. тенге</h3>
+
+                    </div>
+
+                </div>
+
+            </md-card>
+
+
+
+
+
+
+            <div class="row">
+                <div class="col-md-9">
+                    <md-card>
+                    <div id="chartdohod"></div>
+
+                    </md-card>
+                </div>
+
+                <div class="col-md-3">
+
+                    <md-card>
+
+                        <md-list ng-cloak>
+
+                            <md-list-item ng-click="getParam('Жалпы')" ng-class="{bg__color__active : activeMenu === 'Жалпы'}">
+
+                                <p>Жалпы</p>
+
+                            </md-list-item>
+
+
+
+                            <md-list-item ng-click="getParam('Қаржылық активтермен болатын операциялар бойынша сальдо')" ng-class="{bg__color__active : activeMenu === 'Қаржылық активтермен болатын операциялар бойынша сальдо'}">
+
+                                <p style="line-height: 20px">Қаржылық активтермен болатын операциялар бойынша сальдо</p>
+
+                            </md-list-item>
+
+
+                            <md-list-item ng-click="getParam('Қаржылық активтерді сатып алу')" ng-class="{bg__color__active : activeMenu === 'Қаржылық активтерді сатып алу'}">
+
+                                <p style="line-height: 20px">Қаржылық активтерді сатып алу</p>
+
+                            </md-list-item>
+
+
+                            <md-list-item ng-click="getParam('Мемлекеттің қаржылық активтерін сатудан түскен түсімдер')" ng-class="{bg__color__active : activeMenu === 'Мемлекеттің қаржылық активтерін сатудан түскен түсімдер'}">
+
+                                <p style="line-height: 20px">Мемлекеттің қаржылық активтерін сатудан түскен түсімдер</p>
+
+                            </md-list-item>
+
+
+
+
+
+
+
+
+
+                        </md-list>
+
+                    </md-card>
+
+
+
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <md-card>
+
+                        <style type="text/css">
+                            .tg  {border-collapse:collapse;border-spacing:0; width: 100%}
+                            .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                            .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                            .tg .tg-baqh{text-align:right;vertical-align:top}
+                            .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+                            .tg .tg-9hbo{font-weight:bold;vertical-align:top}
+                        </style>
+                        <table class="tg table-striped">
+                            <tr>
+                                <th class="tg-031e"></th>
+                                <th class="tg-amwm">2014</th>
+                                <th class="tg-amwm">2015</th>
+                                <th class="tg-amwm">2016</th>
+                                <th class="tg-amwm">2017<br></th>
+                            </tr>
+                            <tr>
+                                <td class="tg-9hbo">Қаржылық активтермен болатын операциялар бойынша сальдо</td>
+                                <td class="tg-baqh">6 520 013</td>
+                                <td class="tg-baqh">4 336 596</td>
+                                <td class="tg-baqh">1 358 291</td>
+                                <td class="tg-baqh">625 730</td>
+                            </tr>
+                            <tr>
+                                <td class="tg-9hbo">Қаржылық активтерді сатып алу</td>
+                                <td class="tg-baqh">6 538 981</td>
+                                <td class="tg-baqh">4 391 701</td>
+                                <td class="tg-baqh">1 373 291</td>
+                                <td class="tg-baqh">631 706</td>
+                            </tr>
+                            <tr>
+                                <td class="tg-9hbo">Мемлекеттің қаржылық активтерін сатудан түскен түсімдер</td>
+                                <td class="tg-baqh">18 968</td>
+                                <td class="tg-baqh">55 105</td>
+                                <td class="tg-baqh">55 105</td>
+                                <td class="tg-baqh">5 976</td>
+                            </tr>
+                        </table>
+
+
+                    </md-card>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </md-content>
+    </div>
+
+
+
+
+
+</div>

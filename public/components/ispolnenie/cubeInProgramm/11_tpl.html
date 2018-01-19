@@ -1,0 +1,678 @@
+<md-dialog class="fullscreen-dialog" aria-label="Создать мероприятие">
+
+
+
+
+
+
+
+    <md-toolbar class="md-toolbar-tools">
+
+        <h2>{{title}}</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="closeDialog()">
+            <i class="material-icons">close</i>
+        </md-button>
+
+    </md-toolbar>
+
+
+    <md-dialog-content>
+        <div class="md-dialog-content">
+
+
+
+
+           <div class="row">
+               <div class="col-md-12">
+
+                   <style type="text/css">
+                       .tg  {border-collapse:collapse;border-spacing:0; width: 100%}
+                       .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                       .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                       .tg .tg-e3zv{font-weight:bold;}
+                       .tg .tg-lqy6{text-align:right;vertical-align:middle}
+                       .tg .tg-hgcj{text-align:center}
+                       .tg .tg-yw4l{vertical-align:top}
+                       .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+                   </style>
+
+
+                   <table class="tg table-striped">
+
+
+
+                       <tr>
+                           <th class="tg-e3zv">№</th>
+                           <th class="tg-hgcj">Жобалар атауы</th>
+                           <th class="tg-hgcj">Іске асыру мерзімі</th>
+                           <th class="tg-hgcj">Жалпы құны<br>(мың теңге)</th>
+                           <th class="tg-hgcj">2017 жылға дейін</th>
+                           <th class="tg-hgcj">БАРЛЫҒЫ 2017 жыл</th>
+                       </tr>
+
+
+
+
+                       <tr>
+                           <td class="tg-hgcj">1</td>
+                           <td class="tg-hgcj" >2</td>
+                           <td class="tg-hgcj" >3</td>
+                           <td class="tg-hgcj" >4</td>
+                           <td class="tg-hgcj" >5</td>
+                           <td class="tg-hgcj" >6</td>
+
+                       </tr>
+                       <tr >
+                           <td class="tg-lqy6"></td>
+                           <td class="tg-hgcj" colspan="16"><b>"НҰРЛЫ ЖЕР"</b></td>
+                       </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">60</td>
+                           <td class="tg-hgcj" ><b>"Нұрлы жер" бойынша барлығы:</b></td>
+                           <td class="tg-lqy6" ></td>
+                           <td class="tg-lqy6" ><b>38 854 355,0</b></td>
+                           <td class="tg-lqy6" ><b>8 569 207,0</b></td>
+                           <td class="tg-lqy6" ><b>13 425 246,0</b></td>
+
+                       </tr>
+
+                       <tr >
+                       <td class="tg-hgcj" >21</td>
+                       <td class="tg-hgcj" ><b>Инженерлік-коммуникациялық инфрақұрылымды жобалауға, дамытуға және (немесе) жайластыруға</b></td>
+                       <td class="tg-lqy6" ></td>
+                       <td class="tg-lqy6" ><b>11 111 665,0</b></td>
+                       <td class="tg-lqy6" ><b>3 932 051,0</b></td>
+                       <td class="tg-lqy6" ><b>5 029 985,0</b></td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">1</td>
+                           <td class="tg-hgcj" >Индер ауданы Индербор кентіндегі "Шығыс" және "Болашақ" ықшамаудандары үшін инженерлік-коммуникациялық инфрақұрылымының құрылысы</td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >753 841,0</td>
+                           <td class="tg-lqy6" >471 573,0</td>
+                           <td class="tg-lqy6" >244 030,0</td>
+
+                       </tr>
+
+                       <tr >
+                       <td class="tg-hgcj" >2</td>
+                       <td class="tg-hgcj" >Жылыой ауданы Жаңа-Қаратон поселкесіндегі сумен жабдықтау жүйелерінің құрылысы</td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >606 225,0</td>
+                       <td class="tg-lqy6" >300 000,0</td>
+                       <td class="tg-lqy6" >245 603,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">3</td>
+                           <td class="tg-hgcj" >Жылыой ауданы Құлсары қаласындағы Болашақ ықшам ауданының электр қуатымен қамтамасыз ету нысандарының құрылысы</td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >746 110,0</td>
+                           <td class="tg-lqy6" >330 000,0</td>
+                           <td class="tg-lqy6" >334 887,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >4</td>
+                       <td class="tg-hgcj" >Жылыой ауданы Құлсары қаласындағы Болашақ ықшам ауданының сумен жабдықтау жүйелерінің құрылысы</td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >1 429 313,0</td>
+                       <td class="tg-lqy6" >650 000,0</td>
+                       <td class="tg-lqy6" >588 347,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">5</td>
+                           <td class="tg-hgcj" >Атырау қаласынының елді мекендері үшін инженерлік-коммуникациялық инфрақұрылымының құрылысы. Еркінқала-Атырау трассасы бойындағы Еркінқала селолық округінің Балауса т/а аймағы</td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >348 415,0</td>
+                           <td class="tg-lqy6" >100 000,0</td>
+                           <td class="tg-lqy6" >206 988,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >6</td>
+                       <td class="tg-hgcj" >Атырау қаласынының елді мекендері үшін инженерлік-коммуникациялық инфрақұрылымының құрылысы. Қайыршақты селолық округінің Көктем-3 т/а аймағының </td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >96 875,0</td>
+                       <td class="tg-lqy6" >40 000,0</td>
+                       <td class="tg-lqy6" >36 729,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">7</td>
+                           <td class="tg-hgcj" >Атырау қаласынының елді мекендері үшін инженерлік-коммуникациялық инфрақұрылымының құрылысы. Жұмыскер селолық округінің Өркен-2 т/а аймағындағы 34 көше, 4,44 га учаскесі</td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >118 454,0</td>
+                           <td class="tg-lqy6" >50 000,0</td>
+                           <td class="tg-lqy6" >50 945,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >8</td>
+                       <td class="tg-hgcj" >Атырау қаласынының елді мекендері үшін инженерлік-коммуникациялық инфрақұрылымының құрылысы. Сарықамыс-2, 12-13 көше</td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >132 288,0</td>
+                       <td class="tg-lqy6" >50 000,0</td>
+                       <td class="tg-lqy6" >62 617,0</td>
+
+                   </tr><tr >
+                       <td class="tg-hgcj">9</td>
+                       <td class="tg-hgcj" >Атырау қаласынының елді мекендері үшін инженерлік-коммуникациялық инфрақұрылымының құрылысы. Қайыршақты селолық округінің Көктем т/а аймағының 0,9423 га учаскесі</td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >53 284,0</td>
+                       <td class="tg-lqy6" >25 000,0</td>
+                       <td class="tg-lqy6" >16 341,0</td>
+
+                   </tr><tr >
+                       <td class="tg-hgcj" >10</td>
+                       <td class="tg-hgcj" >Атырау қаласынының елді мекендері үшін инженерлік-коммуникациялық инфрақұрылымының құрылысы. Жұмыскер селолық округінің Өркен т/а аймағындағы 34 </td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >101 742,0</td>
+                       <td class="tg-lqy6" >45 000,0</td>
+                       <td class="tg-lqy6" >41 845,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">11</td>
+                           <td class="tg-hgcj" >Атырау қаласынының елді мекендері үшін инженерлік-коммуникациялық инфрақұрылымының құрылысы. Қайыршақты селолық округінің Жұлдыз-3 т/а</td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >168 838,0</td>
+                           <td class="tg-lqy6" >50 000,0</td>
+                           <td class="tg-lqy6" >94 060,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >12</td>
+                       <td class="tg-hgcj" >Атырау қаласынының елді мекендері үшін инженерлік-коммуникациялық инфрақұрылымының құрылысы. Қайыршақты селолық округінің Бесікті ауылындағы 4,76 га </td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >183 498,0</td>
+                       <td class="tg-lqy6" >50 000,0</td>
+                       <td class="tg-lqy6" >98 297,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">13</td>
+                           <td class="tg-hgcj" >Атырау қаласындағы елді мекендердің инженерлік-коммуникациялық инфрақұрылымының құрылысы. Қайыршақты с/о, Жұлдыз-2 т/м, 18-19 көшелері аумағындағы 6,21 учаскесі</td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >271 497,0</td>
+                           <td class="tg-lqy6" >70 000,0</td>
+                           <td class="tg-lqy6" >165 865,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >14</td>
+                       <td class="tg-hgcj" >Атырау қаласындағы елді мекендердің инженерлік-коммуникациялық инфрақұрылымының құрылысы. Кеңөзек а/о, Тасқала ауылы, Қосыбаев көшесінде орналасқан </td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >260 116,0</td>
+                       <td class="tg-lqy6" >65 000,0</td>
+                       <td class="tg-lqy6" >160 890,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">15</td>
+                           <td class="tg-hgcj" >Атырау қаласындағы елді мекендердің инженерлік-коммуникациялық инфрақұрылымының құрылысы. Еркінқала а/о, Балауса т/м, 20,57 га учаскесі</td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >470 862,0</td>
+                           <td class="tg-lqy6" >150 000,0</td>
+                           <td class="tg-lqy6" >122 042,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >16</td>
+                       <td class="tg-hgcj" >Атырау қаласындағы елді мекендердің инженерлік-коммуникациялық инфрақұрылымының құрылысы. Кеңөзек а/о, Тасқала ауылы, Қосыбаев көшесінде орналасқан </td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >250 665,0</td>
+                       <td class="tg-lqy6" >80 000,0</td>
+                       <td class="tg-lqy6" >137 748,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">17</td>
+                           <td class="tg-hgcj" >Атырау қаласындағы елді мекендердің инженерлік-коммуникациялық инфрақұрылымының құрылысы. Еркінқала а/о, Балауса т/м, 32 көшесі, 2,80 га учаскесі</td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >116 074,0</td>
+                           <td class="tg-lqy6" >50 000,0</td>
+                           <td class="tg-lqy6" >48 841,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >18</td>
+                       <td class="tg-hgcj" >Атырау қаласындағы елді мекендердің инженерлік-коммуникациялық инфрақұрылымының құрылысы. Еркінқала а/о, Еркінқала ауылы, 24,5 га учаскесі</td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >724 875,0</td>
+                       <td class="tg-lqy6" >200 000,0</td>
+                       <td class="tg-lqy6" >441 624,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">19</td>
+                           <td class="tg-hgcj" >Атырау қаласындағы елді мекендердің инженерлік-коммуникациялық инфрақұрылымының құрылысы. Ақсай а/о, Ақсай ауылы, 19-20 көшесі, 8,15 га учаскесі</td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >153 750,0</td>
+                           <td class="tg-lqy6" >55 000,0</td>
+                           <td class="tg-lqy6" >75 729,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >20</td>
+                       <td class="tg-hgcj" >Атырау қаласы инженерлік-коммуникациялық инфрақұрылымының құрылысы. Самал шағын ауданындағы 218,8 га учаскесі</td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >3 802 956,0</td>
+                       <td class="tg-lqy6" >1 000 000,0</td>
+                       <td class="tg-lqy6" >1 731 387,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">21</td>
+                           <td class="tg-hgcj" >Атырау қаласындағы елді мекендердің инженерлік-коммуникациялық инфрақұрылымының құрылысы. Жұмыскер а/о, Өркен т/а №35 мектептің аумағындағы 8,15 га учаскесі</td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >321 987,0</td>
+                           <td class="tg-lqy6" >100 478,0</td>
+                           <td class="tg-lqy6" >125 170,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >7</td>
+                       <td class="tg-hgcj" ><b>Инженерлік-коммуникациялық инфрақұрылымды жобалауға, дамытуға және (немесе) жайластыруға</b></td>
+                       <td class="tg-lqy6" ></td>
+                       <td class="tg-lqy6" ><b>3 802 956,0</b></td>
+                       <td class="tg-lqy6" ><b>1 000 000,0</b></td>
+                       <td class="tg-lqy6" ><b>1 731 387,0</b></td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">1</td>
+                           <td class="tg-hgcj" >Қызылқоға ауданы Миялы селосындағы Мөлтек-1 ықшам ауданының оңтүстік жағынан инженерлік-коммуникациялық инфрақұрылымының құрылысы </td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >458 855,0</td>
+                           <td class="tg-lqy6" >200 000,0</td>
+                           <td class="tg-lqy6" >156 827,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >2</td>
+                       <td class="tg-hgcj" >Құрманғазы ауданы Ганюшкин селосындағы инженерлі-коммуникациялық инфрақұрылымының құрылысы</td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >1 759 487,0</td>
+                       <td class="tg-lqy6" >800 000,0</td>
+                       <td class="tg-lqy6" >615 791,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">3</td>
+                           <td class="tg-hgcj" >Жылыой ауданы Жаңа-Қаратон поселкесіндегі электр қуатымен қамтамасыз ету нысандарының құрылысы</td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >277 324,0</td>
+                           <td class="tg-lqy6" >130 000,0</td>
+                           <td class="tg-lqy6" >119 592,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >4</td>
+                       <td class="tg-hgcj" >Атырау қаласы, "Береке" ықшам ауданы (8 га участкесі) тұрғын үйдің құрылысы (Сыртқы инженерлік желілер)</td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >1 387 457,0</td>
+                       <td class="tg-lqy6" >823 840,0</td>
+                       <td class="tg-lqy6" >124 871,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">5</td>
+                           <td class="tg-hgcj" >Атырау қаласының елдімекендеріндегі инженерлік-коммуникациялық инфрақұрылымының құрылысы. Кайнар пос.  (Таскала-4)</td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >1 988 791,0</td>
+                           <td class="tg-lqy6" >567 200,0</td>
+                           <td class="tg-lqy6" >1 358 095,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >6</td>
+                       <td class="tg-hgcj" >Атырау қаласы Көкарна п. инженерлік-коммуникациялық инфрақұрылымының құрылысы (толықтыру)</td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >647 996,0</td>
+                       <td class="tg-lqy6" >300 000,0</td>
+                       <td class="tg-lqy6" >210 296,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">7</td>
+                           <td class="tg-hgcj-lqy6" >Атырау қаласының елдімекендеріндегі инженерлік-коммуникациялық инфрақұрылымының құрылысы. Водниково-3 селосы</td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >1 278 386,0</td>
+                           <td class="tg-lqy6" >550 000,0</td>
+                           <td class="tg-lqy6" >689 826,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" ><b>4</b></td>
+                       <td class="tg-hgcj" ><b>Коммуналдық тұрғын үй қорының тұрғын үйін жобалауға және (немесе) салу, реконструкциялау</b></td>
+                       <td class="tg-lqy6" ></td>
+                       <td class="tg-lqy6" ><b>4 000,0</b></td>
+                       <td class="tg-lqy6" ><b>4 000,0</b></td>
+                       <td class="tg-lqy6" ><b>1 662 394,0</b></td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">1</td>
+                           <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында тұрғын үй құрылысы, уч.8,0 га пятно №12</td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >1 000,0</td>
+                           <td class="tg-lqy6" >1 000,0</td>
+                           <td class="tg-lqy6" >514 093,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >2</td>
+                       <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында тұрғын үй құрылысы, уч.8,0 га пятно №13</td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >1 000,0</td>
+                       <td class="tg-lqy6" >1 000,0</td>
+                       <td class="tg-lqy6" >382 767,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">3</td>
+                           <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында тұрғын үй құрылысы, уч.8,0 га пятно №15</td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >1 000,0</td>
+                           <td class="tg-lqy6" >1 000,0</td>
+                           <td class="tg-lqy6" >514 093,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >4</td>
+                       <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында тұрғын үй құрылысы, уч.8,0 га пятно №16</td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >1 000,0</td>
+                       <td class="tg-lqy6" >1 000,0</td>
+                       <td class="tg-lqy6" >382 767,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj"><b>6</b></td>
+                           <td class="tg-hgcj" ><b>Тұрғын үй құрылыс жинақ жүйесі арқылы несиелік тұрғын үй құрылысы (МБ)</b></td>
+                           <td class="tg-lqy6" ><b>2016-2017 жылдар</b></td>
+                           <td class="tg-lqy6" ><b>2 767 930,0</b></td>
+                           <td class="tg-lqy6" ><b>1 262 116,0</b></td>
+                           <td class="tg-lqy6" ><b>1 545 934,0</b></td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >1</td>
+                       <td class="tg-hgcj" >Атырау қаласы Нұрсая ықшам ауданында тұрғын үй құрылысы, уч. 15,39 га. Пятно №1</td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >410 076,0</td>
+                       <td class="tg-lqy6" >96 667,0</td>
+                       <td class="tg-lqy6" >316 598,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">2</td>
+                           <td class="tg-hgcj" >Атырау қаласы Нұрсая ықшам ауданында тұрғын үй құрылысы, уч. 15,39 га. Пятно №4</td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >551 505,0</td>
+                           <td class="tg-lqy6" >79 456,0</td>
+                           <td class="tg-lqy6" >471 285,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >3</td>
+                       <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында тұрғын үй құрылысы, уч.8,0 га пятно №2</td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >357 940,0</td>
+                       <td class="tg-lqy6" >265 943,0</td>
+                       <td class="tg-lqy6" >135 963,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">4</td>
+                           <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында тұрғын үй құрылысы, уч.8,0 га пятно №3</td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >457 368,0</td>
+                           <td class="tg-lqy6" >296 544,0</td>
+                           <td class="tg-lqy6" >158 944,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >5</td>
+                       <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында тұрғын үй құрылысы, уч.8,0 га пятно №4</td>
+                       <td class="tg-lqy6" >2016-2017 жылдар</td>
+                       <td class="tg-lqy6" >606 496,0</td>
+                       <td class="tg-lqy6" >295 420,0</td>
+                       <td class="tg-lqy6" >308 174,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">6</td>
+                           <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында тұрғын үй құрылысы, уч.8,0 га пятно №10</td>
+                           <td class="tg-lqy6" >2016-2017 жылдар</td>
+                           <td class="tg-lqy6" >384 545,0</td>
+                           <td class="tg-lqy6" >228 086,0</td>
+                           <td class="tg-lqy6" >154 970,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" ><b>21</b></td>
+                       <td class="tg-hgcj" ><b>Тұрғын үй құрылыс жинақ жүйесі арқылы несиелік тұрғын үй құрылысы (МБ)</b></td>
+                       <td class="tg-lqy6" ></td>
+                       <td class="tg-lqy6" ><b>16 459 648,0</b></td>
+                       <td class="tg-lqy6" ><b>0,0</b></td>
+                       <td class="tg-lqy6" ><b>1 300 000,0</b></td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">1</td>
+                           <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №5</td>
+                           <td class="tg-lqy6" >2017-2018 жылдар</td>
+                           <td class="tg-lqy6" >826 833,0</td>
+                           <td class="tg-lqy6" ></td>
+                           <td class="tg-lqy6" >61 900,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >2</td>
+                       <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №6</td>
+                       <td class="tg-lqy6" >2017-2018 жылдар</td>
+                       <td class="tg-lqy6" >827 187,0</td>
+                       <td class="tg-lqy6" ></td>
+                       <td class="tg-lqy6" >61 900,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">3</td>
+                           <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №7</td>
+                           <td class="tg-lqy6" >2017-2018 жылдар</td>
+                           <td class="tg-lqy6" >840 088,0</td>
+                           <td class="tg-lqy6" ></td>
+                           <td class="tg-lqy6" >61 900,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >4</td>
+                       <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №13</td>
+                       <td class="tg-lqy6" >2017-2018 жылдар</td>
+                       <td class="tg-lqy6" >835 751,0</td>
+                       <td class="tg-lqy6" ></td>
+                       <td class="tg-lqy6" >61 900,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">5</td>
+                           <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №14</td>
+                           <td class="tg-lqy6" >2017-2018 жылдар</td>
+                           <td class="tg-lqy6" >827 299,0</td>
+                           <td class="tg-lqy6" ></td>
+                           <td class="tg-lqy6" >61 900,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >6</td>
+                       <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №18</td>
+                       <td class="tg-lqy6" >2017-2018 жылдар</td>
+                       <td class="tg-lqy6" >819 229,0</td>
+                       <td class="tg-lqy6" ></td>
+                       <td class="tg-lqy6" >61 900,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">7</td>
+                           <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №19</td>
+                           <td class="tg-lqy6" >2017-2018 жылдар</td>
+                           <td class="tg-lqy6" >838 078,0</td>
+                           <td class="tg-lqy6" ></td>
+                           <td class="tg-lqy6" >61 900,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >8</td>
+                       <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №20</td>
+                       <td class="tg-lqy6" >2017-2018 жылдар</td>
+                       <td class="tg-lqy6" >827 288,0</td>
+                       <td class="tg-lqy6" ></td>
+                       <td class="tg-lqy6" >61 900,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">9</td>
+                           <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №21</td>
+                           <td class="tg-lqy6" >2017-2018 жылдар</td>
+                           <td class="tg-lqy6" >827 158,0</td>
+                           <td class="tg-lqy6" ></td>
+                           <td class="tg-lqy6" >61 900,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >10</td>
+                       <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №22</td>
+                       <td class="tg-lqy6" >2017-2018 жылдар</td>
+                       <td class="tg-lqy6" >830 989,0</td>
+                       <td class="tg-lqy6" ></td>
+                       <td class="tg-lqy6" >61 900,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">11</td>
+                           <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №23</td>
+                           <td class="tg-lqy6" >2017-2018 жылдар</td>
+                           <td class="tg-lqy6" >723 136,0</td>
+                           <td class="tg-lqy6" ></td>
+                           <td class="tg-lqy6" >61 900,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >12</td>
+                       <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №24</td>
+                       <td class="tg-lqy6" >2017-2018 жылдар</td>
+                       <td class="tg-lqy6" >723 136,0</td>
+                       <td class="tg-lqy6" ></td>
+                       <td class="tg-lqy6" >61 900,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">13</td>
+                           <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №25</td>
+                           <td class="tg-lqy6" >2017-2018 жылдар</td>
+                           <td class="tg-lqy6" >723 136,0</td>
+                           <td class="tg-lqy6" ></td>
+                           <td class="tg-lqy6" >61 900,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >14</td>
+                       <td class="tg-hgcj" >Атырау қаласы Нұрсая ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №4</td>
+                       <td class="tg-lqy6" >2017-2018 жылдар</td>
+                       <td class="tg-lqy6" >726 926,0</td>
+                       <td class="tg-lqy6" ></td>
+                       <td class="tg-lqy6" >61 900,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">15</td>
+                           <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №5</td>
+                           <td class="tg-lqy6" >2017-2018 жылдар</td>
+                           <td class="tg-lqy6" >812 988,0</td>
+                           <td class="tg-lqy6" ></td>
+                           <td class="tg-lqy6" >61 900,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >16</td>
+                       <td class="tg-hgcj" >Атырау қаласы Нұрсая ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №6</td>
+                       <td class="tg-lqy6" >2017-2018 жылдар</td>
+                       <td class="tg-lqy6" >726 926,0</td>
+                       <td class="tg-lqy6" ></td>
+                       <td class="tg-lqy6" >61 900,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">17</td>
+                           <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №7</td>
+                           <td class="tg-lqy6" >2017-2018 жылдар</td>
+                           <td class="tg-lqy6" >726 926,0</td>
+                           <td class="tg-lqy6" ></td>
+                           <td class="tg-lqy6" >61 900,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >18</td>
+                       <td class="tg-hgcj" >Атырау қаласы Нұрсая ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №8</td>
+                       <td class="tg-lqy6" >2017-2018 жылдар</td>
+                       <td class="tg-lqy6" >726 926,0</td>
+                       <td class="tg-lqy6" ></td>
+                       <td class="tg-lqy6" >61 900,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">19</td>
+                           <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №9</td>
+                           <td class="tg-lqy6" >2017-2018 жылдар</td>
+                           <td class="tg-lqy6" >726 926,0</td>
+                           <td class="tg-lqy6" ></td>
+                           <td class="tg-lqy6" >61 900,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" >20</td>
+                       <td class="tg-hgcj" >Атырау қаласы Нұрсая ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №10</td>
+                       <td class="tg-lqy6" >2017-2018 жылдар</td>
+                       <td class="tg-lqy6" >726 926,0</td>
+                       <td class="tg-lqy6" ></td>
+                       <td class="tg-lqy6" >61 900,0</td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">21</td>
+                           <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданында 9 қабатты 72 пәтерлік тұрғын үй құрылысы, пятно №11</td>
+                           <td class="tg-lqy6" >2017-2018 жылдар</td>
+                           <td class="tg-lqy6" >815 796,0</td>
+                           <td class="tg-lqy6" ></td>
+                           <td class="tg-lqy6" >61 900,0</td>
+
+                       </tr><tr >
+                       <td class="tg-hgcj" ><b>1</b></td>
+                       <td class="tg-hgcj" ><b>Инженерлік-коммуникациялық инфрақұрылымды жобалауға, дамытуға және (немесе) жайластыруға</b></td>
+                       <td class="tg-lqy6" ></td>
+                       <td class="tg-lqy6" ><b>712 816,0</b></td>
+                       <td class="tg-lqy6" ><b>0,0</b></td>
+                       <td class="tg-lqy6" ><b>611 635,0</b></td>
+                   </tr>
+
+                       <tr >
+                           <td class="tg-hgcj">1</td>
+                           <td class="tg-hgcj" >Атырау қаласы Береке ықшам ауданы жылу пункті мен магистральды жылу желісінің құрылысы (уч.8га). 1 очередь</td>
+                           <td class="tg-lqy6" >2017-2018 жылдар</td>
+                           <td class="tg-lqy6" >712 816,0</td>
+                           <td class="tg-lqy6" ></td>
+                           <td class="tg-lqy6" >611 635,0</td>
+                       </tr>
+
+
+
+
+                   </table>
+
+
+               </div>
+
+           </div>
+
+
+
+
+
+
+        </div>
+    </md-dialog-content>
+
+
+
+
+    <md-dialog-actions layout="row">
+
+        <span flex></span>
+
+
+        <md-button class="md-raised md-primary" ng-click="closeDialog()">
+            Закрыть
+        </md-button>
+
+    </md-dialog-actions>
+
+
+
+</md-dialog>

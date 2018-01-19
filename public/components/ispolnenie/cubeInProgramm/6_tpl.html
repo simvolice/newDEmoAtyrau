@@ -1,0 +1,856 @@
+<md-dialog class="fullscreen-dialog" aria-label="Создать мероприятие">
+
+
+
+
+
+
+
+    <md-toolbar class="md-toolbar-tools">
+
+        <h2>{{title}}</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="closeDialog()">
+            <i class="material-icons">close</i>
+        </md-button>
+
+    </md-toolbar>
+
+
+    <md-dialog-content>
+        <div class="md-dialog-content">
+
+
+
+
+           <div class="row">
+               <div class="col-md-12">
+
+                   <style type="text/css">
+                       .tg  {border-collapse:collapse;border-spacing:0; width: 100%}
+                       .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                       .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                       .tg .tg-s6z2{text-align:center}
+                       .tg .tg-hgcj{font-weight:bold;text-align:center}
+                   </style>
+                   <table class="tg table-striped">
+                       <colgroup>
+                           <col style="width: 45px">
+                           <col style="width: 222px">
+                           <col style="width: 116px">
+                           <col style="width: 65px">
+                           <col style="width: 69px">
+                           <col style="width: 65px">
+                           <col style="width: 69px">
+                           <col style="width: 66px">
+                           <col style="width: 66px">
+                           <col style="width: 66px">
+                           <col style="width: 105px">
+                           <col style="width: 100px">
+                           <col style="width: 438px">
+                       </colgroup>
+                       <tr>
+                           <th class="tg-hgcj" rowspan="2">№</th>
+                           <th class="tg-hgcj" rowspan="2">Наименование</th>
+                           <th class="tg-hgcj" rowspan="2">Ед. изм.</th>
+                           <th class="tg-hgcj" colspan="7">Исполнение</th>
+                           <th class="tg-hgcj" colspan="2">Финансирование млн.тенге</th>
+                           <th class="tg-hgcj" rowspan="2">Информация об исполнении не исполнении, эффект программ</th>
+                       </tr>
+                       <tr>
+                           <td class="tg-hgcj">План на 2016г.</td>
+                           <td class="tg-hgcj">Факт на 2016г.</td>
+                           <td class="tg-hgcj">План на 2017г.</td>
+                           <td class="tg-hgcj">Факт на 2017г.</td>
+                           <td class="tg-hgcj">План на 2018г.</td>
+                           <td class="tg-hgcj">Факт на 2018г.</td>
+                           <td class="tg-hgcj">План на 2019г.</td>
+                           <td class="tg-hgcj">План</td>
+                           <td class="tg-hgcj">Факт</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-hgcj" colspan="12">Направление Развитие экономики</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-hgcj" colspan="12">3.1. Региональная макроэкономика</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-hgcj" colspan="12">Цель: Обеспечение стабильного роста экономики</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">1</td>
+                           <td class="tg-s6z2">Уровень ожидаемой продол жительности жизни</td>
+                           <td class="tg-s6z2">Количество лет</td>
+                           <td class="tg-s6z2">72,5</td>
+                           <td class="tg-s6z2">72,5</td>
+                           <td class="tg-s6z2">72,8</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">73</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">73</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Данные по ожидаемой продолжи тельности жизни при рождении населения области выводят Комитет статистики МНЭ РК раз в год, в апреле месяце последующего года</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">2</td>
+                           <td class="tg-s6z2">Индекс здоровья населения</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2">42</td>
+                           <td class="tg-s6z2">19</td>
+                           <td class="tg-s6z2">43</td>
+                           <td class="tg-s6z2">43,8</td>
+                           <td class="tg-s6z2">44</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">45</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Показатель достигнут</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">3</td>
+                           <td class="tg-s6z2">Уровень удовлетворенности населения качеством медицинской помощи</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2">40</td>
+                           <td class="tg-s6z2">89,9</td>
+                           <td class="tg-s6z2">42</td>
+                           <td class="tg-s6z2">44</td>
+                           <td class="tg-s6z2">44</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">46</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Атырауский филиал РГП «РЦЭЗ» совместно с медицинскими организациями области проводили анкетирование граждан. В проведении анкетирования участвовали 19 медицинских организации ПМСП и 18 стационаров. Количество участвующих по организациям ПМСП составило 565 человек и по стационаром 211 человек. По итогам опроса 44% (341 человек) из 776 опрошенных человек, в целом удовлетворены качеством медицинского обслуживания в медицинских организация области, из них: по организациям ПМСП: 201 человек (35,6% опрошенных) пациентов удовлетворены результатами обращения в поликлинику и оказанной медицинской помощи, а также 140 (66,4% опрошенных) пациенты удовлетворены в целом медицинской</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-hgcj" colspan="12">Задача 1. Развитие системы общественного здравоохранения</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">1</td>
+                           <td class="tg-s6z2">Количество ДТП с пострадавшими</td>
+                           <td class="tg-s6z2">Абс.</td>
+                           <td class="tg-s6z2">402</td>
+                           <td class="tg-s6z2">303</td>
+                           <td class="tg-s6z2">394</td>
+                           <td class="tg-s6z2">237</td>
+                           <td class="tg-s6z2">386</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">378</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Отмечается снижение количества ДТП с пострадавшими за ІІІ квартал 2017 г. В текущем году управлением местной полиции ДВД области проведены работы по профилактике и недопущению дорожно-транспортных происшествий: профилак тические мероприятия "Безопасная дорога", "Пьяный водитель-преступник", "Правопорядка".</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">2</td>
+                           <td class="tg-s6z2">Смертность от травм, несчастных случаев и отравлений</td>
+                           <td class="tg-s6z2">на 100 тыс. нас</td>
+                           <td class="tg-s6z2">58,3</td>
+                           <td class="tg-s6z2">56,7</td>
+                           <td class="tg-s6z2">58,3</td>
+                           <td class="tg-s6z2">33,3</td>
+                           <td class="tg-s6z2">57,7</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">57,4</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Число смертей от травм, несчастных случаев и отравлений по области за ІІІ кв. 2017г. – 204 человек. Среднегодовая численность населения-человек.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">3</td>
+                           <td class="tg-s6z2">Уровень суицидов среди детей от 15-17 лет</td>
+                           <td class="tg-s6z2">на 100 000 нас.</td>
+                           <td class="tg-s6z2">19,8</td>
+                           <td class="tg-s6z2">14,5</td>
+                           <td class="tg-s6z2">17,3</td>
+                           <td class="tg-s6z2">11,4</td>
+                           <td class="tg-s6z2">14,8</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">12,3</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Количество суицидов среди детей от 15-17 по области – 3 случая. Среднегодовая численность населения в возрасте 15-17 лет – 26 315 человек.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">4</td>
+                           <td class="tg-s6z2">Распространенность ВИЧ-инфекции в возрастной группе 15-49 лет в пределах 0,2-0,6%</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2">0,06</td>
+                           <td class="tg-s6z2">0,044</td>
+                           <td class="tg-s6z2">0,08</td>
+                           <td class="tg-s6z2">0,046</td>
+                           <td class="tg-s6z2">0,1</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">0,13</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Число носителей ВИЧ-инфекции в возрастной группе 15-49 лет по области – 139 человек. Численность населения в возрастной группе 15-49 лет по области – 299386 человек. По области показатель распространенности ВИЧ-инфекции в возрастной группе 15-49 лет составляет 0,046%.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">5</td>
+                           <td class="tg-s6z2">Заболеваемость инфекциями, передаваемыми половым путем (далее – ИППП), среди детей в возрасте 15-17 лет (маркер – сифилис)</td>
+                           <td class="tg-s6z2">на 100 000 нас.</td>
+                           <td class="tg-s6z2">3,9</td>
+                           <td class="tg-s6z2">8</td>
+                           <td class="tg-s6z2">3,8</td>
+                           <td class="tg-s6z2">0</td>
+                           <td class="tg-s6z2">3,7</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">3,6</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">С начало года заболеваемость инфекциями, передаваемыми половым путем (далее – ИППП), среди детей в возрасте 15-17 лет (маркер – сифилис) не зарегистрировано.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">6</td>
+                           <td class="tg-s6z2">Заболеваемость туберкулезом</td>
+                           <td class="tg-s6z2">на 100 000 нас</td>
+                           <td class="tg-s6z2">76,6</td>
+                           <td class="tg-s6z2">66,3</td>
+                           <td class="tg-s6z2">76,6</td>
+                           <td class="tg-s6z2">47,2</td>
+                           <td class="tg-s6z2">72,9</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">71,0</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Число заболеваний туберкулезом, зарегистрированных впервые в жизни по области за ІІІ кв. 2017г. – 289 человек. Среднегодовая численность населения - человек. За ІІІ кв. 2017г. по сравнению с соответствующим периодом прошлого года заболеваемость туберкулезом имеет снижение на 2,4% и составляет 47,2 против 48,3.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">7</td>
+                           <td class="tg-s6z2">Заболеваемость туберкулезом среди осужденных</td>
+                           <td class="tg-s6z2">на 100 000 осужденных</td>
+                           <td class="tg-s6z2">450,0</td>
+                           <td class="tg-s6z2">527</td>
+                           <td class="tg-s6z2">440</td>
+                           <td class="tg-s6z2">0</td>
+                           <td class="tg-s6z2">430</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">420</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">За ІІІ кв. 2017 г. заболеваемость туберкулезом среди заключенных не зарегистрировано. В колониях внедрены штаты фтизиатров и других медработников. Проводятся постоянный контроль и мониторинг по выявлению туберкулеза, лечения проводятся современными препаратами.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">8</td>
+                           <td class="tg-s6z2">Удержание показателя заболеваемости инфекционными и паразитарными заболеваниями на уровне не более 315,9</td>
+                           <td class="tg-s6z2">на 100 000 нас</td>
+                           <td class="tg-s6z2">670,3</td>
+                           <td class="tg-s6z2">332,1</td>
+                           <td class="tg-s6z2">670,3</td>
+                           <td class="tg-s6z2">273,9</td>
+                           <td class="tg-s6z2">434</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">315,7</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Число случаев заболеваний инфекционными и паразитарными заболеваниями по области за ІІІ кв. 2017 г. – 1675 случаев. Среднегодовая численность населения-человек. За ІІІ кв. 2017 г. из 57-и нозологии инфекционных и паразитарных заболевании в регионе зарегистрированы 1675 случаев по 14-и нозологиям и показатель на 100 тыс. населения составил 273,9.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">9</td>
+                           <td class="tg-s6z2">Охват граждан, занимающихся физической культурой и спортом</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2">25,9</td>
+                           <td class="tg-s6z2">25,9</td>
+                           <td class="tg-s6z2">26,5</td>
+                           <td class="tg-s6z2">26,5</td>
+                           <td class="tg-s6z2">27,8</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">29,2</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Охват граждан, занимающихся физической культурой и спортом составил 26,1% (Предварительные данные управления культуры и спорта)</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">10</td>
+                           <td class="tg-s6z2">Охват детей и подростков, занимающихся физической культурой и спортом на базе детско-юношеских спортивных школ</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2">10,6</td>
+                           <td class="tg-s6z2">11</td>
+                           <td class="tg-s6z2">10,7</td>
+                           <td class="tg-s6z2">11,4</td>
+                           <td class="tg-s6z2">10,8</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">10,9</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">11,3% детей и подростков занимаются физической культурой и спортом на базе детско-юношеских спортивных школ (Предварительные данные управления культуры и спорта)</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">11</td>
+                           <td class="tg-s6z2">Распрос траненность ожирения</td>
+                           <td class="tg-s6z2">на 100 тыс. нас.</td>
+                           <td class="tg-s6z2">256,5</td>
+                           <td class="tg-s6z2">232,4</td>
+                           <td class="tg-s6z2">243,6</td>
+                           <td class="tg-s6z2">174,4</td>
+                           <td class="tg-s6z2">231,4</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">210,0</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Число случаев заболевания ожирением; Среднегодовая численность населения.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">12</td>
+                           <td class="tg-s6z2">Доля общеобра зовательных учреждений, реализующих программы по профилактике наркомании и поведенческих болезней</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2">100</td>
+                           <td class="tg-s6z2">100</td>
+                           <td class="tg-s6z2">100</td>
+                           <td class="tg-s6z2">100</td>
+                           <td class="tg-s6z2">100</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">100</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Во всех 195 общеобразовательных школах реализуется программа по профилактике наркомании и поведенческих болезней.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">13</td>
+                           <td class="tg-s6z2">Количество лиц, состоящих на наркологическом учете с пагубным потреблением и зависимостью от наркотиков</td>
+                           <td class="tg-s6z2">на 100 тыс. нас.</td>
+                           <td class="tg-s6z2">132,1</td>
+                           <td class="tg-s6z2">136,7</td>
+                           <td class="tg-s6z2">129,8</td>
+                           <td class="tg-s6z2">139,1</td>
+                           <td class="tg-s6z2">128,5</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">127,4</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Лица, состоящие на учете в наркологическом диспансере за ІІІ кв. 2017 года – 849 и показатель на 100 тыс. населения составил 139,1.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-hgcj" colspan="12">Задача 2. Совершенствование профилактики и управления заболеваниями</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">1</td>
+                           <td class="tg-s6z2">Общая смертность населения</td>
+                           <td class="tg-s6z2">на 1000 населения</td>
+                           <td class="tg-s6z2">5,85</td>
+                           <td class="tg-s6z2">6,1</td>
+                           <td class="tg-s6z2">5,71</td>
+                           <td class="tg-s6z2">4,4</td>
+                           <td class="tg-s6z2">5,57</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">5,43</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Показатель общей смертности по сравнению с аналогичным периодом снизилась на 4,3% ( ІІІ кв.2016г. –4,6; ІІІ кв.2017г. –4,4);</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">2</td>
+                           <td class="tg-s6z2">Материнская смертность</td>
+                           <td class="tg-s6z2">на 100 000 родившихся живыми</td>
+                           <td class="tg-s6z2">5,7</td>
+                           <td class="tg-s6z2">30,1</td>
+                           <td class="tg-s6z2">5,6</td>
+                           <td class="tg-s6z2">8,3</td>
+                           <td class="tg-s6z2">5,5</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">5,4</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">За ІІІ кв 2017 г. зарегистри ровано 1 случай материнской смертности</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">3</td>
+                           <td class="tg-s6z2">Младенческая смертность</td>
+                           <td class="tg-s6z2">на 1000 родившихся живыми</td>
+                           <td class="tg-s6z2">7,3</td>
+                           <td class="tg-s6z2">8,1</td>
+                           <td class="tg-s6z2">6,7</td>
+                           <td class="tg-s6z2">6,7</td>
+                           <td class="tg-s6z2">6,1</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">5,5</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Число умерших детей до 1 года жизни с начало года по региону – 81 случай. Число детей, родившихся живыми по области за ІІІ кв. 2017г. – 12067 живорожденных. За ІІІ кв. 2017 г. по сравнению с прошлого годом показатель младенческой смертности снизилась на на 15,2% (2016г. 9 мес. – 7,9; 2017г. 9 мес. – 6,7). Данные предварительные («МЛАД» с Мединфо).</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">4</td>
+                           <td class="tg-s6z2">Смертность от болезней системы крово обращения(БСК)</td>
+                           <td class="tg-s6z2">на 100 000 нас</td>
+                           <td class="tg-s6z2">129,1</td>
+                           <td class="tg-s6z2">146,9</td>
+                           <td class="tg-s6z2">128,1</td>
+                           <td class="tg-s6z2">99,6</td>
+                           <td class="tg-s6z2">127,1</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">126,1</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Число смертей от болезней системы кровообращения, зарегистрированных по области за ІІІ кв. 2017г. – 609 случаев; Среднегодовая численность населения .-611704 человек.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">5</td>
+                           <td class="tg-s6z2">Смертность от туберкулеза</td>
+                           <td class="tg-s6z2">на 100 000 нас</td>
+                           <td class="tg-s6z2">2,55</td>
+                           <td class="tg-s6z2">2,3</td>
+                           <td class="tg-s6z2">2,5</td>
+                           <td class="tg-s6z2">1,3</td>
+                           <td class="tg-s6z2">2,45</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">2,4</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Число смертей от туберкулеза, зарегистрированных по области за ІІІ кв. 2017г. – 8 случаев; Среднегодовая численность населения – человек.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">6</td>
+                           <td class="tg-s6z2">Смертность от злока чественных ново образований</td>
+                           <td class="tg-s6z2">на 100 000 нас</td>
+                           <td class="tg-s6z2">84,7</td>
+                           <td class="tg-s6z2">87</td>
+                           <td class="tg-s6z2">84,7</td>
+                           <td class="tg-s6z2">56,8</td>
+                           <td class="tg-s6z2">84,68</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">84,65</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Число смертей от злокачественных новообразований, зарегистрированных по области за ІІІ кв. 2017г. – 349 случаев. Среднегодовая численность населения – человек.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">7</td>
+                           <td class="tg-s6z2">5-летняя выживаемость больных с злока чественными ново образованиями</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2">51,6</td>
+                           <td class="tg-s6z2">46,1</td>
+                           <td class="tg-s6z2">51,8</td>
+                           <td class="tg-s6z2">46,6</td>
+                           <td class="tg-s6z2">52</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">52,2</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Количество больных, у которых с момента установления диагноза злокачественного новообразования прошло 5 и более лет по области за 9 мес. 2017 г. Общее число больных, состоящих на учете по поводу злокачественных новообразований</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">8</td>
+                           <td class="tg-s6z2">Ранняя выявляемость злока чественных ново образований (1-2 стадия)</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2">56,8</td>
+                           <td class="tg-s6z2">59,1</td>
+                           <td class="tg-s6z2">57</td>
+                           <td class="tg-s6z2">57</td>
+                           <td class="tg-s6z2">58,5</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">59,5</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Число смертей от злокачественных новообразований, зарегистрированных по области за ІІІ кв. 2017г. – 349 случаев. Среднегодовая численность населения – человек.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">9</td>
+                           <td class="tg-s6z2">Число прикрепленного населения на 1 ВОП</td>
+                           <td class="tg-s6z2">Чел.</td>
+                           <td class="tg-s6z2">2500</td>
+                           <td class="tg-s6z2">2160</td>
+                           <td class="tg-s6z2">2200</td>
+                           <td class="tg-s6z2">2352</td>
+                           <td class="tg-s6z2">1850</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">1500</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">по итогам ІІІ квартала 2017 года число прикрепленного населения на 1 ВОП составил 2352 человек. Количество ВОП составляет 235.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">10</td>
+                           <td class="tg-s6z2">Доля финансирования ПМСП в рамках ГОБМП</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2">39</td>
+                           <td class="tg-s6z2">38,8</td>
+                           <td class="tg-s6z2">40</td>
+                           <td class="tg-s6z2">39,04</td>
+                           <td class="tg-s6z2">41</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">42</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Сумма финансирование на ПМСП в рамках ГОБМП по области – 10 483 814,0 тыс. Тенге. Общая сумма финансирования системы здравоохранения в рамках ГОБМП по области – 26 855 956,8 тыс. тенге..</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">11</td>
+                           <td class="tg-s6z2">Уровень потребления стационарной помощи, финансируемой в условиях ЕНСЗ</td>
+                           <td class="tg-s6z2">число койко-дней на 1000 населения</td>
+                           <td class="tg-s6z2">858,3</td>
+                           <td class="tg-s6z2">845,3</td>
+                           <td class="tg-s6z2">849,7</td>
+                           <td class="tg-s6z2">594,5</td>
+                           <td class="tg-s6z2">849,2</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">848,7</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">За ІІІ кв. 2017 года уровень потребления стационарной помощи в рамках Единой национальной системы здравоохранения составил 594,5.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-hgcj" colspan="12">Цель 2: Модернизация национальной системы здравоохранения, ориентированной на эффективность, финансовую устойчивость и поддержку социально-экономического роста</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-hgcj" colspan="12">Целевые индикаторы:</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">1</td>
+                           <td class="tg-s6z2">Уровень удовлетворенности населения качеством медицинской помощи</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2">40</td>
+                           <td class="tg-s6z2">44,1</td>
+                           <td class="tg-s6z2">42</td>
+                           <td class="tg-s6z2">44</td>
+                           <td class="tg-s6z2">41</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">42</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Атырауский филиал РГП «РЦЭЗ» совместно с медицинскими организациями области было проведено анкетирование граждан. В проведении анкетирования участвовали 19 медицинских организации ПМСП и 18 стационаров. Количество участвующих по организациям ПМСП составило 565 человек и по стационаром 211 человек.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2" colspan="12">Задача 1: Повышение эффективности управления и финансирования системы здравоохранения</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">1</td>
+                           <td class="tg-s6z2">Доля населения, за которое ФСМС получены отчисления и взносы на СМС</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">80</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">81</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Данные Министерства здравоохранения Республики Казахстан (данные Фонда социального медицинского страхования) по итогам 2017 года</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">2</td>
+                           <td class="tg-s6z2">Соотношение средней заработной платы врачей к средней заработной плате в экономике</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">0,8</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">0,9</td>
+                           <td class="tg-s6z2">1,16</td>
+                           <td class="tg-s6z2">1</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">1,1</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Данные предварительные</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">3</td>
+                           <td class="tg-s6z2">Доля медицинских организаций, имеющих высокий рейтинг по уровню менеджмента</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2">9,7</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">9,7</td>
+                           <td class="tg-s6z2">7,1</td>
+                           <td class="tg-s6z2">9,8</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">10</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Данные предварительные</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">4</td>
+                           <td class="tg-s6z2">Доля частных поставщиков медицинских услуг в рамках ГОБМП</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2">26,3</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">27,5</td>
+                           <td class="tg-s6z2">44,4</td>
+                           <td class="tg-s6z2">28,6</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">29</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля частных поставщиков медицинских услуг в рамках ГОБМП – 44,4; Количество частных поставщиков медицинских услуг в рамках ГОБМП по области - 24; Общее количество поставщиков медицинских услуг в рамках ГОБМП по области - 54.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-hgcj" colspan="12">Задача. Повышение эффективности использования ресурсов и совершенствование инфраструктуры отрасли</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">5</td>
+                           <td class="tg-s6z2">Доля врачей ПМСП в общем числе врачей</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2">18,3</td>
+                           <td class="tg-s6z2">19,7</td>
+                           <td class="tg-s6z2">18,8</td>
+                           <td class="tg-s6z2">18,8</td>
+                           <td class="tg-s6z2">19,3</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">19,8</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Доля врачей первичной медико-санитарной помощи в общем числе врачей составил 18,8. Общее количество врачей государственного сектора здравоохранения области – 1397 человек. Количество врачей ПМСП составил 262 человек.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">6</td>
+                           <td class="tg-s6z2">Доля выпускников резидентуры,,успешно прошедших независимую экзаменацию с первого раза</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Данные республиканского государственного предприятия на праве хозяйственного ведения «Республиканский центр развития здравоохранения» (Центр оценки знаний и навыков)</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">7</td>
+                           <td class="tg-s6z2">Удельный вес внедренных новых медицинских технологий от числаразрешенных применению в РК</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Данные республиканского государственного предприятия на праве хозяйственного ведения «Республиканский центр развития здравоохранения» (Центр развития человеческих ресурсов и науки)</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">8</td>
+                           <td class="tg-s6z2">Доля публикаций в международных рецензируемых изданиях в общем количестве международных публикаций</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Данные республиканского государственного предприятия на праве хозяйственного ведения «Республиканский центр развития здравоохранения» (Центр развития человеческих ресурсов и науки)</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">9</td>
+                           <td class="tg-s6z2">Доля амбулаторного лекарственного обеспечения в общем объеме лекарственного обеспечения в рамках ГОБМП</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2">56</td>
+                           <td class="tg-s6z2">56</td>
+                           <td class="tg-s6z2">57</td>
+                           <td class="tg-s6z2">59,7</td>
+                           <td class="tg-s6z2">58</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">60</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Количество амбулаторного лекарственного обеспечения (бюджетные средства, выделенные из республиканского и местного бюджетов на амбулаторное лекарственное лечение в рамках ГОБМП) по области – 4 832 746,4 тыс. тенге. Общее количество лекарственного обеспечения в рамках ГОБМП (бюджетные средства, выделенные из республиканского и местного бюджетов на стационарное и амбулаторное лекарственное лечение в рамках ГОБМП) по области – 8 094 899,6 тыс. тенге.</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">10</td>
+                           <td class="tg-s6z2">Обеспеченность амбулаторно-поликлиническими организациями</td>
+                           <td class="tg-s6z2">на 10 тыс. 3населения</td>
+                           <td class="tg-s6z2">3</td>
+                           <td class="tg-s6z2">2,2</td>
+                           <td class="tg-s6z2">3,2</td>
+                           <td class="tg-s6z2">2,7</td>
+                           <td class="tg-s6z2">3,5</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">4</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Количество АПО на конец отчетного периода (количество самостоятельных амбулаторно-поликлинических организации, а также в составе больничных организаций, фельдшерско-акушерских и медицинских пунктов) по области – 168. Численность населения области на конец отчетного периода – 611704 человек</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">11</td>
+                           <td class="tg-s6z2">Охват населения электронными паспортами здоровья</td>
+                           <td class="tg-s6z2">%</td>
+                           <td class="tg-s6z2">0</td>
+                           <td class="tg-s6z2">0</td>
+                           <td class="tg-s6z2">0</td>
+                           <td class="tg-s6z2">10</td>
+                           <td class="tg-s6z2">20</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">50</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">Данные предварительные,Информация будет предоставлена по выходным таблицам из информационных систем МЗ РК по итогам 2018 года</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">12</td>
+                           <td class="tg-s6z2">Количество реализуемых проектов государственно-частного партнерства, доверительного управления и приватизации в здравоохранении</td>
+                           <td class="tg-s6z2">Ед.</td>
+                           <td class="tg-s6z2">1</td>
+                           <td class="tg-s6z2">1</td>
+                           <td class="tg-s6z2">1</td>
+                           <td class="tg-s6z2">0</td>
+                           <td class="tg-s6z2">1</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">1</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">По Атырауской области в сфере здравоохранения реализуется 3 проекта (городские поликлиники №2, №5 и областная офтальмологическая больница) по механизму передача в ДУ без права выкупа на 3 года. В данное время ведется подготовка конкурсной документаций</td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">13</td>
+                           <td class="tg-s6z2">Продолжить мероприятия по дальнейшей иммунизации населения (реализация Национального календаря прививок)</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">564 761,0</td>
+                           <td class="tg-s6z2">564 761,0</td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">14</td>
+                           <td class="tg-s6z2">Проводить информационную работу по профилактике поведенческих факторов риска (табакокурение, употребление алкоголя, психоактивных веществ, рисковые формы поведения, низкая физическая активность) с использованием современных информационных технологий</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">68 850,0</td>
+                           <td class="tg-s6z2">68 850,0</td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">15</td>
+                           <td class="tg-s6z2">- за счет средств республиканского бюджета</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">68 850,0</td>
+                           <td class="tg-s6z2">68 850,0</td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">16</td>
+                           <td class="tg-s6z2">- за счет средств местного бюджета</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">17</td>
+                           <td class="tg-s6z2">Обеспечить дальнейшее развитие Национальной скрининговой программы, ее мониторинг и оценку эффективности</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">97 871,0</td>
+                           <td class="tg-s6z2">97 871,0</td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">18</td>
+                           <td class="tg-s6z2">Продолжить обеспечение населения РК лекарственными препаратами в рамках ГОБМП, включая расширение перечня лекарственных средств и нозологий, в том числе в рамках амбулаторного лекарственного обеспечения</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">1 955,271,9</td>
+                           <td class="tg-s6z2">1 954,916,7</td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">19</td>
+                           <td class="tg-s6z2">за счет средств республиканского бюджета</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">1 955 120,0</td>
+                           <td class="tg-s6z2">1 954 764,9</td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                       <tr>
+                           <td class="tg-s6z2">20</td>
+                           <td class="tg-s6z2">- за счет средств местного бюджета</td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2"></td>
+                           <td class="tg-s6z2">151,9</td>
+                           <td class="tg-s6z2">151,8</td>
+                           <td class="tg-s6z2"></td>
+                       </tr>
+                   </table>
+               </div>
+
+           </div>
+
+
+
+
+
+
+        </div>
+    </md-dialog-content>
+
+
+
+
+    <md-dialog-actions layout="row">
+
+        <span flex></span>
+
+
+        <md-button class="md-raised md-primary" ng-click="closeDialog()">
+            Закрыть
+        </md-button>
+
+    </md-dialog-actions>
+
+
+
+</md-dialog>

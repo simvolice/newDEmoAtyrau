@@ -236,6 +236,22 @@ angular.module('app').controller('BudgetCtrl', function ($scope, $timeout) {
 
 
 
+    $('.drawer').on('drawer.closed', function(){
+
+
+        chartFirst.resize();
+
+
+    });
+
+
+    $('.drawer').on('drawer.opened', function(){
+
+
+
+        chartFirst.resize();
+
+    });
 
 
 

@@ -152,7 +152,7 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
 
         $("#mainpanel").addClass("for__padding__sidebar");
         $("#titlesighnup").css("margin-left", "200px");
-        $("#chartbudget").css("left", "0");
+
         $("#label1").css("left", "31%");
         $("#label2").css("left", "62%");
         $("#chartstructure").css("left", "5%");
@@ -165,10 +165,10 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
 
         $("#mainpanel").removeClass("for__padding__sidebar");
         $("#titlesighnup").css("margin-left", "260px");
-        $("#chartbudget").css("left", "8%");
+
 
         $("#label1").css("left", "33%");
-        $("#label2").css("left", "58%");
+        $("#label2").css("left", "62%");
         $("#chartstructure").css("left", "15%");
 
 

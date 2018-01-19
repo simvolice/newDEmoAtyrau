@@ -1,4 +1,4 @@
-<div class="row" ng-controller="BudgetCtrl">
+<div class="row" ng-controller="BudgetIspolCtrl">
     <div class="col-md-12">
         <md-content layout="column" flex class="custom__md-content__categ">
 
@@ -7,7 +7,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="title text-center" style="text-transform: uppercase">Основные показатели бюджета</h3>
+                        <h3 class="title text-center" style="text-transform: uppercase">Исполнение бюджета</h3>
 
                     </div>
 
@@ -64,7 +64,7 @@
 
 
 
-                    <div id="chartbudget"></div>
+                    <div id="chartbudgetispol"></div>
 
                 </div>
 
@@ -72,8 +72,8 @@
 
                 <div class="col-md-1 custom__title__chart2">
 
-                        <h3><a href="" style="color: #ff7f0e; text-decoration-line: none">Доходы</a></h3>
-
+                        <h3><a href="" style="color: #ff7f0e; text-decoration-line: none;">Доходы</a></h3>
+                        <h3 class="proficit__custom">{{proficit}} </h3>
 
 
                 </div>
@@ -117,39 +117,49 @@
                     </tr>
                     <tr>
                         <td class="tg-031e">Доходы</td>
-                        <td class="tg-yw4l">194 718 996</td>
-                        <td class="tg-yw4l">186 988 010</td>
-                        <td class="tg-yw4l">234 138 861</td>
-                        <td class="tg-yw4l">315 480 315</td>
-                        <td class="tg-yw4l">205 349 433</td>
-                        <td class="tg-yw4l">215 730 358</td>
+                        <td class="tg-yw4l">165 635,6</td>
+                        <td class="tg-yw4l">151 077,4</td>
+                        <td class="tg-yw4l">260 134,4</td>
+                        <td class="tg-yw4l">200 195,9</td>
+                        <td class="tg-yw4l">57 845,6</td>
+                        <td class="tg-yw4l">61 717,7</td>
                     </tr>
                     <tr>
                         <td class="tg-031e">Изменение +/- к предыдущему году</td>
-                        <td class="tg-s6z2">20,08%</td>
-                        <td class="tg-s6z2">3,97%</td>
-                        <td class="tg-baqh">25,22%</td>
-                        <td class="tg-baqh">34,74%</td>
-                        <td class="tg-baqh">-34,91%</td>
-                        <td class="tg-baqh">5,06%</td>
+                        <td class="tg-s6z2">4,3%</td>
+                        <td class="tg-s6z2">-8,8%</td>
+                        <td class="tg-baqh">72,2%</td>
+                        <td class="tg-baqh">-23,0%</td>
+                        <td class="tg-baqh">-71,1%</td>
+                        <td class="tg-baqh">6,7%</td>
                     </tr>
                     <tr>
-                        <td class="tg-031e">Расходы</td>
-                        <td class="tg-yw4l">194 718 996</td>
-                        <td class="tg-yw4l">186 988 010</td>
-                        <td class="tg-yw4l">234 138 861</td>
-                        <td class="tg-yw4l">315 480 315</td>
-                        <td class="tg-yw4l">205 349 433</td>
-                        <td class="tg-yw4l">215 730 358</td>
+                        <td class="tg-031e">Затраты</td>
+                        <td class="tg-yw4l">154 634,3</td>
+                        <td class="tg-yw4l">154 225,2</td>
+                        <td class="tg-yw4l">229 564,8</td>
+                        <td class="tg-yw4l">177 993,2</td>
+                        <td class="tg-yw4l">57 845,6</td>
+                        <td class="tg-yw4l">61 717,7</td>
                     </tr>
                     <tr>
                         <td class="tg-031e">Изменение +/- к предыдущему году</td>
-                        <td class="tg-baqh">20,08%</td>
-                        <td class="tg-baqh">3,97%</td>
-                        <td class="tg-baqh">25,22%</td>
-                        <td class="tg-baqh">34,74%</td>
-                        <td class="tg-baqh">-34,91%</td>
-                        <td class="tg-baqh">5,06%</td>
+                        <td class="tg-baqh">3,5%</td>
+                        <td class="tg-baqh">-0,3%</td>
+                        <td class="tg-baqh">48,9%</td>
+                        <td class="tg-baqh">-22,5%</td>
+                        <td class="tg-baqh">-67,5%</td>
+                        <td class="tg-baqh">6,7%</td>
+                    </tr>
+
+                    <tr>
+                        <td class="tg-031e">Дефицит (профицит) бюджета</td>
+                        <td class="tg-yw4l">11 001,3</td>
+                        <td class="tg-yw4l">-3 147,8</td>
+                        <td class="tg-yw4l">30 569,6</td>
+                        <td class="tg-yw4l">22 202,7</td>
+                        <td class="tg-yw4l">0,0</td>
+                        <td class="tg-yw4l">0,0</td>
                     </tr>
                 </table>
 
