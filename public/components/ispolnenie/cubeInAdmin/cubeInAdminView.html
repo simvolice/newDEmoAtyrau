@@ -1,4 +1,4 @@
-<div class="row" ng-controller="CubeInAdminCtrl">
+<div class="row" ng-controller="IspolCubeInAdminCtrl">
     <div class="col-md-12">
         <md-content layout="column" flex class="custom__md-content__categ">
 
@@ -20,7 +20,7 @@
 
 
 
-                <div class="row">
+                <div class="row" style="margin-bottom: 10px">
                     <div class="col-md-12 custom__label__date text-right">
                         <span class="label" ng-click="selectDate('2016')" ng-class="{bg__color__active__date : activeMenu === '2016'}">2016</span>
                         <span class="label" ng-click="selectDate('2017')" ng-class="{bg__color__active__date : activeMenu === '2017'}">2017</span>
@@ -35,35 +35,1145 @@
 
 
 
-                        <div id="tabledata2">
+                        <div id="table2016">
+
 
                             <style type="text/css">
-                                .tg  {border-collapse:collapse;border-spacing:0; width: 100%; margin-top: 20px}
+                                .tg  {border-collapse:collapse;border-spacing:0; width: 100%;}
                                 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
                                 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-                                .tg .tg-0ord{text-align:right}
-                                .tg .tg-lqy6{text-align:left; width: 600px;}
-                                .tg .tg-lqy8{text-align:center; width: 300px}
-                                .tg .tg-hgcj{font-weight:bold;text-align:center}
-                                .tg .tg-yw4l{vertical-align:top}
+                                .tg .tg-e3zv{font-weight:bold; text-align: center}
+                                .tg .tg-yw4l{text-align: right; width: 150px}
+                                .tg .tg-prg{text-align: center}
                             </style>
                             <table class="tg table-striped">
 
+                                <tr>
+                                    <th class="tg-e3zv">Наименование</th>
+                                    <th class="tg-e3zv">Индикатор</th>
+                                    <th class="tg-e3zv">План на {{yearTitle}}</th>
+                                    <th class="tg-e3zv">Освоение на 1 ноября {{yearTitle}} года</th>
+                                    <th class="tg-e3zv">% исполнения</th>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">Всего по администраторам</td>
 
-                                <tr ng-repeat="x in dataTable">
-                                    <td class="tg-lqy6">{{x.name}}</td>
-                                    <td class="tg-lqy8">
+                                    <td class="tg-prg">
 
 
-                                        <md-progress-linear md-mode="determinate" value="{{x.prg}}"></md-progress-linear>
+                                        <md-progress-linear md-mode="determinate" value="80"></md-progress-linear>
+
 
 
                                     </td>
 
-                                    <td class="tg-0ord">{{x.value | ruFormat2}}</td>
-                                </tr>
 
+
+                                    <td class="tg-yw4l">109 473 224,0</td>
+                                    <td class="tg-yw4l">108 503 651,0</td>
+                                    <td class="tg-yw4l">99,1</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Аппарат Атырауского областного маслихата"</td>
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="60"></md-progress-linear>
+
+
+
+                                    </td>
+
+                                    <td class="tg-yw4l">43 542,0</td>
+                                    <td class="tg-yw4l">43 493,0</td>
+                                    <td class="tg-yw4l">100</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Аппарат акима Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="60"></md-progress-linear>
+
+
+
+                                    </td>
+
+                                    <td class="tg-yw4l">1 204 945,0</td>
+                                    <td class="tg-yw4l">965 015,0</td>
+                                    <td class="tg-yw4l">80,1</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление земельных отношений Атырауской области"</td>
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="60"></md-progress-linear>
+
+
+
+                                    </td>
+
+                                    <td class="tg-yw4l">23 326,0</td>
+                                    <td class="tg-yw4l">22 995,0</td>
+                                    <td class="tg-yw4l">98,6</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление внутренних дел Атырауской области " тенге</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="60"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">3 332 247,0</td>
+                                    <td class="tg-yw4l">3 315 866,0</td>
+                                    <td class="tg-yw4l">99,5</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление здравоохранения Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="55"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">16 595 175,0</td>
+                                    <td class="tg-yw4l">16 340 105,0</td>
+                                    <td class="tg-yw4l">98,5<br></td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление природных ресурсов и регулирования природопользования Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="55"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">295 811,0</td>
+                                    <td class="tg-yw4l">294 557,0</td>
+                                    <td class="tg-yw4l">99,6</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление сельского хозяйства Атырауской области"</td>
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="50"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">2 763 344,0</td>
+                                    <td class="tg-yw4l">2 761 489,0</td>
+                                    <td class="tg-yw4l">99,9</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление координации занятости и социальных программ"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="50"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">1 012,2</td>
+                                    <td class="tg-yw4l">1 011,8</td>
+                                    <td class="tg-yw4l">100,0</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление финансов Атырауской области "</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="50"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">59 188 042,0</td>
+                                    <td class="tg-yw4l">59 187 951,0</td>
+                                    <td class="tg-yw4l">100,0</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление экономики и бюджетного планирования Атырауской области "</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="50"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">109 624,0</td>
+                                    <td class="tg-yw4l">108 832,0</td>
+                                    <td class="tg-yw4l">99,3</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Областное управление образования"</td>
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="50"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">5 799 499,0</td>
+                                    <td class="tg-yw4l">5 757 332,0</td>
+                                    <td class="tg-yw4l">99,3</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление внутренней политики Атырауской области "</td>
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="45"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">622 406,0</td>
+                                    <td class="tg-yw4l">618 439,0</td>
+                                    <td class="tg-yw4l">99,4</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление по развитию языков"</td>
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="45"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">32 612,0</td>
+                                    <td class="tg-yw4l">32 401,0</td>
+                                    <td class="tg-yw4l">99,4</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление предпринимательства и индустриально инновационного развития Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="45"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">2 409 156,0</td>
+                                    <td class="tg-yw4l">2 329 715,0</td>
+                                    <td class="tg-yw4l">96,7<br></td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление пассажирского транспорта автомобильных дорог Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="45"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">3 132 392,0</td>
+                                    <td class="tg-yw4l">3 131 920,0</td>
+                                    <td class="tg-yw4l">100,0</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление по делам религий Атырауской области "</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="45"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">147 276,0</td>
+                                    <td class="tg-yw4l">145 315,0</td>
+                                    <td class="tg-yw4l">98,7</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">План на отчетный период ГУ "Управление строительства Атырауской области "</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="40"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">4 054 391,0</td>
+                                    <td class="tg-yw4l">3 876 629,0</td>
+                                    <td class="tg-yw4l">95,6</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление архитектуры и градостроительства Атырауской области "</td>
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="40"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">182 670,0</td>
+                                    <td class="tg-yw4l">182 420,0</td>
+                                    <td class="tg-yw4l">99,9</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление культуры, архивов и документации Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="40"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">1 989 273,0</td>
+                                    <td class="tg-yw4l">1 987 256,0</td>
+                                    <td class="tg-yw4l">99,9</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление энергетики и жилищно-коммунального хозяйства Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="40"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">493 749,0</td>
+                                    <td class="tg-yw4l">492 652,0</td>
+                                    <td class="tg-yw4l">99,8</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Ревизионная комиссия Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="40"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">129 793,0</td>
+                                    <td class="tg-yw4l">129 565,0</td>
+                                    <td class="tg-yw4l">99,8</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление по вопросам молодежной политики"</td>
+
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="40"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">1 119 986,0</td>
+                                    <td class="tg-yw4l">1 118 386,0</td>
+                                    <td class="tg-yw4l">99,9</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление физической культуры и спорта Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="40"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">4 511 492,0</td>
+                                    <td class="tg-yw4l">4 428 637,0</td>
+                                    <td class="tg-yw4l">98,2</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">Департамент по чрезвычайным ситуациям Атырауской области</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="40"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">102 481,0</td>
+                                    <td class="tg-yw4l">55 387,0</td>
+                                    <td class="tg-yw4l">54,0</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление государственной трудовой инспекции"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="40"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">47 013,0</td>
+                                    <td class="tg-yw4l">44 292,0</td>
+                                    <td class="tg-yw4l">94,2</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление государственных закупок Атырауской области"</td>
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="40"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">35 867,0</td>
+                                    <td class="tg-yw4l">33 472,0</td>
+                                    <td class="tg-yw4l">93,3</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление ветеринарии Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="40"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">26 404,0</td>
+                                    <td class="tg-yw4l">25 350,0</td>
+                                    <td class="tg-yw4l">96,0</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление государственного архитектурно-строительного контроля Атырауской области"</td>
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="35"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">33 300,0</td>
+                                    <td class="tg-yw4l">31 236,0</td>
+                                    <td class="tg-yw4l">93,8</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление по контролю за использованием и охраной земель Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="35"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">2 064,0</td>
+                                    <td class="tg-yw4l">31 173,0</td>
+                                    <td class="tg-yw4l">88,5</td>
+                                </tr>
                             </table>
+
+                        </div>
+
+
+
+
+                        <div id="table2017" style="visibility: collapse">
+
+
+                            <style type="text/css">
+                                .tg  {border-collapse:collapse;border-spacing:0; width: 100%;}
+                                .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                                .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+                                .tg .tg-e3zv{font-weight:bold}
+                                .tg .tg-yw4l{text-align: right;width: 150px}
+                                .tg .tg-prg{text-align: center}
+                            </style>
+                            <table class="tg table-striped">
+
+                                <tr>
+                                    <th class="tg-e3zv">Наименование</th>
+                                    <th class="tg-e3zv">Индикатор</th>
+                                    <th class="tg-e3zv">План на {{yearTitle}}</th>
+                                    <th class="tg-e3zv">Освоение на 1 ноября {{yearTitle}} года</th>
+                                    <th class="tg-e3zv">% исполнения</th>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">Всего по администраторам</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="80"></md-progress-linear>
+
+
+
+                                    </td>
+
+                                    <td class="tg-yw4l">130 057 619,0</td>
+                                    <td class="tg-yw4l">128 763 304,0</td>
+                                    <td class="tg-yw4l">99,0</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Аппарат Атырауского областного маслихата"</td>
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="50"></md-progress-linear>
+
+
+
+                                    </td>
+                                    <td class="tg-yw4l">30 668,0</td>
+                                    <td class="tg-yw4l">30 595,0</td>
+                                    <td class="tg-yw4l">99,8</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Аппарат акима Атырауской области"</td>
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="25"></md-progress-linear>
+
+
+
+                                    </td>
+                                    <td class="tg-yw4l">1 566 616,0</td>
+                                    <td class="tg-yw4l">1 538 043,0</td>
+                                    <td class="tg-yw4l">98,2</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление земельных отношений Атырауской области"</td>
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="25"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">25 550,0</td>
+                                    <td class="tg-yw4l">24 187,0</td>
+                                    <td class="tg-yw4l">94,7</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление внутренних дел Атырауской области " тенге</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="25"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">7 189 592,0</td>
+                                    <td class="tg-yw4l">7 188 184,0</td>
+                                    <td class="tg-yw4l">100,0</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление здравоохранения Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="25"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">10 237 136,0</td>
+                                    <td class="tg-yw4l">9 939 129,0</td>
+                                    <td class="tg-yw4l">97,1</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление природных ресурсов и регулирования природопользования Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="25"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">243 211,0</td>
+                                    <td class="tg-yw4l">240 836,0</td>
+                                    <td class="tg-yw4l">99,0</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление сельского хозяйства Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="25"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">2 557 234,0</td>
+                                    <td class="tg-yw4l">2 551 991,0</td>
+                                    <td class="tg-yw4l">99,8</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление координации занятости и социальных программ"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="25"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">1 306 483,0</td>
+                                    <td class="tg-yw4l">1 305 402,0</td>
+                                    <td class="tg-yw4l">99,9</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление финансов Атырауской области "</td>
+
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="25"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">75 241 133,0</td>
+                                    <td class="tg-yw4l">75 239 807,0</td>
+                                    <td class="tg-yw4l">100,0</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление экономики и бюджетного планирования Атырауской области "</td>
+
+
+
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="25"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+
+
+
+                                    <td class="tg-yw4l">101 989,0</td>
+                                    <td class="tg-yw4l">101 720,0</td>
+                                    <td class="tg-yw4l">99,7</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Областное управление образования"</td>
+
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="25"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">6 621 178,0</td>
+                                    <td class="tg-yw4l">6 547 594,0</td>
+                                    <td class="tg-yw4l">98,9</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление внутренней политики Атырауской области "</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="25"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">720 271,0</td>
+                                    <td class="tg-yw4l">719 790,0</td>
+                                    <td class="tg-yw4l">99,9</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление по развитию языков"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="25"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">34 300,0</td>
+                                    <td class="tg-yw4l">34 159,0</td>
+                                    <td class="tg-yw4l">99,6</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление предпринимательства и индустриально инновационного развития Атырауской области"</td>
+
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="25"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+
+                                    <td class="tg-yw4l">2 534 021,0</td>
+                                    <td class="tg-yw4l">2 529 614,0</td>
+                                    <td class="tg-yw4l">99,8</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление пассажирского транспорта автомобильных дорог Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="25"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">3 019 509,0</td>
+                                    <td class="tg-yw4l">3 011 105,0</td>
+                                    <td class="tg-yw4l">99,7</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление по делам религий Атырауской области "</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="25"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">164 157,0</td>
+                                    <td class="tg-yw4l">162 702,0</td>
+                                    <td class="tg-yw4l">99,1</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">План на отчетный период ГУ "Управление строительства Атырауской области "</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="25"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">8 102 736,0</td>
+                                    <td class="tg-yw4l">7 924 112,0</td>
+                                    <td class="tg-yw4l">97,8</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление архитектуры и градостроительства Атырауской области "</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="20"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">3 479 556,0</td>
+                                    <td class="tg-yw4l">3 464 506,0</td>
+                                    <td class="tg-yw4l">99,6</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление культуры, архивов и документации Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="20"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">3 479 556,0</td>
+                                    <td class="tg-yw4l">3 464 506,0</td>
+                                    <td class="tg-yw4l">99,6</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление энергетики и жилищно-коммунального хозяйства Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="20"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">869 012,0</td>
+                                    <td class="tg-yw4l">867 908,0</td>
+                                    <td class="tg-yw4l">99,9</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Ревизионная комиссия Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="20"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">124 598,0</td>
+                                    <td class="tg-yw4l">123 610,0</td>
+                                    <td class="tg-yw4l">99,2</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление по вопросам молодежной политики"</td>
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="20"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">250 800,0</td>
+                                    <td class="tg-yw4l">238 448,0</td>
+                                    <td class="tg-yw4l">95,1</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление физической культуры и спорта Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="20"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">4 492 389,0</td>
+                                    <td class="tg-yw4l">4 444 214,0</td>
+                                    <td class="tg-yw4l">98,9</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">Департамент по чрезвычайным ситуациям Атырауской области</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="20"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">772 930,0</td>
+                                    <td class="tg-yw4l">189 380,0</td>
+                                    <td class="tg-yw4l">24,5</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление государственной трудовой инспекции"</td>
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="20"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">64 709,0</td>
+                                    <td class="tg-yw4l">63 054,0</td>
+                                    <td class="tg-yw4l">97,4</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление государственных закупок Атырауской области"</td>
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="20"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">38 431,0</td>
+                                    <td class="tg-yw4l">38 425,0</td>
+                                    <td class="tg-yw4l">100,0</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление ветеринарии Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="20"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">17 475,0</td>
+                                    <td class="tg-yw4l">17 474,0</td>
+                                    <td class="tg-yw4l">100,0</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление государственного архитектурно-строительного контроля Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="20"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+                                    <td class="tg-yw4l">49 643,0</td>
+                                    <td class="tg-yw4l">49 446,0</td>
+                                    <td class="tg-yw4l">99,6</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-031e">ГУ "Управление по контролю за использованием и охраной земель Атырауской области"</td>
+
+
+                                    <td class="tg-prg">
+
+
+                                        <md-progress-linear md-mode="determinate" value="20"></md-progress-linear>
+
+
+
+                                    </td>
+
+
+
+                                    <td class="tg-yw4l">36 469,0</td>
+                                    <td class="tg-yw4l">35 995,0</td>
+                                    <td class="tg-yw4l">98,7</td>
+                                </tr>
+                            </table>
+
 
 
                         </div>

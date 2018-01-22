@@ -1,4 +1,4 @@
-<div class="row" ng-controller="DohodPlanCtrl">
+<div class="row" ng-controller="IspolDohodPlanCtrl">
     <div class="col-md-12">
         <md-content layout="column" flex class="custom__md-content__categ">
 
@@ -8,7 +8,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="title text-center" style="text-transform: uppercase">Динамика доходов (план), млн. тенге</h3>
+                        <h3 class="title text-center" style="text-transform: uppercase">Динамика доходов (факт), млн. тенге</h3>
 
                     </div>
 
@@ -43,39 +43,33 @@
 
 
 
-                            <md-list-item ng-click="getParam('Собственные')" ng-class="{bg__color__active : activeMenu === 'Собственные'}">
+                            <md-list-item ng-click="getParam('Налоговые поступления')" ng-class="{bg__color__active : activeMenu === 'Налоговые поступления'}">
 
-                                <p>Собственные</p>
-
-                            </md-list-item>
-
-
-                            <md-list-item ng-click="getParam('Целевые трансферты')" ng-class="{bg__color__active : activeMenu === 'Целевые трансферты'}">
-
-                                <p>Целевые трансферты из РБ</p>
+                                <p>Налоговые поступления</p>
 
                             </md-list-item>
 
 
-                            <md-list-item ng-click="getParam('Поступления от погашения')" ng-class="{bg__color__active : activeMenu === 'Поступления от погашения'}">
+                            <md-list-item ng-click="getParam('Неналоговые поступления')" ng-class="{bg__color__active : activeMenu === 'Неналоговые поступления'}">
 
-                                <p style="line-height: 20px">Поступления от погашения бюджетных кредитов</p>
-
-                            </md-list-item>
-
-
-                            <md-list-item ng-click="getParam('Поступления от продажи')" ng-class="{bg__color__active : activeMenu === 'Поступления от продажи'}">
-
-                                <p style="line-height: 20px">Поступления от продажи активов государства</p>
+                                <p>Неналоговые поступления</p>
 
                             </md-list-item>
 
 
-                            <md-list-item ng-click="getParam('Кредитование')" ng-class="{bg__color__active : activeMenu === 'Кредитование'}">
+                            <md-list-item ng-click="getParam('Поступления трансфертов')" ng-class="{bg__color__active : activeMenu === 'Поступления трансфертов'}">
 
-                                <p>Кредитование</p>
+                                <p style="line-height: 20px">Поступления трансфертов</p>
 
                             </md-list-item>
+
+
+                            <md-list-item ng-click="getParam('Поступления от продажи основного капитала')" ng-class="{bg__color__active : activeMenu === 'Поступления от продажи основного капитала'}">
+
+                                <p style="line-height: 20px">Поступления от продажи основного капитала</p>
+
+                            </md-list-item>
+
 
 
 
@@ -98,126 +92,66 @@
 
                     <md-card>
 
+
+
+
                         <style type="text/css">
                             .tg  {border-collapse:collapse;border-spacing:0; width: 100%}
                             .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
                             .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-                            .tg .tg-0ord{text-align:right}
-                            .tg .tg-lqy6{text-align:right;vertical-align:top}
-                            .tg .tg-hgcj{font-weight:bold;text-align:center}
-                            .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
-                            .tg .tg-yw4l{vertical-align:top}
+                            .tg .tg-e3zv{font-weight:bold; text-align: center}
+                            .tg .tg-9hbo{font-weight:bold;vertical-align:top}
+                            .tg .tg-yw4l{text-align: right}
                         </style>
                         <table class="tg table-striped">
                             <tr>
-                                <th class="tg-hgcj">Наименование доходов</th>
-                                <th class="tg-hgcj">2014</th>
-                                <th class="tg-hgcj">2015</th>
-                                <th class="tg-amwm">2016</th>
-                                <th class="tg-amwm">2017</th>
-                                <th class="tg-amwm">2018</th>
-                                <th class="tg-amwm">2019</th>
+                                <th class="tg-e3zv">Наименование доходов</th>
+                                <th class="tg-e3zv">2014</th>
+                                <th class="tg-e3zv">2015</th>
+                                <th class="tg-e3zv">2016</th>
+                                <th class="tg-e3zv">2017</th>
+                                <th class="tg-e3zv">2018</th>
+                                <th class="tg-e3zv">2019</th>
                             </tr>
                             <tr>
-                                <td class="tg-031e">Собственные</td>
-                                <td class="tg-0ord">133 860 879</td>
-                                <td class="tg-0ord">152 490 584</td>
-                                <td class="tg-lqy6">174 211 929</td>
-                                <td class="tg-lqy6">248 286 306</td>
-                                <td class="tg-lqy6">205 349 433</td>
-                                <td class="tg-lqy6">215 730 358</td>
+                                <td class="tg-9hbo">Налоговые поступления</td>
+                                <td class="tg-yw4l">52 867 580</td>
+                                <td class="tg-yw4l">59 112 695</td>
+                                <td class="tg-yw4l">168 354 979</td>
+                                <td class="tg-yw4l">56 551 304</td>
+                                <td class="tg-yw4l">57 546 988</td>
+                                <td class="tg-yw4l">61 404 155</td>
                             </tr>
                             <tr>
-                                <td class="tg-031e">Налоговое поступления</td>
-                                <td class="tg-0ord">131 082 743</td>
-                                <td class="tg-0ord">148 501 009</td>
-                                <td class="tg-lqy6">168 354 979</td>
-                                <td class="tg-lqy6">241 579 338</td>
-                                <td class="tg-lqy6">0</td>
-                                <td class="tg-lqy6">0</td>
+                                <td class="tg-9hbo">Неналоговые поступления</td>
+                                <td class="tg-yw4l">608 019</td>
+                                <td class="tg-yw4l">1 944 570</td>
+                                <td class="tg-yw4l">3 021 438</td>
+                                <td class="tg-yw4l">2 614 197</td>
+                                <td class="tg-yw4l">298 612</td>
+                                <td class="tg-yw4l">313 543</td>
                             </tr>
                             <tr>
-                                <td class="tg-yw4l">Не налоговое поступления</td>
-                                <td class="tg-lqy6">2 278 546</td>
-                                <td class="tg-lqy6">2 345 676</td>
-                                <td class="tg-lqy6">3 021 438</td>
-                                <td class="tg-lqy6">4 636 349</td>
-                                <td class="tg-lqy6">0</td>
-                                <td class="tg-lqy6">0</td>
+                                <td class="tg-9hbo">Поступления трансфертов</td>
+                                <td class="tg-yw4l">69 016 591</td>
+                                <td class="tg-yw4l">79 242 641</td>
+                                <td class="tg-yw4l">48 231 633</td>
+                                <td class="tg-yw4l">115 205 004</td>
+                                <td class="tg-yw4l">0</td>
+                                <td class="tg-yw4l">0</td>
                             </tr>
                             <tr>
-                                <td class="tg-yw4l">Поступления от продажи основного капитала</td>
-                                <td class="tg-lqy6">499 590</td>
-                                <td class="tg-lqy6">1 643 899</td>
-                                <td class="tg-lqy6">2 835 512</td>
-                                <td class="tg-lqy6">2 070 619</td>
-                                <td class="tg-lqy6">0</td>
-                                <td class="tg-lqy6">0</td>
-                            </tr>
-                            <tr>
-                                <td class="tg-yw4l">Целевые трансферты из РБ</td>
-                                <td class="tg-lqy6">39 971 671</td>
-                                <td class="tg-lqy6">23 422 008</td>
-                                <td class="tg-lqy6">48 231 633</td>
-                                <td class="tg-lqy6">24 348 667</td>
-                                <td class="tg-lqy6">0</td>
-                                <td class="tg-lqy6">0</td>
-                            </tr>
-                            <tr>
-                                <td class="tg-yw4l">Целевые трансферты на развитие из РБ</td>
-                                <td class="tg-lqy6">18 378 459,4</td>
-                                <td class="tg-lqy6">4 362 155</td>
-                                <td class="tg-lqy6">13 984 933</td>
-                                <td class="tg-lqy6">13 328 318</td>
-                                <td class="tg-lqy6">0</td>
-                                <td class="tg-lqy6">0</td>
-                            </tr>
-                            <tr>
-                                <td class="tg-yw4l">Целевые текущие трансферты из РБ</td>
-                                <td class="tg-lqy6">21 593 211,3</td>
-                                <td class="tg-lqy6">19 059 853</td>
-                                <td class="tg-lqy6">34 246 700</td>
-                                <td class="tg-lqy6">11 020 349</td>
-                                <td class="tg-lqy6">0</td>
-                                <td class="tg-lqy6">0</td>
-                            </tr>
-                            <tr>
-                                <td class="tg-yw4l">Поступления от погашения бюджетных кредитов</td>
-                                <td class="tg-lqy6">208 665</td>
-                                <td class="tg-lqy6">233 628</td>
-                                <td class="tg-lqy6">510 101</td>
-                                <td class="tg-lqy6">1 839 930</td>
-                                <td class="tg-lqy6">0</td>
-                                <td class="tg-lqy6">0</td>
-                            </tr>
-                            <tr>
-                                <td class="tg-yw4l">Поступления от продажи активов государства</td>
-                                <td class="tg-lqy6">18 968</td>
-                                <td class="tg-lqy6">55 105</td>
-                                <td class="tg-lqy6">15 000</td>
-                                <td class="tg-lqy6">5 976</td>
-                                <td class="tg-lqy6">0</td>
-                                <td class="tg-lqy6">0</td>
-                            </tr>
-                            <tr>
-                                <td class="tg-yw4l">Кредитование</td>
-                                <td class="tg-lqy6">2 855 448</td>
-                                <td class="tg-lqy6">1 936 985</td>
-                                <td class="tg-lqy6">3 240 280</td>
-                                <td class="tg-lqy6">2 911 690</td>
-                                <td class="tg-lqy6">0</td>
-                                <td class="tg-lqy6">0</td>
-                            </tr>
-                            <tr>
-                                <td class="tg-yw4l">Свободный остаток</td>
-                                <td class="tg-lqy6">17 803 365</td>
-                                <td class="tg-lqy6">8 849 701</td>
-                                <td class="tg-lqy6">7 929 918</td>
-                                <td class="tg-lqy6">38 087 746</td>
-                                <td class="tg-lqy6">0</td>
-                                <td class="tg-lqy6">0</td>
+                                <td class="tg-9hbo">Поступления от продажи основного капитала</td>
+                                <td class="tg-yw4l">0</td>
+                                <td class="tg-yw4l">3 741</td>
+                                <td class="tg-yw4l">2 835 512</td>
+                                <td class="tg-yw4l">25</td>
+                                <td class="tg-yw4l">0</td>
+                                <td class="tg-yw4l">0</td>
                             </tr>
                         </table>
+
+
 
 
                     </md-card>

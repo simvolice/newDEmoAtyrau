@@ -4,10 +4,10 @@
 
 
 
-angular.module('app').controller('RashodPlanCtrl', function ($scope, $timeout) {
+angular.module('app').controller('IspolRashodPlanCtrl', function ($scope, $timeout) {
 
     var chartDohod = null;
-    $scope.menuItems = ['Всего доходов', 'Собственные', 'Целевые трансферты', 'Поступления от погашения', "Поступления от продажи", "Кредитование"];
+    $scope.menuItems = ['Всего доходов'];
 
 
 
@@ -45,7 +45,13 @@ angular.module('app').controller('RashodPlanCtrl', function ($scope, $timeout) {
 
             data: {
                 columns: [
-                    ['data1', 154256725, 143888253,	229949719, 195229368, 203290355, 208441744],
+                    ['data1', 154256725
+                        , 143888253
+                        ,	229949719
+                        , 195229368
+                        , 203290355
+                        , 208441744
+                    ],
 
                 ],
                 type: 'bar',
@@ -115,7 +121,13 @@ angular.module('app').controller('RashodPlanCtrl', function ($scope, $timeout) {
 
             chartDohod.load({
                 columns: [
-                    ['data1', 154256725, 143888253,	229949719, 195229368, 203290355, 208441744],
+                    ['data1', 154256725
+                        , 143888253
+                        ,	229949719
+                        , 195229368
+                        , 203290355
+                        , 208441744
+                    ],
 
                 ]
             });

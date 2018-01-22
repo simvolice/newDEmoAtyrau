@@ -381,8 +381,8 @@
 
 
 				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" href="?#!/adminedit">Исполнение. Структура доходов</a></li>
-				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" href="?#!/adminedit">Динамика доходов (факт)</a></li>
-				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" href="?#!/adminedit">Динамика расходов (факт)</a></li>
+				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" ui-sref="ispoldohodplan">Динамика доходов (факт)</a></li>
+				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" ui-sref="ispolrashodplanctrl">Динамика расходов (факт)</a></li>
 
 				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" role="button" aria-expanded="false">Исполнение. Структура расходов<span class="drawer-caret"></span></a>
 
@@ -392,10 +392,10 @@
 
 
 
-						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Исполнение. В разрезе программ</a></li>
-						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Исполнение. В разрезе администраторов</a></li>
-						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Исполнение. В разрезе направлений (отраслей)</a></li>
-						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Исполнение. В разрезе районов</a></li>
+						<li><a class="drawer-dropdown-menu-item" ui-sref="ispolcubeinprogrammctrl">Исполнение. В разрезе программ</a></li>
+						<li><a class="drawer-dropdown-menu-item" ui-sref="ispolcubeinadminctrl">Исполнение. В разрезе администраторов</a></li>
+						<li><a class="drawer-dropdown-menu-item" ui-sref="ispolcubeinspherectrl">Исполнение. В разрезе направлений (отраслей)</a></li>
+						<li><a class="drawer-dropdown-menu-item" ui-sref="ispolcubeintownctrl">Исполнение. В разрезе районов</a></li>
 
 					</ul>
 
@@ -567,6 +567,34 @@
 
 	<script src="components/ispolnenie/budget/budgetService.js"></script>
 	<script src="components/ispolnenie/budget/budgetController.js"></script>
+
+
+
+	<script src="components/ispolnenie/dohodPlan/dohodPlanController.js"></script>
+	<script src="components/ispolnenie/dohodPlan/dohodPlanService.js"></script>
+	<script src="components/ispolnenie/rashodplan/rashodplanService.js"></script>
+	<script src="components/ispolnenie/rashodplan/rashodplanController.js"></script>
+
+
+
+	<script src="components/ispolnenie/cubeInProgramm/cubeInProgrammService.js"></script>
+	<script src="components/ispolnenie/cubeInProgramm/cubeInProgrammController.js"></script>
+
+
+
+	<script src="components/ispolnenie/cubeInAdmin/cubeInAdminService.js"></script>
+	<script src="components/ispolnenie/cubeInAdmin/cubeInAdminController.js"></script>
+
+
+	<script src="components/ispolnenie/cubeInSphere/cubeInSpheteService.js"></script>
+	<script src="components/ispolnenie/cubeInSphere/cubeInSpheteController.js"></script>
+
+
+
+	<script src="components/ispolnenie/cubeInTown/cubeInTownService.js"></script>
+	<script src="components/ispolnenie/cubeInTown/cubeInTownController.js"></script>
+
+
 
 
 

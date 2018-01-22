@@ -9,7 +9,7 @@ angular.module('app').filter('ruFormat2', function() {
 });
 
 
-angular.module('app').controller('CubeInAdminCtrl', function ($scope, $mdDialog) {
+    angular.module('app').controller('IspolCubeInAdminCtrl', function ($scope, $mdDialog) {
 
     var locale = {
         "decimal": ",",
@@ -42,7 +42,7 @@ angular.module('app').controller('CubeInAdminCtrl', function ($scope, $mdDialog)
         "2016": [
 
 
-            {prg: 80, name: "Всего по администраторам", value: 109473224.0},
+            {prg: 80, name: "Всего по администраторам", value: 109473224.0, val2: "108 503 651,0", val3: 73.7},
             {prg: 60, name: "ГУ \"Управление финансов Атырауской области\"", value: 59188042.0},
             {prg: 40, name: "ГУ \"Управление здравоохранения Атырауской области\"", value: 16595175.0},
             {prg: 30, name: "ГУ \"Областное управление образования\"", value: 5799499.0},
@@ -122,6 +122,9 @@ angular.module('app').controller('CubeInAdminCtrl', function ($scope, $mdDialog)
     $scope.activeMenu = $scope.menuItems[0];
 
 
+    $scope.yearTitle = 2016;
+
+
     $scope.dataTable = $scope.data["2016"];
 
 
@@ -137,10 +140,23 @@ angular.module('app').controller('CubeInAdminCtrl', function ($scope, $mdDialog)
 $scope.selectDate = function (date) {
     $scope.activeMenu = date;
 
+    $scope.yearTitle = date;
 
-    $scope.dataTable = $scope.data[date];
 
 
+    if (date === "2016") {
+
+        $("#table2016").css("visibility", "visible");
+        $("#table2017").css("visibility", "collapse");
+
+    } else if (date === "2017") {
+
+
+        $("#table2016").css("visibility", "collapse");
+        $("#table2017").css("visibility", "visible");
+
+
+    }
 
 
 

@@ -4,10 +4,10 @@
 
 
 
-angular.module('app').controller('DohodPlanCtrl', function ($scope, $timeout) {
+angular.module('app').controller('IspolDohodPlanCtrl', function ($scope, $timeout) {
 
     var chartDohod = null;
-    $scope.menuItems = ['Всего доходов', 'Собственные', 'Целевые трансферты', 'Поступления от погашения', "Поступления от продажи", "Кредитование"];
+    $scope.menuItems = ['Всего доходов', 'Налоговые поступления', 'Неналоговые поступления', 'Поступления трансфертов', "Поступления от продажи основного капитала"];
 
 
 
@@ -45,7 +45,7 @@ angular.module('app').controller('DohodPlanCtrl', function ($scope, $timeout) {
 
             data: {
                 columns: [
-                    ['data1', 131082743, 148501009,	168354979, 241579338.2, 0, 0],
+                    ['data1', 122492190, 140303647,	222443562, 174370530, 57845601, 61717698],
 
                 ],
                 type: 'bar',
@@ -115,31 +115,25 @@ angular.module('app').controller('DohodPlanCtrl', function ($scope, $timeout) {
 
             chartDohod.load({
                 columns: [
-                    ['data1', 131082743, 148501009,	168354979, 241579338.2, 0, 0],
+                    ['data1', 122492190, 140303647,	222443562, 174370530, 57845601, 61717698],
 
                 ]
             });
 
 
 
-        } else if (param === "Собственные") {
+        } else if (param === "Налоговые поступления") {
 
 
             chartDohod.load({
                 columns: [
-                    ['data1', 133860879, 152490584,	174211929, 248286306, 205349433, 215730358],
-
-                ]
-            });
-
-
-
-
-        } else if (param === "Целевые трансферты") {
-
-            chartDohod.load({
-                columns: [
-                    ['data1', 2278546, 2345675,	3021438, 4636349, 0, 0],
+                    ['data1', 52867580
+                        , 59112695
+                        ,	168354979
+                        , 56551304
+                        , 57546988
+                        , 61404155
+                    ],
 
                 ]
             });
@@ -147,25 +141,17 @@ angular.module('app').controller('DohodPlanCtrl', function ($scope, $timeout) {
 
 
 
-
-        }else if (param === "Поступления от погашения") {
-
-            chartDohod.load({
-                columns: [
-                    ['data1', 499590, 1643899,	2835512, 2070619, 0, 0],
-
-                ]
-            });
-
-
-
-
-
-        }else if (param === "Поступления от продажи") {
+        } else if (param === "Неналоговые поступления") {
 
             chartDohod.load({
                 columns: [
-                    ['data1', 39971670.789, 23422008, 48231633, 27357955, 0, 0],
+                    ['data1', 608019
+                        , 1944570
+                        ,	3021438
+                        , 2614197
+                        , 298612
+                        , 313543
+                    ],
 
                 ]
             });
@@ -174,11 +160,30 @@ angular.module('app').controller('DohodPlanCtrl', function ($scope, $timeout) {
 
 
 
-        }else if (param === "Кредитование") {
+        }else if (param === "Поступления трансфертов") {
 
             chartDohod.load({
                 columns: [
-                    ['data1', 39971670.7007, 23422008,	48231633, 27357955, 0, 0],
+                    ['data1', 69016591
+                        , 79242641
+                        ,	48231633
+                        , 115205004
+                        , 0, 0],
+
+                ]
+            });
+
+
+
+
+
+        }else if (param === "Поступления от продажи основного капитала") {
+
+            chartDohod.load({
+                columns: [
+                    ['data1', 0, 3741
+                        , 2835512
+                        , 25, 0, 0],
 
                 ]
             });
@@ -188,7 +193,6 @@ angular.module('app').controller('DohodPlanCtrl', function ($scope, $timeout) {
 
 
         }
-
 
     };
 

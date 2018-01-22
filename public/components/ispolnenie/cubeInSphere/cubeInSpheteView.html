@@ -1,4 +1,4 @@
-<div class="row" ng-controller="CubeInSpheteCtrl">
+<div class="row" ng-controller="IspolCubeInSphereCtrl">
     <div class="col-md-12">
         <md-content layout="column" flex class="custom__md-content__categ">
 
@@ -50,6 +50,15 @@
                             <table class="tg table-striped">
 
 
+                                <tr>
+                                    <td class="tg-hgcj">Наименование</td>
+                                    <td class="tg-hgcj">Индикатор</td>
+                                    <td class="tg-hgcj">План на {{yearTitle}}</td>
+                                    <td class="tg-hgcj">Освоение на 1 ноября {{yearTitle}} года</td>
+                                    <td class="tg-hgcj">% исполнения</td>
+                                </tr>
+
+
                                 <tr ng-repeat="x in dataTable">
                                     <td class="tg-lqy6">{{x.name}}</td>
                                     <td class="tg-lqy8">
@@ -61,6 +70,8 @@
                                     </td>
 
                                     <td class="tg-0ord">{{x.value | ruFormat2}}</td>
+                                    <td class="tg-0ord">{{x.val2 | ruFormat2}}</td>
+                                    <td class="tg-0ord">{{x.val3 | ruFormat2}}</td>
                                 </tr>
 
                             </table>

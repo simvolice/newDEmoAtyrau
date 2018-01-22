@@ -135,6 +135,54 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
       })
 
+      .state('ispoldohodplan', {
+          url: '/ispoldohodplan',
+          templateUrl: 'components/ispolnenie/dohodPlan/dohodPlanView.html',
+
+
+      })
+
+      .state('ispolrashodplanctrl', {
+          url: '/ispolrashodplanctrl',
+          templateUrl: 'components/ispolnenie/rashodplan/rashodplanView.html',
+
+
+      })
+
+
+
+      .state('ispolcubeinprogrammctrl', {
+          url: '/ispolcubeinprogrammctrl',
+          templateUrl: 'components/ispolnenie/cubeInProgramm/cubeInProgrammView.html',
+
+
+      })
+
+
+      .state('ispolcubeinadminctrl', {
+          url: '/ispolcubeinadminctrl',
+          templateUrl: 'components/ispolnenie/cubeInAdmin/cubeInAdminView.html',
+
+
+      })
+
+      .state('ispolcubeinspherectrl', {
+          url: '/ispolcubeinspherectrl',
+          templateUrl: 'components/ispolnenie/cubeInSphere/cubeInSpheteView.html',
+
+
+      })
+
+
+      .state('ispolcubeintownctrl', {
+          url: '/ispolcubeintownctrl',
+          templateUrl: 'components/ispolnenie/cubeInTown/cubeInTownView.html',
+
+
+      })
+
+
+
 
 
 
