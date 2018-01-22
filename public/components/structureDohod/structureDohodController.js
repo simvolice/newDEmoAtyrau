@@ -590,7 +590,9 @@ angular.module('app').controller('structuDohod', function ($scope, $timeout) {
 
 
 
-
+$scope.plusRow = function (event) {
+  console.log(event);
+};
 
 
 
