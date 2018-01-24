@@ -180,6 +180,12 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
 
       })
+      .state('socvrpctrl', {
+          url: '/socvrpctrl',
+          templateUrl: 'components/socVRP/socVRPView.html',
+
+
+      })
 
 
 
