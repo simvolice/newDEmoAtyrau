@@ -123,10 +123,10 @@
 					<ul class="nav navbar-nav navbar-right">
 
 
-						<li>
+						<li style="visibility: collapse">
 
 							<label for="colorheader">Выбрать цвет для заголовка</label>
-							<input id="colorheader" type="color" style="margin-top: 10px" ng-model="colorheader" ng-change="getColor()">
+							<input id="colorheader" type="color" style="margin-top: 10px;" ng-model="colorheader" ng-change="getColor()">
 						</li>
 
 
@@ -206,7 +206,7 @@
 					<ul class="drawer-dropdown-menu">
 
 						<li><a class="drawer-dropdown-menu-item" ui-sref="socvrpctrl">Валовый региональный продукт</a></li>
-						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Промышленность</a></li>
+						<li><a class="drawer-dropdown-menu-item" ui-sref="socpromctrl">Промышленность</a></li>
 						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Инвестиции</a></li>
 						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Сельское хозяйство</a></li>
 						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Предпринимательство</a></li>
@@ -296,8 +296,8 @@
 
 
 
-					<label for="colorsidebar" style="color: grey">Выбрать цвет для Фона</label>
-			<input id="colorsidebar" type="color" style="margin-top: 10px" ng-model="colorsidebar" ng-change="getColorSideBar()">
+					<label for="colorsidebar" style="color: grey; visibility: collapse">Выбрать цвет для Фона</label>
+			<input id="colorsidebar" type="color" style="margin-top: 10px; visibility: collapse" ng-model="colorsidebar" ng-change="getColorSideBar()">
 
 
 
@@ -598,6 +598,10 @@
 
 	<script src="components/socVRP/socVRPController.js"></script>
 	<script src="components/socVRP/socVRPService.js"></script>
+
+	<script src="components/socProm/socPromController.js"></script>
+	<script src="components/socProm/socPromService.js"></script>
+
 
 
 

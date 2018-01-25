@@ -9,7 +9,7 @@
                     <md-card id="card1" class="masonry__custom1" style="background-color: #0098AB; color: white; text-transform: uppercase">
 
 
-                        <input type="color" style="margin-bottom: -20px" ng-model="colorbodyForCard" ng-change="getColorCard('#card1')">
+                        <input type="color" style="margin-bottom: -20px; visibility: collapse" ng-model="colorbodyForCard" ng-change="getColorCard('#card1')">
 
 
                         <img src="assets/img/mainIcon/monitor.svg" alt="Washed Out">
@@ -29,7 +29,7 @@
 
                     <md-card id="card2" class="masonry__custom2" style="background-color: #603BBC; color: white; text-transform: uppercase">
 
-                        <input type="color" style="margin-bottom: -15px" ng-model="colorbodyForCard" ng-change="getColorCard('#card2')">
+                        <input type="color" style="margin-bottom: -15px; visibility: collapse" ng-model="colorbodyForCard" ng-change="getColorCard('#card2')">
 
                         <img src="assets/img/mainIcon/budget.svg" alt="Washed Out">
                         <md-card-title>
@@ -44,7 +44,7 @@
 
                     <md-card id="card3" class="masonry__custom2" style="background-color: #2877EE; color: white; text-transform: uppercase">
 
-                        <input type="color" style="margin-bottom: -15px"  ng-model="colorbodyForCard" ng-change="getColorCard('#card3')">
+                        <input type="color" style="margin-bottom: -15px; visibility: collapse"  ng-model="colorbodyForCard" ng-change="getColorCard('#card3')">
 
 
                         <img src="assets/img/mainIcon/university-with-a-flag.svg" alt="Washed Out">
@@ -62,7 +62,7 @@
                 <div class="col-md-3">
                     <md-card id="card4" class="masonry__custom1" style="background-color: #008F01; color: white; text-transform: uppercase">
 
-                        <input type="color" style="margin-bottom: -20px" ng-model="colorbodyForCard" ng-change="getColorCard('#card4')">
+                        <input type="color" style="margin-bottom: -20px; visibility: collapse" ng-model="colorbodyForCard" ng-change="getColorCard('#card4')">
 
 
                         <img src="assets/img/mainIcon/brainstorm.svg" alt="Washed Out">
@@ -80,7 +80,7 @@
 
                 <div class="col-md-3">
                     <md-card id="card5" class="masonry__custom1" style="background-color: #DA542E; color: white;">
-                        <input type="color" style="margin-bottom: -20px" ng-model="colorbodyForCard" ng-change="getColorCard('#card5')">
+                        <input type="color" style="margin-bottom: -20px; visibility: collapse" ng-model="colorbodyForCard" ng-change="getColorCard('#card5')">
 
 
                         <img src="assets/img/mainIcon/file.svg" alt="Washed Out">
@@ -102,7 +102,7 @@
                     <md-card id="card6" class="masonry__custom3" style="background-color: #8E2800; color: white; text-transform: uppercase">
                         <!--<img src="assets/img/mainIcon/kazakhstani-tenge.svg" alt="Washed Out">-->
 
-                        <input type="color" style="margin-bottom: -15px" ng-model="colorbodyForCard" ng-change="getColorCard('#card6')">
+                        <input type="color" style="margin-bottom: -15px; visibility: collapse" ng-model="colorbodyForCard" ng-change="getColorCard('#card6')">
 
 
 
@@ -120,7 +120,7 @@
 
 
 
-            <div class="row" >
+            <div class="row" style="visibility: collapse">
                 <div class="col-md-12">
                     <label for="colorheader" style="color: white">Выбрать цвет для Фона</label>
                     <input id="colorheader" type="color" style="margin-top: 10px" ng-model="colorbody" ng-change="getColorBody()">

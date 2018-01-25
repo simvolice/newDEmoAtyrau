@@ -829,7 +829,7 @@ table.md-table:not(.md-row-select) td.md-cell:nth-child(n+2):nth-last-child(n+2)
 .custom__label__date > span {
 
     cursor: pointer;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 
@@ -944,4 +944,10 @@ polyline{
 
 table .collapse.in {
     display:table-row;
+}
+
+.brd__left {
+
+    border-left: 1px solid #d9d9d9;
+
 }

@@ -187,6 +187,12 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
       })
 
+      .state('socpromctrl', {
+          url: '/socpromctrl',
+          templateUrl: 'components/socProm/socPromView.html',
+
+
+      })
 
 
 
