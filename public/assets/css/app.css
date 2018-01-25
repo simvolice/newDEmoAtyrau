@@ -692,14 +692,29 @@ table.md-table:not(.md-row-select) td.md-cell:nth-child(n+2):nth-last-child(n+2)
 
 .masonry__custom1 {
 
-    width: 250px;
-    height: 350px;
+    background-color: #eef1ea;
+    text-transform: uppercase;
+
+
+    border: 5px solid transparent;
+
+
+
+
+    border-image: linear-gradient(to bottom right, #00DFFC 0%, #3a4ed5 100%);
+
+    border-image-slice: 1;
+
+
 }
 
 
 .masonry__custom1 > img {
-    height: 100px;
+    height: 40px;
     margin-top: 20px;
+
+
+
 }
 
 
@@ -949,5 +964,15 @@ table .collapse.in {
 .brd__left {
 
     border-left: 1px solid #d9d9d9;
+
+}
+
+.custom__title__card {
+
+    font-size: 15px;
+    font-family: "Roboto Black", "Helvetica", "Arial", sans-serif;
+
+
+
 
 }
