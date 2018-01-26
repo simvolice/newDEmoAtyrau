@@ -194,6 +194,12 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
       })
 
+      .state('socinvestctrl', {
+          url: '/socinvestctrl',
+          templateUrl: 'components/socInvest/socInvestView.html',
+
+
+      })
 
 
 

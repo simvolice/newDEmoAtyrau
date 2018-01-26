@@ -1,0 +1,304 @@
+<div class="row" ng-controller="SocInvestCtrl">
+    <div class="col-md-12">
+        <md-content layout="column" flex class="custom__md-content__categ">
+
+
+
+            <md-card>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="title text-center" style="text-transform: uppercase">Инвестиции</h3>
+
+                    </div>
+
+                </div>
+
+            </md-card>
+
+
+
+
+
+
+
+            <md-card>
+
+                <md-tabs md-dynamic-height md-border-bottom>
+
+
+
+                    <md-tab label="Инвестиции в основной капитал" ng-click="tabClk(1)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+                                <div class="col-md-5 text-left">
+
+
+
+                                    <md-button class="md-raised md-primary">
+                                        <md-icon class="material-icons">file_download</md-icon>
+
+                                        <a href="assets/doc/03-Инвестиции.docx" style="text-decoration: none; color: white">Аналитическая записка</a></md-button>
+
+                                </div>
+
+
+                                <div class="col-md-7 custom__label__date text-right">
+                                    <span class="label" ng-click="selectDate('2010')" ng-class="{bg__color__active__date : activeMenu === '2010'}">2010</span>
+                                    <span class="label" ng-click="selectDate('2011')" ng-class="{bg__color__active__date : activeMenu === '2011'}">2011</span>
+                                    <span class="label" ng-click="selectDate('2012')" ng-class="{bg__color__active__date : activeMenu === '2012'}">2012</span>
+                                    <span class="label" ng-click="selectDate('2013')" ng-class="{bg__color__active__date : activeMenu === '2013'}">2013</span>
+                                    <span class="label" ng-click="selectDate('2014')" ng-class="{bg__color__active__date : activeMenu === '2014'}">2014</span>
+                                    <span class="label" ng-click="selectDate('2015')" ng-class="{bg__color__active__date : activeMenu === '2015'}">2015</span>
+                                    <span class="label" ng-click="selectDate('2016')" ng-class="{bg__color__active__date : activeMenu === '2016'}">2016</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <hr style="background-color: #d9d9d9; width: 100%">
+
+
+                            <div class="row">
+
+                                <div class="col-md-9">
+
+                                    <div id="chart1"></div>
+                                </div>
+
+
+                                <div class="col-md-3" style="border: 2px solid #d9d9d9">
+
+
+                                    <h6 class="title">Инвестиции в основной капитал области на 1 полугодие, млрд.тенге</h6>
+
+                                    <div id="chart2"></div>
+
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+
+
+                    <md-tab label="ИФО инвестиции" ng-click="tabClk(2)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+                                <div class="col-md-12 custom__label__date text-right">
+                                    <span class="label" ng-click="selectDate2('2010')" ng-class="{bg__color__active__date : activeMenu2 === '2010'}">2010</span>
+                                    <span class="label" ng-click="selectDate2('2011')" ng-class="{bg__color__active__date : activeMenu2 === '2011'}">2011</span>
+                                    <span class="label" ng-click="selectDate2('2012')" ng-class="{bg__color__active__date : activeMenu2 === '2012'}">2012</span>
+                                    <span class="label" ng-click="selectDate2('2013')" ng-class="{bg__color__active__date : activeMenu2 === '2013'}">2013</span>
+                                    <span class="label" ng-click="selectDate2('2014')" ng-class="{bg__color__active__date : activeMenu2 === '2014'}">2014</span>
+                                    <span class="label" ng-click="selectDate2('2015')" ng-class="{bg__color__active__date : activeMenu2 === '2015'}">2015</span>
+                                    <span class="label" ng-click="selectDate2('2016')" ng-class="{bg__color__active__date : activeMenu2 === '2016'}">2016</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="row" style="margin-bottom: 30px">
+
+
+
+
+                                <div id="charttab2"></div>
+
+
+                            </div>
+
+
+
+
+                            <div class="row">
+
+                                <div class="col-md-6" style="border: 2px solid #d9d9d9">
+
+
+                                    <h6 class="title">ИФО инвестиции в основной капитал по годам</h6>
+
+                                    <div id="charttab21"></div>
+
+                                </div>
+
+                                <div class="col-md-6" style="border: 2px solid #d9d9d9">
+
+
+                                    <h6 class="title">ИФО области на 1 полугодие</h6>
+                                    <div id="charttab22"></div>
+
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+                    <md-tab label="Инвестиции внутренние и внешние" ng-click="tabClk(3)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+                                <div class="col-md-12 custom__label__date text-right">
+                                   <span class="label" ng-click="selectDate3('2015')" ng-class="{bg__color__active__date : activeMenu3 === '2015'}">2015</span>
+                                    <span class="label" ng-click="selectDate3('2016')" ng-class="{bg__color__active__date : activeMenu3 === '2016'}">2016</span>
+                                    <span class="label" ng-click="selectDate3('2017')" ng-class="{bg__color__active__date : activeMenu3 === '2017'}">2017</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <h6 class="title">Внутренние и внешние инвестиции, млрд.тенге</h6>
+
+                                    <div id="chartTab33"></div>
+                                </div>
+
+
+                                <div class="col-md-6">
+
+
+                                    <h6 class="title">Внутренние и внешние инвестиции, в %</h6>
+
+                                    <div id="chartTab313"></div>
+
+                                </div>
+
+                            </div>
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+                    <md-tab label="Инвестиции в промышленность" ng-click="tabClk(4)">
+                        <md-content class="md-padding" style="text-align: center">
+
+
+
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <div id="chartTab41"></div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+
+                                    <h6 class="title">Инвестиции по отраслям промышленности, млрд. тенге</h6>
+
+                                    <div id="chartTab42"></div>
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+
+
+                    <md-tab label="Инвестиции по видам промышленности" ng-click="tabClk(5)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <div id="chartTab51"></div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+
+                                    <h6 class="title">Объем горнодобывающей промышленности, млрд. тенге</h6>
+
+                                    <div id="chartTab52"></div>
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+                </md-tabs>
+
+
+
+
+            </md-card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </md-content>
+    </div>
+
+
+
+
+
+</div>
