@@ -201,6 +201,14 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
       })
 
+      .state('homepage2ctrl', {
+          url: '/homepage2ctrl',
+          templateUrl: 'components/main2/main2View.html',
+
+
+      })
+
+
 
 
 

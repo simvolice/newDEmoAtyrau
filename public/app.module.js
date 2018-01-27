@@ -148,6 +148,7 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
 
     $('.drawer').on('drawer.opened', function(){
 
+        $("#main2").css("margin-left", "0");
 
 
         $("#mainpanel").addClass("for__padding__sidebar");
@@ -176,6 +177,11 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
     });
 
     $('.drawer').on('drawer.closed', function(){
+
+
+
+        $("#main2").css("width", "1080px");
+        $("#main2").css("margin-left", "120px");
 
 
         $("#mainpanel").removeClass("for__padding__sidebar");

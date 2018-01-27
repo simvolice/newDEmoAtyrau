@@ -709,31 +709,141 @@ table.md-table:not(.md-row-select) td.md-cell:nth-child(n+2):nth-last-child(n+2)
 
 .masonry__custom2 {
 
-    width: 250px;
-    height: 171px;
+    background-color: #eef1ea;
+    text-transform: uppercase;
+
+
+    border: 5px solid transparent;
+
+
+
+
+    border-image: linear-gradient(to bottom right, #FE4365 0%, #3a4ed5 100%);
+
+    border-image-slice: 1;
+
+
 }
+
 
 
 .masonry__custom2 > img {
-    height: 50px;
-    margin-top: 5px;
+    height: 40px;
+    margin-top: 20px;
+
+
+
 }
 
 
-.masonry__custom3 {
-    width: 100%;
-    height: 90px;
+
+.masonry__custom4 {
+
+    background-color: #eef1ea;
+    text-transform: uppercase;
+
+
+    border: 5px solid transparent;
+
+
+
+
+    border-image: linear-gradient(to bottom right, #F9CDAD 0%, #3a4ed5 100%);
+
+    border-image-slice: 1;
+
+
 }
+
+
+.masonry__custom4 > img {
+    height: 40px;
+    margin-top: 20px;
+
+
+
+}
+
+
 
 .masonry__custom3 > img {
-    height: 70px;
-    width: 70px;
+    height: 40px;
+    margin-top: 20px;
+
+
 
 
 
 
 }
 
+.masonry__custom5 {
+
+    background-color: #eef1ea;
+    text-transform: uppercase;
+
+    border: 5px solid transparent;
+
+    border-image: linear-gradient(to bottom right, #FA6900 0%, #3a4ed5 100%);
+
+    border-image-slice: 1;
+
+}
+
+
+.masonry__custom5 > img {
+    height: 40px;
+    margin-top: 20px;
+
+
+
+}
+
+
+.masonry__custom6 {
+
+    background-color: #eef1ea;
+    text-transform: uppercase;
+
+    border: 5px solid transparent;
+
+    border-image: linear-gradient(to bottom right, #CFF09E 0%, #3a4ed5 100%);
+
+    border-image-slice: 1;
+
+}
+
+
+.masonry__custom6 > img {
+    height: 40px;
+    margin-top: 20px;
+
+
+
+}
+
+
+.masonry__custom7 {
+
+    background-color: #eef1ea;
+    text-transform: uppercase;
+
+    border: 5px solid transparent;
+
+    border-image: linear-gradient(to bottom right, #F9D423 0%, #3a4ed5 100%);
+
+    border-image-slice: 1;
+
+}
+
+
+.masonry__custom7 > img {
+    height: 40px;
+    margin-top: 20px;
+
+
+
+}
 
 .custom__back_btn {
     font-size: 15px;
@@ -1001,5 +1111,110 @@ table .collapse.in {
 
 .comp__analys__panel > #digtext{
     margin-left: 70px;
+
+}
+
+.custom__title__card2 {
+
+    position: absolute;
+
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    padding-left: 30px;
+    padding-top: 45px;
+
+    line-height: 30px;
+
+
+
+}
+
+.custom__title__card4 {
+
+    position: absolute;
+
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    padding-left: 18px;
+    padding-top: 30px;
+
+    line-height: 30px;
+
+
+
+}
+
+
+.block__for__mask {
+
+    position: absolute;
+
+    background-color: yellow;
+
+
+    height: 150px;
+    width: 278px;
+
+    opacity: 0.4;
+
+    z-index: 600;
+}
+
+
+.custom__title__card3 {
+
+    position: absolute;
+
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    padding-left: 30px;
+    padding-top: 30px;
+
+    color: white;
+    line-height: 30px;
+    z-index: 700;
+
+
+
+}
+
+.block__for__mask2 {
+
+    position: relative;
+
+    background-color: blue;
+    opacity: 0.4;
+
+
+    height: 150px;
+    width: 278px;
+    z-index: 600;
+
+
+
+}
+
+.block__for__mask3 {
+
+    position: relative;
+
+    background-color: green;
+    opacity: 0.4;
+
+
+    height: 150px;
+    width: 278px;
+    z-index: 600;
+
+
 
 }
