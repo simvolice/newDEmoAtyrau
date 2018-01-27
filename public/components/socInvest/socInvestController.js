@@ -206,6 +206,16 @@ angular.module('app').controller('SocInvestCtrl', function ($scope, $timeout, $m
     }, 50);
 
 
+    $timeout(function () {
+
+
+        $("#clk2010invest").click();
+
+
+    }, 750);
+
+
+
 
 
 
