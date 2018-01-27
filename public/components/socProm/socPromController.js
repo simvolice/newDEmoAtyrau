@@ -266,7 +266,7 @@ angular.module('app').controller('SocPromCtrl', function ($scope, $timeout, $mdD
 
 
 
-    }, 50);
+    }, 350);
 
 
 
@@ -995,6 +995,13 @@ angular.module('app').controller('SocPromCtrl', function ($scope, $timeout, $mdD
             });
 
 
+            $timeout(function () {
+
+
+                $("#clk2010promtab3").click();
+
+
+            }, 750);
 
 
 
@@ -2472,7 +2479,7 @@ $scope.showDialog = function (id, title, ev) {
         $timeout(function () {
 
 
-            $("#clk2010").click();
+            $("#clk2010diag2").click();
 
 
 
@@ -3589,7 +3596,7 @@ $scope.showDialog = function (id, title, ev) {
         $timeout(function () {
 
 
-            $("#clk2010").click();
+            $("#clk2010diag").click();
 
 
 

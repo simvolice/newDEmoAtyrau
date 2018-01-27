@@ -158,6 +158,21 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
         $("#chartstructure").css("left", "5%");
 
 
+
+
+        $timeout(function () {
+            $("#structurerashod").addClass("open");
+            $("#structurerashod > a").attr("aria-expanded", true);
+
+
+            $("#ispolstructurerashod").addClass("open");
+            $("#ispolstructurerashod > a").attr("aria-expanded", true);
+
+
+
+        }, 50);
+
+
     });
 
     $('.drawer').on('drawer.closed', function(){
@@ -206,10 +221,54 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
 
 
 
+
+    $(".noexpandesidebar").on("click", function () {
+
+
+        $timeout(function () {
+            $("#structurerashod").addClass("open");
+            $("#structurerashod > a").attr("aria-expanded", true);
+
+
+            $("#ispolstructurerashod").addClass("open");
+            $("#ispolstructurerashod > a").attr("aria-expanded", true);
+
+            $("#sar").addClass("open");
+            $("#sar > a").attr("aria-expanded", true);
+
+
+        }, 50);
+
+
+
+
+
+    });
+
+
+
+
+
+
 $("#budget").on("click", function () {
 
 
    $("#budgetsidebar").css("display", "block");
+
+
+
+
+
+   $timeout(function () {
+       $("#structurerashod").addClass("open");
+       $("#structurerashod > a").attr("aria-expanded", true);
+
+   }, 50);
+
+
+
+
+
 
 
 });
@@ -220,6 +279,14 @@ $("#budget").on("click", function () {
 
 
         $("#executionsidebar").css("display", "block");
+
+
+
+        $timeout(function () {
+            $("#ispolstructurerashod").addClass("open");
+            $("#ispolstructurerashod > a").attr("aria-expanded", true);
+
+        }, 50);
 
 
     });

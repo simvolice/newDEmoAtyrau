@@ -47,7 +47,7 @@
 
 
                                 <div class="col-md-7 custom__label__date text-right">
-                                    <span class="label" ng-click="selectDate('2010')" ng-class="{bg__color__active__date : activeMenu === '2010'}">2010</span>
+                                    <span id="clk2010vrp" class="label" ng-click="selectDate('2010')" ng-class="{bg__color__active__date : activeMenu === '2010'}">2010</span>
                                     <span class="label" ng-click="selectDate('2011')" ng-class="{bg__color__active__date : activeMenu === '2011'}">2011</span>
                                     <span class="label" ng-click="selectDate('2012')" ng-class="{bg__color__active__date : activeMenu === '2012'}">2012</span>
                                     <span class="label" ng-click="selectDate('2013')" ng-class="{bg__color__active__date : activeMenu === '2013'}">2013</span>
@@ -158,7 +158,7 @@
 
                             <div class="row" style="margin-bottom: 20px">
                                 <div class="col-md-12 custom__label__date text-right">
-                                    <span class="label" ng-click="selectDate3('2010')" ng-class="{bg__color__active__date : activeMenu3 === '2010'}">2010</span>
+                                    <span id="clk2010vrp3tab" class="label" ng-click="selectDate3('2010')" ng-class="{bg__color__active__date : activeMenu3 === '2010'}">2010</span>
                                     <span class="label" ng-click="selectDate3('2011')" ng-class="{bg__color__active__date : activeMenu3 === '2011'}">2011</span>
                                     <span class="label" ng-click="selectDate3('2012')" ng-class="{bg__color__active__date : activeMenu3 === '2012'}">2012</span>
                                     <span class="label" ng-click="selectDate3('2013')" ng-class="{bg__color__active__date : activeMenu3 === '2013'}">2013</span>
@@ -213,21 +213,21 @@
                     <div class="col-md-12 text-center">
 
                         <md-button class="md-raised md-primary" ng-click="showDialog(1, 'Структура промышленности', $event)">Структура промышленности</md-button>
-                        <md-button class="md-raised md-primary" ng-click="showDialog(2, 'Оптовая и розничная торговля', $event)">Оптовая и розничная торговля</md-button>
-                        <md-button class="md-raised md-primary" ng-click="showDialog(3, 'Информация и связь', $event)">Информация и связь</md-button>
-                        <md-button class="md-raised md-primary" ng-click="showDialog(4, 'Профессиональная, научная деятельность', $event)">Профессиональная, научная деятельность</md-button>
-                        <md-button class="md-raised md-primary" ng-click="showDialog(5, 'Образование', $event)">Образование</md-button>
-                        <md-button class="md-raised md-primary" ng-click="showDialog(6, 'Строительство', $event)">Строительство</md-button>
-                        <md-button class="md-raised md-primary" ng-click="showDialog(7, 'Транспорт и складирование', $event)">Транспорт и складирование</md-button>
-                        <md-button class="md-raised md-primary" ng-click="showDialog(8, 'Финансовая и страховая деятельность', $event)">Финансовая и страховая деятельность</md-button>
-                        <md-button class="md-raised md-primary" ng-click="showDialog(9, 'Деятельность в области административного обслуживания', $event)">Деятельность в области административного обслуживания</md-button>
-                        <md-button class="md-raised md-primary" ng-click="showDialog(10, 'Здравохранение и социальные услуги', $event)">Здравохранение и социальные услуги</md-button>
-                        <md-button class="md-raised md-primary" ng-click="showDialog(11, 'Сельское хозяйство', $event)">Сельское хозяйство</md-button>
-                        <md-button class="md-raised md-primary" ng-click="showDialog(12, 'Услуги по проживанию и питанию', $event)">Услуги по проживанию и питанию</md-button>
-                        <md-button class="md-raised md-primary" ng-click="showDialog(13, 'Операции с недвижимым имуществом', $event)">Операции с недвижимым имуществом</md-button>
-                        <md-button class="md-raised md-primary" ng-click="showDialog(14, 'Государственное управление и оборона', $event)">Государственное управление и оборона</md-button>
-                        <md-button class="md-raised md-primary" ng-click="showDialog(15, 'Искусство развления и отдых', $event)">Искусство развления и отдых</md-button>
-                        <md-button class="md-raised md-primary" ng-click="showDialog(16, 'Прочие услуги', $event)">Прочие услуги</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(2, 'Оптовая и розничная торговля, млрд. тенге', $event)">Оптовая и розничная торговля</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(3, 'Информация и связь, млрд. тенге', $event)">Информация и связь</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(4, 'Профессиональная, научная деятельность, млрд. тенге', $event)">Профессиональная, научная деятельность</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(5, 'Образование, млрд. тенге', $event)">Образование</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(6, 'Строительство, млрд. тенге', $event)">Строительство</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(7, 'Транспорт и складирование, млрд. тенге', $event)">Транспорт и складирование</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(8, 'Финансовая и страховая деятельность, млрд. тенге', $event)">Финансовая и страховая деятельность</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(9, 'Деятельность в области административного обслуживания, млрд. тенге', $event)">Деятельность в области административного обслуживания</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(10, 'Здравохранение и социальные услуги, млрд. тенге', $event)">Здравохранение и социальные услуги</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(11, 'Сельское хозяйство, млрд. тенге', $event)">Сельское хозяйство</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(12, 'Услуги по проживанию и питанию, млрд. тенге', $event)">Услуги по проживанию и питанию</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(13, 'Операции с недвижимым имуществом, млрд. тенге', $event)">Операции с недвижимым имуществом</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(14, 'Государственное управление и оборона, млрд. тенге', $event)">Государственное управление и оборона</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(15, 'Искусство развления и отдых, млрд. тенге', $event)">Искусство развления и отдых</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(16, 'Прочие услуги, млрд. тенге', $event)">Прочие услуги</md-button>
 
 
                     </div>

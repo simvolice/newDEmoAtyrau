@@ -584,40 +584,29 @@ ul:not(.browser-default) > li {
 
 
 .title__sidebar {
-    position: absolute;
+
+
     margin-bottom: 0;
-    color: white;
-    z-index: 500;
-    left: 13%;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    text-transform: uppercase;
+
+
     font-size: 13px;
     font-weight: 500;
 }
 
 .digit__sidebar {
-    position: absolute;
+
     margin-bottom: 0;
     color: white;
-    z-index: 500;
-    top: 8%;
-    left: 35%;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    text-transform: uppercase;
+
+
 
     font-weight: 500;
 }
 
 .sub__text__sidebar {
-    width: 100px;
-    position: absolute;
-    margin-bottom: 0;
-    color: white;
-    z-index: 500;
-    top: 15%;
-    left: 35%;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    text-transform: uppercase;
+
+
+    width: 80px;
     font-size: 10px;
     word-wrap: break-word;
     line-height: 10px;
@@ -973,6 +962,44 @@ table .collapse.in {
     font-family: "Roboto Black", "Helvetica", "Arial", sans-serif;
 
 
+}
 
+
+#custom__progress__liner > .md-container {
+    background-color: transparent;
+}
+
+.custom__progress__liner > .md-container{
+    background-color: transparent;
+}
+
+.comp__analys__panel {
+    position: absolute;
+    top: 0;
+    left: 5%;
+
+    height: 150px;
+    width: 200px;
+
+    z-index: 500;
+
+    color: white;
+
+
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    text-transform: uppercase;
+
+
+}
+
+
+.comp__analys__panel > #digit{
+    margin-top: 20px;
+    margin-left: 70px;
+
+}
+
+.comp__analys__panel > #digtext{
+    margin-left: 70px;
 
 }

@@ -207,13 +207,23 @@ angular.module('app').controller('SocVRPCtrl', function ($scope, $timeout, $mdDi
 
 
 
-    }, 50);
+    }, 250);
+
+
+    $timeout(function () {
+
+
+        $("#clk2010vrp").click();
+
+
+    }, 750);
 
 
 
 
 
     $scope.selectDate = function (param) {
+
 
         $scope.activeMenu = param;
 
@@ -826,6 +836,16 @@ angular.module('app').controller('SocVRPCtrl', function ($scope, $timeout, $mdDi
                 },
 
             });
+
+
+            $timeout(function () {
+
+
+                $("#clk2010vrp3tab").click();
+
+
+            }, 750);
+
 
 
 
