@@ -125,6 +125,13 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
             $("#mainsidebar").css("background", "#121212");
             $(".drawer-menu-item").css("color", "#fff");
 
+            $(".drawer-menu-item:hover").css("background-color", "#26d560");
+
+
+
+
+            $("#sw").css("color", "#fff");
+
 
             $("#budgetsidebar").css("background", "#121212");
             $("#executionsidebar").css("background", "#121212");
@@ -144,7 +151,10 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
             $("#executionsidebar").css("background", "#fff");
             $(".drawer-menu-item").css("color", "#222");
 
-//TODO надо доделать остальные селекторы
+            $(".drawer-menu-item:hover").css("background", "#f2f2f2");
+
+            $("#sw").css("color", "#222");
+
 
             $("html").css("background", "#CCC");
             $("body").css("background", "#CCC");
