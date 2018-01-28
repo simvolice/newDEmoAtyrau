@@ -209,6 +209,12 @@ app.config(function($stateProvider, $urlRouterProvider) {
       })
 
 
+      .state('soctransportctrl', {
+          url: '/soctransportctrl',
+          templateUrl: 'components/socTransport/socTransportView.html',
+
+
+      })
 
 
 

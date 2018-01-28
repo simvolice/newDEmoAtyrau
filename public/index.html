@@ -50,6 +50,7 @@
     <link href="assets/css/billboard.css" rel="stylesheet"/>
 
 	<link rel="stylesheet" href="assets/css/drawer.min.css">
+	<link rel="stylesheet" href="assets/css/leaflet.css">
 
 
 	<link rel="stylesheet" href="assets/css/print.css" type="text/css" media="print">
@@ -221,7 +222,7 @@
 						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Архитектура и строительство</a></li>
 						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Бюджет</a></li>
 						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">ЖКХ И ЭНЕРГЕТИКА</a></li>
-						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Транспорт</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" ui-sref="soctransportctrl">Транспорт</a></li>
 						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Координация занятости и социальная защита</a></li>
 						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Здравоохранение</a></li>
 						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Образование</a></li>
@@ -279,7 +280,8 @@
 
 				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown">Мониторинг государственных программ</a></li>
 
-				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" ui-sref="homepage2ctrl">Второй вариант главной</a></li>
+				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" ui-sref="homepage2ctrl"><strong>Второй
+					вариант главной</strong></a></li>
 
 
 
@@ -483,6 +485,7 @@
 <script src="assets/js/d3.v4.min.js"></script>
 <script src="assets/js/billboard.min.js"></script>
 <script src="assets/js/d3-textwrap.min.js"></script>
+<script src="assets/js/leaflet.js"></script>
 
 
 
@@ -614,6 +617,11 @@
 
 	<script src="components/main2/main2Controller.js"></script>
 	<script src="components/main2/main2Service.js"></script>
+
+	<script src="components/socTransport/socTransportController.js"></script>
+	<script src="components/socTransport/socTransportService.js"></script>
+
+
 
 
 
