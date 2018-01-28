@@ -114,6 +114,43 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
 
 
 
+    $scope.cb1 = false;
+
+    $scope.onChange = function(cbState) {
+        if (cbState === true) {
+
+            $("#mainnavbar").css("background", "#121212");
+
+
+            $("#mainsidebar").css("background", "#121212");
+            $(".drawer-menu-item").css("color", "#fff");
+
+
+            $("#budgetsidebar").css("background", "#121212");
+            $("#executionsidebar").css("background", "#121212");
+
+
+            $("html").css("background", "#181818");
+            $("body").css("background", "#181818");
+
+        } else {
+
+
+            $("#mainnavbar").css("background", "#3f51b5");
+
+
+            $("#mainsidebar").css("background", "#fff");
+            $("#budgetsidebar").css("background", "#fff");
+            $("#executionsidebar").css("background", "#fff");
+            $(".drawer-menu-item").css("color", "#222");
+
+//TODO надо доделать остальные селекторы
+
+            $("html").css("background", "#CCC");
+            $("body").css("background", "#CCC");
+
+        }
+    };
 
 
 
