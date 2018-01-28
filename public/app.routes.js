@@ -185,6 +185,24 @@ app.config(function($stateProvider, $urlRouterProvider) {
           templateUrl: 'components/socVRP/socVRPView.html',
 
 
+
+      .state('socSportCtrl', {
+          url: '/socsportctrl',
+          templateUrl: 'components/socSport/socSportView.html',
+
+      })
+
+      .state('socVeterCtrl', {
+          url: '/socveterctrl',
+          templateUrl: 'components/socVeter/socVeterView.html',
+
+      })
+
+
+      .state('socReligionCtrl', {
+          url: '/socreligionctrl',
+          templateUrl: 'components/socReligion/socReligionView.html',
+
       })
 
       .state('socpromctrl', {
@@ -197,6 +215,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
       .state('socinvestctrl', {
           url: '/socinvestctrl',
           templateUrl: 'components/socInvest/socInvestView.html',
+
 
 
       })
@@ -216,8 +235,29 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
       })
 
+      .state('socCultureCtrlsocTradeCtrl', {
+          url: '/socculturectrl',
+          templateUrl: 'components/socCulture/socCultureView.html'
+
+      })
+
+      .state('socYouthCtrl', {
+          url: '/socyouthctrl',
+          templateUrl: 'components/socYouth/socYouthView.html'
+
+      })
 
 
+      .state('socTradeCtrl', {
+          url: '/soctradectrl',
+          templateUrl: 'components/socTrade/socTradeView.html'
+
+      })
 
 
+      .state('socAgricultureCtrl', {
+          url: '/socagriculturectrl',
+          templateUrl: 'components/socAgriculture/socAgricultureView.html'
+
+      })
 });
