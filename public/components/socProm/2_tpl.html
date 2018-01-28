@@ -1,0 +1,300 @@
+<md-dialog class="fullscreen-dialog" aria-label="Создать мероприятие">
+
+
+
+
+
+
+
+    <md-toolbar class="md-toolbar-tools">
+
+        <h2>{{title}}</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="closeDialog()">
+            <i class="material-icons">close</i>
+        </md-button>
+
+    </md-toolbar>
+
+
+    <md-dialog-content>
+        <div class="md-dialog-content">
+
+
+            <md-card>
+
+
+                <md-tabs md-dynamic-height md-border-bottom>
+                    <md-tab label="Объем обрабатывающей промышленности" ng-click="tabClk(1)">
+
+
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+
+
+
+                                <div class="col-md-12 custom__label__date text-right">
+                                    <span id="clk2010diag2" class="label" ng-click="selectDate('2010')" ng-class="{bg__color__active__date : activeMenu === '2010'}">2010</span>
+                                    <span class="label" ng-click="selectDate('2011')" ng-class="{bg__color__active__date : activeMenu === '2011'}">2011</span>
+                                    <span class="label" ng-click="selectDate('2012')" ng-class="{bg__color__active__date : activeMenu === '2012'}">2012</span>
+                                    <span class="label" ng-click="selectDate('2013')" ng-class="{bg__color__active__date : activeMenu === '2013'}">2013</span>
+                                    <span class="label" ng-click="selectDate('2014')" ng-class="{bg__color__active__date : activeMenu === '2014'}">2014</span>
+                                    <span class="label" ng-click="selectDate('2015')" ng-class="{bg__color__active__date : activeMenu === '2015'}">2015</span>
+                                    <span class="label" ng-click="selectDate('2016')" ng-class="{bg__color__active__date : activeMenu === '2016'}">2016</span>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="row">
+
+                                <div class="col-md-8">
+
+                                    <div id="chartdialog1"></div>
+                                </div>
+
+
+                                <div class="col-md-4" style="border: 2px solid #d9d9d9">
+
+
+                                    <h6 class="title">Объем обрабатывающей продукции на 1 полугодие, млрд.тенге</h6>
+
+                                    <div id="chartdialog2" style="margin-left: 70px"></div>
+
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+                        </md-content>
+
+
+
+
+
+                    </md-tab>
+
+
+
+
+                    <md-tab label="ИФО обрабатывающей промышленности" ng-click="tabClk(2)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+                                <div class="col-md-12 custom__label__date text-right">
+                                    <span class="label" ng-click="selectDate2('2010')" ng-class="{bg__color__active__date : activeMenu2 === '2010'}">2010</span>
+                                    <span class="label" ng-click="selectDate2('2011')" ng-class="{bg__color__active__date : activeMenu2 === '2011'}">2011</span>
+                                    <span class="label" ng-click="selectDate2('2012')" ng-class="{bg__color__active__date : activeMenu2 === '2012'}">2012</span>
+                                    <span class="label" ng-click="selectDate2('2013')" ng-class="{bg__color__active__date : activeMenu2 === '2013'}">2013</span>
+                                    <span class="label" ng-click="selectDate2('2014')" ng-class="{bg__color__active__date : activeMenu2 === '2014'}">2014</span>
+                                    <span class="label" ng-click="selectDate2('2015')" ng-class="{bg__color__active__date : activeMenu2 === '2015'}">2015</span>
+                                    <span class="label" ng-click="selectDate2('2016')" ng-class="{bg__color__active__date : activeMenu2 === '2016'}">2016</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="row" style="margin-bottom: 30px">
+
+
+
+
+                                <div id="chartdialogtab2"></div>
+
+
+                            </div>
+
+
+
+
+                            <div class="row">
+
+                                <div class="col-md-6" style="border: 2px solid #d9d9d9">
+
+
+                                    <h6 class="title">ИФО области по годам</h6>
+
+                                    <div id="chartdialogtab21"></div>
+
+                                </div>
+
+                                <div class="col-md-6" style="border: 2px solid #d9d9d9">
+
+
+                                    <h6 class="title">ИФО области за 1 полугодие</h6>
+                                    <div id="chartdialogtab22"></div>
+
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+                </md-tabs>
+
+
+
+            </md-card>
+
+
+
+
+            <md-card>
+
+                <div class="row">
+
+
+
+
+
+                    <div class="col-md-8">
+                        <h4 class="title" style="text-transform: uppercase; margin-left: 10px">Структура обрабатывающей промышленности</h4>
+
+                        <div id="chartlistdialog"></div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+
+                        <md-list ng-cloak>
+
+
+                            <md-divider></md-divider>
+
+                            <md-list-item ng-click="getParam('Производство продуктов нефтепереработки, млн. тенге')" ng-class="{bg__color__active : activeMenuList === 'Производство продуктов нефтепереработки, млн. тенге'}">
+
+                                <p style="line-height: 20px">Производство продуктов нефтепереработки, млн. тенге</p>
+
+                            </md-list-item>
+
+
+                            <md-divider></md-divider>
+
+
+
+                            <md-list-item ng-click="getParam('Легкая промышленность, млн. тенге')" ng-class="{bg__color__active : activeMenuList === 'Легкая промышленность, млн. тенге'}">
+
+                                <p style="line-height: 20px">Легкая промышленность, млн. тенге</p>
+
+                            </md-list-item>
+                            <md-divider></md-divider>
+
+
+                            <md-list-item ng-click="getParam('Машиностроение, млн. тенге')" ng-class="{bg__color__active : activeMenuList === 'Машиностроение, млн. тенге'}">
+
+                                <p style="line-height: 20px">Машиностроение, млн. тенге</p>
+
+                            </md-list-item>
+                            <md-divider></md-divider>
+
+
+                            <md-list-item ng-click="getParam('Металлургия, млн. тенге')" ng-class="{bg__color__active : activeMenuList === 'Металлургия, млн. тенге'}">
+
+                                <p style="line-height: 20px">Металлургия, млн. тенге</p>
+
+                            </md-list-item>
+                            <md-divider></md-divider>
+
+
+                            <md-list-item ng-click="getParam('Химическая промышленность, млн. тенге')" ng-class="{bg__color__active : activeMenuList === 'Химическая промышленность, млн. тенге'}">
+
+                                <p style="line-height: 20px">Химическая промышленность, млн. тенге</p>
+
+                            </md-list-item>
+                            <md-divider></md-divider>
+
+
+
+                            <md-list-item ng-click="getParam('Производство резиновых и пластмассовых изделий, млн. тенге')" ng-class="{bg__color__active : activeMenuList === 'Производство резиновых и пластмассовых изделий, млн. тенге'}">
+
+                                <p style="line-height: 20px">Производство резиновых и пластмассовых изделий, млн. тенге</p>
+
+                            </md-list-item>
+                            <md-divider></md-divider>
+
+                            <md-list-item ng-click="getParam('Производство продуктов питания, млн. тенге')" ng-class="{bg__color__active : activeMenuList === 'Производство продуктов питания, млн. тенге'}">
+
+                                <p style="line-height: 20px">Производство продуктов питания, млн. тенге</p>
+
+                            </md-list-item>
+                            <md-divider></md-divider>
+
+
+
+                            <md-list-item ng-click="getParam('Производство прочей минеральной продукции, млн. тенге')" ng-class="{bg__color__active : activeMenuList === 'Производство прочей минеральной продукции, млн. тенге'}">
+
+                                <p style="line-height: 20px">Производство прочей минеральной продукции, млн. тенге</p>
+
+                            </md-list-item>
+                            <md-divider></md-divider>
+
+
+
+
+                        </md-list>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </md-card>
+
+
+
+
+
+
+        </div>
+    </md-dialog-content>
+
+
+
+
+    <md-dialog-actions layout="row">
+
+        <span flex></span>
+
+
+        <md-button class="md-raised md-primary" ng-click="closeDialog()">
+            Закрыть
+        </md-button>
+
+    </md-dialog-actions>
+
+
+
+</md-dialog>

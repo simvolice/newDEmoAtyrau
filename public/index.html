@@ -50,6 +50,7 @@
     <link href="assets/css/billboard.css" rel="stylesheet"/>
 
 	<link rel="stylesheet" href="assets/css/drawer.min.css">
+	<link rel="stylesheet" href="assets/css/leaflet.css">
 
 
 	<link rel="stylesheet" href="assets/css/print.css" type="text/css" media="print">
@@ -123,10 +124,10 @@
 					<ul class="nav navbar-nav navbar-right">
 
 
-						<li>
+						<li style="visibility: collapse">
 
 							<label for="colorheader">Выбрать цвет для заголовка</label>
-							<input id="colorheader" type="color" style="margin-top: 10px" ng-model="colorheader" ng-change="getColor()">
+							<input id="colorheader" type="color" style="margin-top: 10px;" ng-model="colorheader" ng-change="getColor()">
 						</li>
 
 
@@ -179,9 +180,15 @@
 
 
 
-					<h6 class="title__sidebar">оперативная аналитика</h6>
-					<h5 id="digit" class="digit__sidebar">500 000</h5>
-					<p id="digtext" class="sub__text__sidebar">Выделено из бюджета</p>
+
+					<div class="comp__analys__panel">
+
+						<h6 class="title__sidebar">оперативная аналитика</h6>
+						<h5 id="digit" class="digit__sidebar">500 000</h5>
+						<p id="digtext" class="sub__text__sidebar">Выделено из бюджета</p>
+
+
+					</div>
 
 					<img class="custom__sidebar__img" src="assets/img/indigo-pentagonal-background.png" alt="Фон" height="150" width="232">
 
@@ -200,31 +207,32 @@
 				</li>
 
 
-				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" role="button" aria-expanded="true">Социально-экономическое развитие<span class="drawer-caret"></span></a>
+				<li id="sar" class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" role="button" aria-expanded="false">Социально-экономическое развитие<span class="drawer-caret"></span></a>
 
 
 					<ul class="drawer-dropdown-menu">
 
-						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Валовый региональный продукт</a></li>
-						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Промышленность</a></li>
-						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Инвестиции</a></li>
-						<li><a class="drawer-dropdown-menu-item" ui-sref="socAgricultureCtrl">Сельское хозяйство</a></li>
-						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Предпринимательство</a></li>
-						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Инфляция</a></li>
-						<li><a class="drawer-dropdown-menu-item" ui-sref="socTradeCtrl">Торговля</a></li>
-						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Архитектура и строительство</a></li>
-						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Бюджет</a></li>
-						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">ЖКХ И ЭНЕРГЕТИКА</a></li>
-						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Транспорт</a></li>
-						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Координация занятости и социальная защита</a></li>
-						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Здравоохранение</a></li>
-						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Образование</a></li>
-						<li><a class="drawer-dropdown-menu-item" ui-sref="socYouthCtrl">Молодежная политика</a></li>
-						<li><a class="drawer-dropdown-menu-item" ui-sref="socCultureCtrl">Культура</a></li>
-						<li><a class="drawer-dropdown-menu-item" ui-sref="socReligionCtrl">Религия</a></li>
-						<li><a class="drawer-dropdown-menu-item" ui-sref="socVeterCtrl">Ветеринария</a></li>
-						<li><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Оперативные данные</a></li>
-						<li><a class="drawer-dropdown-menu-item" ui-sref="socSportCtrl">Спорт</a></li>
+
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" ui-sref="socvrpctrl">Валовый региональный продукт</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" ui-sref="socpromctrl">Промышленность</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" ui-sref="socinvestctrl">Инвестиции</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Сельское хозяйство</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Предпринимательство</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Инфляция</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Торговля</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Архитектура и строительство</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Бюджет</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">ЖКХ И ЭНЕРГЕТИКА</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" ui-sref="soctransportctrl">Транспорт</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Координация занятости и социальная защита</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Здравоохранение</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Образование</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Молодежная политика</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Культура</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Религия</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Ветеринария</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Оперативные данные</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" href="?#!/adminedit">Спорт</a></li>
 
 
 
@@ -271,14 +279,10 @@
 
 
 
-				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown">Мониторинг государственных программ</a>
+				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown">Мониторинг государственных программ</a></li>
 
-
-
-
-
-				</li>
-
+				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" ui-sref="homepage2ctrl"><strong>Второй
+					вариант главной</strong></a></li>
 
 
 
@@ -296,8 +300,8 @@
 
 
 
-					<label for="colorsidebar" style="color: grey">Выбрать цвет для Фона</label>
-			<input id="colorsidebar" type="color" style="margin-top: 10px" ng-model="colorsidebar" ng-change="getColorSideBar()">
+					<label for="colorsidebar" style="color: grey; visibility: collapse">Выбрать цвет для Фона</label>
+			<input id="colorsidebar" type="color" style="margin-top: 10px; visibility: collapse" ng-model="colorsidebar" ng-change="getColorSideBar()">
 
 
 
@@ -323,7 +327,7 @@
 				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" ui-sref="dohodplan">Динамика доходов (план)</a></li>
 				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" ui-sref="rashodplan">Динамика расходов (план)</a></li>
 
-				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" role="button" aria-expanded="false" ui-sref="structureRashod">Структура расходов<span class="drawer-caret"></span></a>
+				<li id="structurerashod" class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" role="button" aria-expanded="false" ui-sref="structureRashod">Структура расходов<span class="drawer-caret"></span></a>
 
 
 				<ul class="drawer-dropdown-menu">
@@ -331,10 +335,10 @@
 
 
 
-				<li><a class="drawer-dropdown-menu-item" ui-sref="cubeInProgramm">В разрезе программ</a></li>
-				<li><a class="drawer-dropdown-menu-item" ui-sref="cubeInAdmin">В разрезе администраторов</a></li>
-				<li><a class="drawer-dropdown-menu-item" ui-sref="cubeInSphete">В разрезе направлений (отраслей)</a></li>
-				<li><a class="drawer-dropdown-menu-item" ui-sref="cubeInTown">В разрезе районов</a></li>
+				<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" ui-sref="cubeInProgramm">В разрезе программ</a></li>
+				<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" ui-sref="cubeInAdmin">В разрезе администраторов</a></li>
+				<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" ui-sref="cubeInSphete">В разрезе направлений (отраслей)</a></li>
+				<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" ui-sref="cubeInTown">В разрезе районов</a></li>
 
 				</ul>
 
@@ -384,7 +388,7 @@
 				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" ui-sref="ispoldohodplan">Динамика доходов (факт)</a></li>
 				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" ui-sref="ispolrashodplanctrl">Динамика расходов (факт)</a></li>
 
-				<li class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" role="button" aria-expanded="false">Исполнение. Структура расходов<span class="drawer-caret"></span></a>
+				<li id="ispolstructurerashod" class="drawer-dropdown"><a class="drawer-menu-item" data-toggle="dropdown" role="button" aria-expanded="false">Исполнение. Структура расходов<span class="drawer-caret"></span></a>
 
 
 					<ul class="drawer-dropdown-menu">
@@ -392,10 +396,10 @@
 
 
 
-						<li><a class="drawer-dropdown-menu-item" ui-sref="ispolcubeinprogrammctrl">Исполнение. В разрезе программ</a></li>
-						<li><a class="drawer-dropdown-menu-item" ui-sref="ispolcubeinadminctrl">Исполнение. В разрезе администраторов</a></li>
-						<li><a class="drawer-dropdown-menu-item" ui-sref="ispolcubeinspherectrl">Исполнение. В разрезе направлений (отраслей)</a></li>
-						<li><a class="drawer-dropdown-menu-item" ui-sref="ispolcubeintownctrl">Исполнение. В разрезе районов</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" ui-sref="ispolcubeinprogrammctrl">Исполнение. В разрезе программ</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" ui-sref="ispolcubeinadminctrl">Исполнение. В разрезе администраторов</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" ui-sref="ispolcubeinspherectrl">Исполнение. В разрезе направлений (отраслей)</a></li>
+						<li class="noexpandesidebar"><a class="drawer-dropdown-menu-item" ui-sref="ispolcubeintownctrl">Исполнение. В разрезе районов</a></li>
 
 					</ul>
 
@@ -482,6 +486,7 @@
 <script src="assets/js/d3.v4.min.js"></script>
 <script src="assets/js/billboard.min.js"></script>
 <script src="assets/js/d3-textwrap.min.js"></script>
+<script src="assets/js/leaflet.js"></script>
 
 
 
@@ -598,6 +603,13 @@
 	<script src="components/socSport/socSportService.js"></script>
 	<script src="components/socSport/socSportController.js"></script>
 
+	<script src="components/socVRP/socVRPController.js"></script>
+	<script src="components/socVRP/socVRPService.js"></script>
+
+	<script src="components/socProm/socPromController.js"></script>
+	<script src="components/socProm/socPromService.js"></script>
+
+
 
 
 	<script src="components/socVeter/socVeterService.js"></script>
@@ -623,6 +635,17 @@
 	<script src="components/socAgriculture/socAgricultureService.js"></script>
 	<script src="components/socAgriculture/socAgricultureController.js"></script>
 	<!--Бюджет Исполнение Конец-->
+
+	<script src="components/socInvest/socInvestController.js"></script>
+	<script src="components/socInvest/socInvestService.js"></script>
+
+
+	<script src="components/main2/main2Controller.js"></script>
+	<script src="components/main2/main2Service.js"></script>
+
+	<script src="components/socTransport/socTransportController.js"></script>
+	<script src="components/socTransport/socTransportService.js"></script>
+
 
 
 
