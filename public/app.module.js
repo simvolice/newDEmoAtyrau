@@ -116,6 +116,21 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
 
     $scope.cb1 = false;
 
+
+    var colorForHover = "#f2f2f2";
+    var colorForLeave = "#fff";
+
+
+    $(".drawer-menu-item").on("mouseover", function () {
+        $(this).css("background-color", colorForHover);
+    });
+
+
+    $(".drawer-menu-item").on("mouseleave", function () {
+        $(this).css("background-color", colorForLeave);
+    });
+
+
     $scope.onChange = function(cbState) {
         if (cbState === true) {
 
@@ -124,13 +139,17 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
 
             $("#mainsidebar").css("background", "#121212");
             $(".drawer-menu-item").css("color", "#fff");
+            $(".drawer-menu-item").css("background-color", "#121212");
 
-            $(".drawer-menu-item:hover").css("background-color", "#26d560");
+            colorForHover = "#26d560";
+            colorForLeave = "#121212";
 
 
+            $("#backbtn").css("color", "#fff");
 
 
             $("#sw").css("color", "#fff");
+
 
 
             $("#budgetsidebar").css("background", "#121212");
@@ -139,6 +158,9 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
 
             $("html").css("background", "#181818");
             $("body").css("background", "#181818");
+            $("#mainpage").css("background", "#181818");
+            $("#main2").css("background", "#181818");
+
 
         } else {
 
@@ -150,14 +172,21 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
             $("#budgetsidebar").css("background", "#fff");
             $("#executionsidebar").css("background", "#fff");
             $(".drawer-menu-item").css("color", "#222");
+            $(".drawer-menu-item").css("background-color", "#fff");
 
-            $(".drawer-menu-item:hover").css("background", "#f2f2f2");
+            colorForHover = "#f2f2f2";
+            colorForLeave = "#fff";
+
 
             $("#sw").css("color", "#222");
+            $("#backbtn").css("color", "#222");
 
 
             $("html").css("background", "#CCC");
             $("body").css("background", "#CCC");
+            $("#mainpage").css("background", "#CCC");
+            $("#main2").css("background", "#CCC");
+
 
         }
     };
