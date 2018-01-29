@@ -584,40 +584,29 @@ ul:not(.browser-default) > li {
 
 
 .title__sidebar {
-    position: absolute;
+
+
     margin-bottom: 0;
-    color: white;
-    z-index: 500;
-    left: 13%;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    text-transform: uppercase;
+
+
     font-size: 13px;
     font-weight: 500;
 }
 
 .digit__sidebar {
-    position: absolute;
+
     margin-bottom: 0;
     color: white;
-    z-index: 500;
-    top: 8%;
-    left: 35%;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    text-transform: uppercase;
+
+
 
     font-weight: 500;
 }
 
 .sub__text__sidebar {
-    width: 100px;
-    position: absolute;
-    margin-bottom: 0;
-    color: white;
-    z-index: 500;
-    top: 15%;
-    left: 35%;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    text-transform: uppercase;
+
+
+    width: 80px;
     font-size: 10px;
     word-wrap: break-word;
     line-height: 10px;
@@ -692,44 +681,169 @@ table.md-table:not(.md-row-select) td.md-cell:nth-child(n+2):nth-last-child(n+2)
 
 .masonry__custom1 {
 
-    width: 250px;
-    height: 350px;
+    background-color: #eef1ea;
+    text-transform: uppercase;
+
+
+    border: 5px solid transparent;
+
+
+
+
+    border-image: linear-gradient(to bottom right, #00DFFC 0%, #3a4ed5 100%);
+
+    border-image-slice: 1;
+
+
 }
 
 
 .masonry__custom1 > img {
-    height: 100px;
+    height: 40px;
     margin-top: 20px;
+
+
+
 }
 
 
 .masonry__custom2 {
 
-    width: 250px;
-    height: 171px;
+    background-color: #eef1ea;
+    text-transform: uppercase;
+
+
+    border: 5px solid transparent;
+
+
+
+
+    border-image: linear-gradient(to bottom right, #FE4365 0%, #3a4ed5 100%);
+
+    border-image-slice: 1;
+
+
 }
+
 
 
 .masonry__custom2 > img {
-    height: 50px;
-    margin-top: 5px;
+    height: 40px;
+    margin-top: 20px;
+
+
+
 }
 
 
-.masonry__custom3 {
-    width: 100%;
-    height: 90px;
+
+.masonry__custom4 {
+
+    background-color: #eef1ea;
+    text-transform: uppercase;
+
+
+    border: 5px solid transparent;
+
+
+
+
+    border-image: linear-gradient(to bottom right, #F9CDAD 0%, #3a4ed5 100%);
+
+    border-image-slice: 1;
+
+
 }
+
+
+.masonry__custom4 > img {
+    height: 40px;
+    margin-top: 20px;
+
+
+
+}
+
+
 
 .masonry__custom3 > img {
-    height: 70px;
-    width: 70px;
+    height: 40px;
+    margin-top: 20px;
+
+
 
 
 
 
 }
 
+.masonry__custom5 {
+
+    background-color: #eef1ea;
+    text-transform: uppercase;
+
+    border: 5px solid transparent;
+
+    border-image: linear-gradient(to bottom right, #FA6900 0%, #3a4ed5 100%);
+
+    border-image-slice: 1;
+
+}
+
+
+.masonry__custom5 > img {
+    height: 40px;
+    margin-top: 20px;
+
+
+
+}
+
+
+.masonry__custom6 {
+
+    background-color: #eef1ea;
+    text-transform: uppercase;
+
+    border: 5px solid transparent;
+
+    border-image: linear-gradient(to bottom right, #CFF09E 0%, #3a4ed5 100%);
+
+    border-image-slice: 1;
+
+}
+
+
+.masonry__custom6 > img {
+    height: 40px;
+    margin-top: 20px;
+
+
+
+}
+
+
+.masonry__custom7 {
+
+    background-color: #eef1ea;
+    text-transform: uppercase;
+
+    border: 5px solid transparent;
+
+    border-image: linear-gradient(to bottom right, #F9D423 0%, #3a4ed5 100%);
+
+    border-image-slice: 1;
+
+}
+
+
+.masonry__custom7 > img {
+    height: 40px;
+    margin-top: 20px;
+
+
+
+}
 
 .custom__back_btn {
     font-size: 15px;
@@ -829,9 +943,19 @@ table.md-table:not(.md-row-select) td.md-cell:nth-child(n+2):nth-last-child(n+2)
 .custom__label__date > span {
 
     cursor: pointer;
-    font-size: 16px;
+    font-size: 12px;
 }
 
+
+
+
+
+#chart12 > svg {
+
+
+    margin-left: 30%;
+
+}
 
 
 
@@ -936,4 +1060,226 @@ table .collapse.in {
     display:table-row;
 }
 
+
+
+
+.brd__left {
+
+    border-left: 1px solid #d9d9d9;
+
+}
+
+.custom__title__card {
+
+    font-size: 15px;
+    font-family: "Roboto Black", "Helvetica", "Arial", sans-serif;
+
+
+}
+
+
+#custom__progress__liner > .md-container {
+    background-color: transparent;
+}
+
+.custom__progress__liner > .md-container{
+    background-color: transparent;
+}
+
+.comp__analys__panel {
+    position: absolute;
+    top: 0;
+    left: 5%;
+
+    height: 150px;
+    width: 200px;
+
+    z-index: 500;
+
+    color: white;
+
+
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    text-transform: uppercase;
+
+
+}
+
+
+.comp__analys__panel > #digit{
+    margin-top: 20px;
+    margin-left: 70px;
+
+}
+
+.comp__analys__panel > #digtext{
+    margin-left: 70px;
+
+}
+
+.custom__title__card2 {
+
+    position: absolute;
+
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    padding-left: 30px;
+    padding-top: 45px;
+
+    line-height: 30px;
+
+
+
+}
+
+.custom__title__card4 {
+
+    position: absolute;
+
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    padding-left: 18px;
+    padding-top: 30px;
+
+    line-height: 30px;
+
+
+
+}
+
+
+.block__for__mask {
+
+    position: absolute;
+
+    background-color: #E94E77;
+
+
+    height: 150px;
+    width: 278px;
+
+    opacity: 0.4;
+
+    z-index: 600;
+}
+
+
+.custom__title__card3 {
+
+    position: absolute;
+
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    padding-left: 30px;
+    padding-top: 30px;
+
+    color: white;
+    line-height: 30px;
+    z-index: 700;
+
+
+
+}
+
+
+.custom__title__card65 {
+
+    position: absolute;
+
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    padding-left: 30px;
+    padding-top: 45px;
+
+    color: white;
+    line-height: 30px;
+    z-index: 700;
+
+
+
+}
+
+.block__for__mask2 {
+
+    position: relative;
+
+    background-color: blue;
+    opacity: 0.4;
+
+
+    height: 150px;
+    width: 278px;
+    z-index: 600;
+
+
+
+}
+
+.block__for__mask3 {
+
+    position: relative;
+
+    background-color: green;
+    opacity: 0.4;
+
+
+    height: 150px;
+    width: 278px;
+    z-index: 600;
+
+
+
+}
+
+.lineConnect {
+    fill: none;
+    stroke: black;
+    opacity: 1;
+}
+
+
+.lineConnectmakat {
+    fill: none;
+    stroke: black;
+    opacity: 1;
+}
+
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
 

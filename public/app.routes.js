@@ -180,6 +180,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
 
       })
+      .state('socvrpctrl', {
+          url: '/socvrpctrl',
+          templateUrl: 'components/socVRP/socVRPView.html',
+
 
 
       .state('socSportCtrl', {
@@ -201,6 +205,35 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
       })
 
+      .state('socpromctrl', {
+          url: '/socpromctrl',
+          templateUrl: 'components/socProm/socPromView.html',
+
+
+      })
+
+      .state('socinvestctrl', {
+          url: '/socinvestctrl',
+          templateUrl: 'components/socInvest/socInvestView.html',
+
+
+
+      })
+
+      .state('homepage2ctrl', {
+          url: '/homepage2ctrl',
+          templateUrl: 'components/main2/main2View.html',
+
+
+      })
+
+
+      .state('soctransportctrl', {
+          url: '/soctransportctrl',
+          templateUrl: 'components/socTransport/socTransportView.html',
+
+
+      })
 
       .state('socCultureCtrl', {
           url: '/socculturectrl',

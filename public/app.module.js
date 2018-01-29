@@ -148,6 +148,7 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
 
     $('.drawer').on('drawer.opened', function(){
 
+        $("#main2").css("margin-left", "0");
 
 
         $("#mainpanel").addClass("for__padding__sidebar");
@@ -158,9 +159,29 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
         $("#chartstructure").css("left", "5%");
 
 
+
+
+        $timeout(function () {
+            $("#structurerashod").addClass("open");
+            $("#structurerashod > a").attr("aria-expanded", true);
+
+
+            $("#ispolstructurerashod").addClass("open");
+            $("#ispolstructurerashod > a").attr("aria-expanded", true);
+
+
+
+        }, 50);
+
+
     });
 
     $('.drawer').on('drawer.closed', function(){
+
+
+
+        $("#main2").css("width", "1080px");
+        $("#main2").css("margin-left", "120px");
 
 
         $("#mainpanel").removeClass("for__padding__sidebar");
@@ -206,10 +227,54 @@ app.controller('MainCtrl', function ($scope, $state, $timeout, $translate, $root
 
 
 
+
+    $(".noexpandesidebar").on("click", function () {
+
+
+        $timeout(function () {
+            $("#structurerashod").addClass("open");
+            $("#structurerashod > a").attr("aria-expanded", true);
+
+
+            $("#ispolstructurerashod").addClass("open");
+            $("#ispolstructurerashod > a").attr("aria-expanded", true);
+
+            $("#sar").addClass("open");
+            $("#sar > a").attr("aria-expanded", true);
+
+
+        }, 50);
+
+
+
+
+
+    });
+
+
+
+
+
+
 $("#budget").on("click", function () {
 
 
    $("#budgetsidebar").css("display", "block");
+
+
+
+
+
+   $timeout(function () {
+       $("#structurerashod").addClass("open");
+       $("#structurerashod > a").attr("aria-expanded", true);
+
+   }, 50);
+
+
+
+
+
 
 
 });
@@ -220,6 +285,14 @@ $("#budget").on("click", function () {
 
 
         $("#executionsidebar").css("display", "block");
+
+
+
+        $timeout(function () {
+            $("#ispolstructurerashod").addClass("open");
+            $("#ispolstructurerashod > a").attr("aria-expanded", true);
+
+        }, 50);
 
 
     });

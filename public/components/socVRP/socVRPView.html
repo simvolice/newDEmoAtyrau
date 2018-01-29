@@ -1,0 +1,267 @@
+<div class="row" ng-controller="SocVRPCtrl">
+    <div class="col-md-12">
+        <md-content layout="column" flex class="custom__md-content__categ">
+
+
+
+            <md-card>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="title text-center" style="text-transform: uppercase">Валовый региональный продукт по областям, млрд. тенге</h3>
+
+                    </div>
+
+                </div>
+
+            </md-card>
+
+
+
+
+
+
+
+            <md-card>
+
+                <md-tabs md-dynamic-height md-border-bottom>
+                    <md-tab label="Валовый региональный продукт, млрд. тенге" ng-click="tabClk(1)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+                                <div class="col-md-5 text-left">
+
+
+                                    <md-button class="md-raised md-primary">
+                                        <md-icon class="material-icons">file_download</md-icon>
+
+                                        <a href="assets/doc/val.xls" style="text-decoration: none; color: white">Объем ВРП</a></md-button>
+
+                                    <md-button class="md-raised md-primary">
+                                        <md-icon class="material-icons">file_download</md-icon>
+
+                                        <a href="assets/doc/vrp.docx" style="text-decoration: none; color: white">Аналитическая записка</a></md-button>
+
+                                </div>
+
+
+                                <div class="col-md-7 custom__label__date text-right">
+                                    <span id="clk2010vrp" class="label" ng-click="selectDate('2010')" ng-class="{bg__color__active__date : activeMenu === '2010'}">2010</span>
+                                    <span class="label" ng-click="selectDate('2011')" ng-class="{bg__color__active__date : activeMenu === '2011'}">2011</span>
+                                    <span class="label" ng-click="selectDate('2012')" ng-class="{bg__color__active__date : activeMenu === '2012'}">2012</span>
+                                    <span class="label" ng-click="selectDate('2013')" ng-class="{bg__color__active__date : activeMenu === '2013'}">2013</span>
+                                    <span class="label" ng-click="selectDate('2014')" ng-class="{bg__color__active__date : activeMenu === '2014'}">2014</span>
+                                    <span class="label" ng-click="selectDate('2015')" ng-class="{bg__color__active__date : activeMenu === '2015'}">2015</span>
+                                    <span class="label" ng-click="selectDate('2016')" ng-class="{bg__color__active__date : activeMenu === '2016'}">2016</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <hr style="background-color: #d9d9d9; width: 100%">
+
+
+                            <div class="row">
+
+                                <div class="col-md-9">
+
+                                    <div id="chart1"></div>
+                                </div>
+
+
+                                <div class="col-md-3" style="border: 2px solid #d9d9d9">
+
+
+                                    <h6 class="title">ВРП области на 1 полугодие, млрд.тенге</h6>
+
+                                    <div id="chart2"></div>
+
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+
+
+                    <md-tab label="ИФО ВРП, %" ng-click="tabClk(2)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+                                <div class="col-md-12 custom__label__date text-right">
+                                    <span class="label" ng-click="selectDate2('2010')" ng-class="{bg__color__active__date : activeMenu2 === '2010'}">2010</span>
+                                    <span class="label" ng-click="selectDate2('2011')" ng-class="{bg__color__active__date : activeMenu2 === '2011'}">2011</span>
+                                    <span class="label" ng-click="selectDate2('2012')" ng-class="{bg__color__active__date : activeMenu2 === '2012'}">2012</span>
+                                    <span class="label" ng-click="selectDate2('2013')" ng-class="{bg__color__active__date : activeMenu2 === '2013'}">2013</span>
+                                    <span class="label" ng-click="selectDate2('2014')" ng-class="{bg__color__active__date : activeMenu2 === '2014'}">2014</span>
+                                    <span class="label" ng-click="selectDate2('2015')" ng-class="{bg__color__active__date : activeMenu2 === '2015'}">2015</span>
+                                    <span class="label" ng-click="selectDate2('2016')" ng-class="{bg__color__active__date : activeMenu2 === '2016'}">2016</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="row" style="margin-bottom: 30px">
+
+
+
+
+                                <div id="charttab2"></div>
+
+
+                            </div>
+
+
+
+
+                            <div class="row">
+
+                                <div class="col-md-6" style="border: 2px solid #d9d9d9">
+
+
+                                    <h6 class="title">ИФО области по годам</h6>
+
+                                    <div id="charttab21"></div>
+
+                                </div>
+
+                                <div class="col-md-6" style="border: 2px solid #d9d9d9">
+
+
+                                    <h6 class="title">ИФО области за полугодие</h6>
+                                    <div id="charttab22"></div>
+
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+                    <md-tab label="ВРП на душу населения" ng-click="tabClk(3)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+                                <div class="col-md-12 custom__label__date text-right">
+                                    <span id="clk2010vrp3tab" class="label" ng-click="selectDate3('2010')" ng-class="{bg__color__active__date : activeMenu3 === '2010'}">2010</span>
+                                    <span class="label" ng-click="selectDate3('2011')" ng-class="{bg__color__active__date : activeMenu3 === '2011'}">2011</span>
+                                    <span class="label" ng-click="selectDate3('2012')" ng-class="{bg__color__active__date : activeMenu3 === '2012'}">2012</span>
+                                    <span class="label" ng-click="selectDate3('2013')" ng-class="{bg__color__active__date : activeMenu3 === '2013'}">2013</span>
+                                    <span class="label" ng-click="selectDate3('2014')" ng-class="{bg__color__active__date : activeMenu3 === '2014'}">2014</span>
+                                    <span class="label" ng-click="selectDate3('2015')" ng-class="{bg__color__active__date : activeMenu3 === '2015'}">2015</span>
+                                    <span class="label" ng-click="selectDate3('2016')" ng-class="{bg__color__active__date : activeMenu3 === '2016'}">2016</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="row">
+
+                                <div class="col-md-9">
+
+                                    <div id="chartTab3"></div>
+                                </div>
+
+
+                                <div class="col-md-3" style="border: 2px solid #d9d9d9">
+
+
+                                    <h6 class="title">ВРП на душу населения на 1 полугодие, тыс. тенге</h6>
+
+                                    <div id="chartTab31"></div>
+
+                                </div>
+
+                            </div>
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+                </md-tabs>
+
+
+
+
+            </md-card>
+
+
+
+
+
+            <md-card>
+
+                <div class="row">
+                    <div class="col-md-12 text-center">
+
+                        <md-button class="md-raised md-primary" ng-click="showDialog(1, 'Структура промышленности', $event)">Структура промышленности</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(2, 'Оптовая и розничная торговля, млрд. тенге', $event)">Оптовая и розничная торговля</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(3, 'Информация и связь, млрд. тенге', $event)">Информация и связь</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(4, 'Профессиональная, научная деятельность, млрд. тенге', $event)">Профессиональная, научная деятельность</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(5, 'Образование, млрд. тенге', $event)">Образование</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(6, 'Строительство, млрд. тенге', $event)">Строительство</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(7, 'Транспорт и складирование, млрд. тенге', $event)">Транспорт и складирование</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(8, 'Финансовая и страховая деятельность, млрд. тенге', $event)">Финансовая и страховая деятельность</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(9, 'Деятельность в области административного обслуживания, млрд. тенге', $event)">Деятельность в области административного обслуживания</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(10, 'Здравохранение и социальные услуги, млрд. тенге', $event)">Здравохранение и социальные услуги</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(11, 'Сельское хозяйство, млрд. тенге', $event)">Сельское хозяйство</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(12, 'Услуги по проживанию и питанию, млрд. тенге', $event)">Услуги по проживанию и питанию</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(13, 'Операции с недвижимым имуществом, млрд. тенге', $event)">Операции с недвижимым имуществом</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(14, 'Государственное управление и оборона, млрд. тенге', $event)">Государственное управление и оборона</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(15, 'Искусство развления и отдых, млрд. тенге', $event)">Искусство развления и отдых</md-button>
+                        <md-button class="md-raised md-primary" ng-click="showDialog(16, 'Прочие услуги, млрд. тенге', $event)">Прочие услуги</md-button>
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </md-card>
+
+
+
+
+
+
+
+
+
+
+
+
+        </md-content>
+    </div>
+
+
+
+
+
+</div>

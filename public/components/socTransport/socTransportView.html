@@ -1,0 +1,296 @@
+<div class="row" ng-controller="SocTransportCtrl">
+    <div class="col-md-12">
+        <md-content layout="column" flex class="custom__md-content__categ">
+
+
+
+            <md-card>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="title text-center" style="text-transform: uppercase">Пассажирский транспорт и автомобильные дороги</h3>
+
+                    </div>
+
+                </div>
+
+            </md-card>
+
+
+
+
+
+
+
+            <md-card>
+
+                <md-tabs md-dynamic-height md-border-bottom>
+                    <md-tab label="Финансирование, млн.тенге" ng-click="tabClk(1)">
+                        <md-content class="md-padding" style="text-align: center">
+
+
+
+
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <div id="chart1"></div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+
+
+                    <md-tab label="ПРОТЯЖЕННОСТЬ АВТОМОБИЛЬНЫХ ДОРОГ АТЫРАУСКОЙ ОБЛАСТИ" ng-click="tabClk(2)">
+                        <md-content class="md-padding" style="text-align: center">
+
+
+
+
+
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+
+
+
+                                    <div id="chart2"></div>
+
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+                    <md-tab label="ПРОТЯЖЕННОСТЬ АВТОМОБИЛЬНЫХ ДОРОГ ОБЛАСТНОГО И РАЙОННОГО ЗНАЧЕНИЯ, км" ng-click="tabClk(3)">
+                        <md-content class="md-padding" style="text-align: center">
+
+
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <div id="chart3"></div>
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+
+                        </md-content>
+                    </md-tab>
+                    <md-tab label="Развитие инфраструктуры" ng-click="tabClk(4)">
+                        <md-content class="md-padding" style="text-align: center">
+
+
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <div id="chart4"></div>
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+
+                        </md-content>
+                    </md-tab>
+                    <md-tab label="Государственная программа инфраструктурного развития Нурлы Жол на 2015-2019 гг." ng-click="tabClk(5)">
+                        <md-content class="md-padding" style="text-align: center">
+
+
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <div id="map" style="height: 600px; width: 100%"></div>
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+
+                        </md-content>
+                    </md-tab>
+                    <md-tab label="Перевозка грузов транспортом" ng-click="tabClk(6)">
+                        <md-content class="md-padding" style="text-align: center">
+
+
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <div id="chart6"></div>
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+
+                        </md-content>
+                    </md-tab>
+                    <md-tab label="Перевозка пассажиров" ng-click="tabClk(7)">
+                        <md-content class="md-padding" style="text-align: center">
+
+
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <div id="chart7"></div>
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+                    <md-tab label="Грузооборот" ng-click="tabClk(8)">
+                        <md-content class="md-padding" style="text-align: center">
+
+
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <div id="chart8"></div>
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+
+                        </md-content>
+                    </md-tab>
+                    <md-tab label="Пассажирооборот" ng-click="tabClk(9)">
+                        <md-content class="md-padding" style="text-align: center">
+
+
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <div id="chart9"></div>
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+                    <md-tab label="Объем услуг связи, млн. тенге" ng-click="tabClk(10)">
+                        <md-content class="md-padding" style="text-align: center">
+
+
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <div id="chart10"></div>
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+                </md-tabs>
+
+
+
+
+            </md-card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </md-content>
+    </div>
+
+
+
+
+
+</div>
