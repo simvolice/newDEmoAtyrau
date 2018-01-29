@@ -202,7 +202,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
       })
 
 
-      .state('socCultureCtrlsocTradeCtrl', {
+      .state('socCultureCtrl', {
           url: '/socculturectrl',
           templateUrl: 'components/socCulture/socCultureView.html'
 
@@ -225,6 +225,13 @@ app.config(function($stateProvider, $urlRouterProvider) {
       .state('socAgricultureCtrl', {
           url: '/socagriculturectrl',
           templateUrl: 'components/socAgriculture/socAgricultureView.html'
+
+      })
+
+
+      .state('socZHkhCtrl', {
+          url: '/soczhkhctrl',
+          templateUrl: 'components/socZHkh/socZHkhView.html'
 
       })
 });
