@@ -262,6 +262,12 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
       })
 
+      .state('socZHkhCtrl', {
+          url: '/soczhkhctrl',
+          templateUrl: 'components/socZHkh/socZHkhView.html'
+
+      })
+
 
 
 
