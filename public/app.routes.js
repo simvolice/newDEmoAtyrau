@@ -269,6 +269,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
       })
 
 
+      .state('socbusenessctrl', {
+          url: '/socbusenessctrl',
+          templateUrl: 'components/socBusiness/socBusenessView.html'
+
+      })
 
 
 
