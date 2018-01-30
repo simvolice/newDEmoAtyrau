@@ -9,6 +9,16 @@ angular.module('app').controller('SocInvestCtrl', function ($scope, $timeout, $m
     var chartDohod = null;
     var chartTab2 = null;
     var chartTab3 = null;
+    var chartnew1 = null;
+    var chartnew2 = null;
+    var chartnew3 = null;
+    var chartnew4 = null;
+    var chartnew5 = null;
+    var chartnew6 = null;
+    var chartnew7 = null;
+    var chartnew8 = null;
+    var chartnew9 = null;
+    var chartnew10 = null;
 
 
 
@@ -196,6 +206,114 @@ angular.module('app').controller('SocInvestCtrl', function ($scope, $timeout, $m
             },
 
         });
+
+
+
+
+
+        chartnew1 = bb.generate({
+
+            bindto: "#chartnew1",
+
+            data: {
+                columns: [
+                    ['Объем инвестиций в основной капитал (млрд. тенге)',
+
+                        1038.4,
+                        1129.6,
+                        1470.3,
+                        2036.9,
+                        2456.3
+
+
+
+                    ],
+
+
+                    ['ИФО', 97.3,
+                    104.4,
+                    126.7,
+                    127.7,
+                    114.0,
+
+
+
+
+                    ],
+
+                ],
+
+                type: 'bar',
+
+                types: {
+
+                    'ИФО': "line"
+
+                },
+
+
+                labels: {
+                    format: function (x, id) {
+
+
+                        if (id === 'ИФО') {
+
+                            return d3.format(",.2d")(x) + "%";
+
+                        } else {
+                            return d3.format(",.2d")(x);
+
+                        }
+
+
+                    }
+
+
+                }
+            },
+            bar: {
+                width: {
+                    ratio: 0.5 // this makes bar width 50% of length between ticks
+                }
+                // or
+                //width: 100 // this makes bar width 100px
+            },
+            grid: {
+                x: {
+                    show: false
+                },
+                y: {
+                    show: true
+                }
+            },
+
+            axis: {
+
+                x: {
+                    type: 'category',
+                    categories: [
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017
+                    ]
+                },
+                y: {
+                    show: true
+                }
+            },
+
+            tooltip: {
+                show: true
+            },
+            legend: {
+                show: true
+            },
+
+        });
+
+
 
 
 
@@ -1056,7 +1174,527 @@ angular.module('app').controller('SocInvestCtrl', function ($scope, $timeout, $m
 
 
 
+        }else if (id === 6) {
+
+
+           chartnew2 = bb.generate({
+
+               bindto: "#chartnew2",
+
+               data: {
+                   columns: [
+                       ['data1', 257.0,
+                           437.1,
+                           527.3,
+                           2456.5,
+                           440.6,
+                           639.9,
+                           944.6,
+                           234.5,
+                           414.3,
+                           358.8,
+                           199.4,
+                           241.5,
+                           432.8,
+                           493.9,
+                           188.9,
+                           482.0,
+
+
+                       ],
+
+                   ],
+                   type: 'bar',
+                   labels: {
+                       format: {
+
+                           data1: d3.format(",d")
+
+                       }
+
+
+                   }
+               },
+               bar: {
+                   width: {
+                       ratio: 0.5 // this makes bar width 50% of length between ticks
+                   }
+                   // or
+                   //width: 100 // this makes bar width 100px
+               },
+               grid: {
+                   x: {
+                       show: false
+                   },
+                   y: {
+                       show: false
+                   }
+               },
+
+               axis: {
+                   rotated: true,
+                   x: {
+                       type: 'category',
+                       categories: [
+
+                           "АКМОЛИНСКАЯ",
+                           "АКТЮБИНСКАЯ",
+                           "АЛМАТИНСКАЯ",
+                           "АТЫРАУСКАЯ",
+                           "ВОСТОЧНО-КАЗАХСТАНСКАЯ",
+                           "Г.АЛМАТЫ",
+                           "Г.АСТАНА",
+                           "ЖАМБЫЛСКАЯ",
+                           "ЗАПАДНО-КАЗАХСТАНСКАЯ",
+                           "КАРАГАНДИНСКАЯ",
+                           "КОСТАНАЙСКАЯ",
+                           "КЫЗЫЛОРДИНСКАЯ",
+                           "МАНГИСТАУСКАЯ",
+                           "ПАВЛОДАРСКАЯ",
+                           "СЕВЕРО-КАЗАХСТАНСКАЯ",
+                           "ЮЖНО-КАЗАХСТАНСКАЯ"
+                       ]
+                   },
+                   y: {
+
+                       show: false
+
+                   }
+               },
+
+               tooltip: {
+                   show: false
+               },
+               legend: {
+                   show: false
+               },
+
+           });
+
+
+
+
+
+
+
+
+        }else if (id === 7) {
+
+
+            chartnew3 = bb.generate({
+                data: {
+                    columns: [
+
+                        ["Собственные средства", 1303.3],
+                        ["Кредиты банков", 172.8],
+                        ["Другие заемные средства", 522.1],
+                        ["Республиканский бюджет", 11.7],
+                        ["Местный бюджет", 27.0],
+
+
+                    ],
+                    type: "donut"
+
+                },
+                donut: {
+                    title: "2036,85 \n" +
+                    " млрд. тенге\n"
+                },
+                tooltip: {
+                    format: {
+                        value: function (x, id) {
+
+
+                            return d3.format(",.2d")(x);
+
+
+                        }
+
+                    }
+
+
+                },
+
+                bindto: "#chartnew3"
+            });
+
+
+
+
+
+
+
+        }else if (id === 8) {
+
+
+            chartnew4 = bb.generate({
+
+                bindto: "#chartnew4",
+
+                data: {
+                    columns: [
+                        ['Внутренние инвестиции (млрд. тенге)', 556.0,
+                            619.5,
+                            1382.6,
+
+                        ],
+
+                        ['Внешние инвестиции (млрд. тенге)', 573.6,
+                            850.8,
+                            654.2,
+
+                        ],
+
+                    ],
+                    type: 'bar',
+                    labels: {
+                        format: function (val) {
+                            return d3.format(",.2f")(val);
+                        }
+
+
+                    },
+                    groups: [
+
+                        ['Внутренние инвестиции (млрд. тенге)',
+                            'Внешние инвестиции (млрд. тенге)']
+
+                    ]
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 // this makes bar width 50% of length between ticks
+                    }
+                    // or
+                    //width: 100 // this makes bar width 100px
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: false
+                    }
+                },
+
+                axis: {
+
+                    x: {
+                        type: 'category',
+                        categories: [
+
+                            2014,
+                            2015,
+                            2016,
+
+                        ]
+                    },
+                    y: {
+
+                        show: false
+
+                    }
+                },
+
+                tooltip: {
+                    show: true
+                },
+                legend: {
+                    show: true
+                },
+
+            });
+
+
+            chartnew5 = bb.generate({
+                data: {
+                    columns: [
+
+                        ["Работы по строительству и капитальному ремонту зданий и сооружений", 859.6],
+                        ["Машины, оборудование,транспортные средства, инструмент ", 555.4],
+                        ["Прочие  затраты в объеме инвестиций в основной капитал", 621.9],
+
+
+                    ],
+                    type: "donut"
+
+                },
+                donut: {
+                    title: "2 036,9\n" +
+                    "  млрд. тенге\n"
+                },
+                tooltip: {
+                    format: {
+                        value: function (x, id) {
+
+
+                            return d3.format(",.2d")(x);
+
+
+                        }
+
+                    }
+
+
+                },
+
+                bindto: "#chartnew5"
+            });
+
+
+
+
+
+        }else if (id === 9) {
+
+
+            chartnew6 = bb.generate({
+                data: {
+                    columns: [
+
+                        ["Промышленность", 1773.2],
+                        ["Транспорт и складирование ", 174.9],
+                        ["Операции с недвижимым имуществом", 33.2],
+                        ["Прочая деятельность", 55.6],
+
+
+                    ],
+                    type: "donut"
+
+                },
+                donut: {
+                    title: "2 036,85\n" +
+                    "  млрд. тенге\n"
+                },
+                tooltip: {
+                    format: {
+                        value: function (x, id) {
+
+
+                            return d3.format(",.2d")(x);
+
+
+                        }
+
+                    }
+
+
+                },
+
+                bindto: "#chartnew6"
+            });
+
+
+            chartnew7 = bb.generate({
+
+                bindto: "#chartnew7",
+
+                data: {
+                    columns: [
+                        ['data1', 375.8,
+                            388.6,
+                            408.7,
+                            834.7,
+                            1039.2,
+                            1716.1,
+                            2236.3,
+                            3246.7,
+                            5203.2,
+                            5796.5,
+                            7368.8,
+                            10640.3,
+                            16313.8
+
+                        ],
+
+
+
+                    ],
+                    type: 'bar',
+                    labels: {
+                        format: function (val) {
+                            return d3.format(",.2f")(val);
+                        }
+
+
+                    }
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 // this makes bar width 50% of length between ticks
+                    }
+                    // or
+                    //width: 100 // this makes bar width 100px
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: false
+                    }
+                },
+
+                axis: {
+                    rotated: true,
+                    x: {
+                        type: 'category',
+                        categories: [
+
+                            "Предоставление прочих видов услуг",
+                            "Государственное управление и оборона",
+                            "Финансовая и страховая деятельность",
+                            "Искусство, развлечения и отдых",
+                            "Здравоохранение и социальные услуги",
+                            "Сельское, лесное и рыбное хозяйство",
+                            "Информация и связь",
+                            "Оптовая и розничная торговля",
+                            "Деятельность в области административного и вспомогательного обслуживания",
+                            "Образование",
+                            "Услуги по проживанию и питанию",
+                            "Профессиональная, научная и техническая деятельность",
+                            "Строительство"
+
+
+                        ]
+                    },
+                    y: {
+
+                        show: false
+
+                    }
+                },
+
+                tooltip: {
+                    show: false
+                },
+                legend: {
+                    show: false
+                },
+
+            });
+
+
+
+
+
+        }else if (id === 10) {
+
+
+            chartnew8 = bb.generate({
+                data: {
+                    columns: [
+
+                        ["Горнодобывающая", 1624.7],
+                        ["Обрабатывающая", 127.0],
+                        ["Электроснабжением", 11.5],
+                        ["Водоснабжение", 10.0],
+
+
+                    ],
+                    type: "donut"
+
+                },
+                donut: {
+                    title: "1 773,0\n" +
+                    "  млрд. тенге\n"
+                },
+                tooltip: {
+                    format: {
+                        value: function (x, id) {
+
+
+                            return d3.format(",.2d")(x);
+
+
+                        }
+
+                    }
+
+
+                },
+
+                bindto: "#chartnew8"
+            });
+
+            chartnew9 = bb.generate({
+                data: {
+                    columns: [
+
+                        ["Производство кокса и продуктов нефтепереработки", 112.5],
+                        ["Производство продуктов химической промышленности", 10.9],
+                        ["Производство прочей продукции", 3.6],
+
+
+
+                    ],
+                    type: "donut"
+
+                },
+                donut: {
+                    title: "127,0\n" +
+                    "  млрд. тенге\n"
+                },
+                tooltip: {
+                    format: {
+                        value: function (x, id) {
+
+
+                            return d3.format(",.2d")(x);
+
+
+                        }
+
+                    }
+
+
+                },
+
+                bindto: "#chartnew9"
+            });
+
+            chartnew10 = bb.generate({
+                data: {
+                    columns: [
+
+                        ["Добыча сырой нефти и природного газа", 1324.71],
+                        ["Технические услуги и прочие отрасли горнодобывающей промышленности", 299.98],
+
+
+
+
+                    ],
+                    type: "donut"
+
+                },
+                donut: {
+                    title: "1 624,7\n" +
+                    "  млрд. тенге\n"
+                },
+                tooltip: {
+                    format: {
+                        value: function (x, id) {
+
+
+                            return d3.format(",.2d")(x);
+
+
+                        }
+
+                    }
+
+
+                },
+
+                bindto: "#chartnew10"
+            });
+
+
+
+
         }
+
+
 
 
 
