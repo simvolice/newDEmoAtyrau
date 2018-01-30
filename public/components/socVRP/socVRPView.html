@@ -25,6 +25,230 @@
             <md-card>
 
                 <md-tabs md-dynamic-height md-border-bottom>
+
+
+
+                    <md-tab label="Общие показатели социально-экономического развития Атырауской области по годам">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+                                <div class="col-md-6">
+
+
+                                   <div id="chartnew1"></div>
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <div id="chartnew2"></div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+                    <md-tab label="ВРП И ИФО по областям за 2016 год (млрд. тенге)" ng-click="tabClk(4)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+                                <div class="col-md-12">
+
+
+                                    <div id="chartnew3"></div>
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+                    <md-tab label="Доля врп областей в врп республики за 2016 год">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+                                <div class="col-md-12">
+
+
+                                    <img src="../../assets/img/vrpMap.JPG" alt="">
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+                    <md-tab label="ВРП На душу населения по областям за 2016 год (тыс. тенге)" ng-click="tabClk(5)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+                                <div class="col-md-12">
+
+
+                                    <div id="chartnew4"></div>
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+                    <md-tab label="Общие показатели социально-экономического развития Атырауской области за 9 месяцев 2017 года" ng-click="tabClk(6)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+                                <div class="col-md-6">
+
+
+                                    <div id="chartnew5"></div>
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <div id="chartnew6"></div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+                    <md-tab label="СТРУКТУРА ВРП Атырауской области за 9 месяцев 2017 года (млн. тенге)" ng-click="tabClk(7)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+                                <div class="col-md-12">
+
+
+                                    <div id="chartnew7"></div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+
+
+                    <md-tab label="ПРОЧАЯ ДЕЯТЕЛЬНОСТЬ В СТРУКТУРЕ ВРП за 9 месяцев 2017 года (млн. тенге)" ng-click="tabClk(8)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+                                <div class="col-md-12">
+
+
+                                    <div id="chartnew8"></div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     <md-tab label="Валовый региональный продукт, млрд. тенге" ng-click="tabClk(1)">
                         <md-content class="md-padding" style="text-align: center">
 
@@ -90,10 +314,6 @@
 
                         </md-content>
                     </md-tab>
-
-
-
-
                     <md-tab label="ИФО ВРП, %" ng-click="tabClk(2)">
                         <md-content class="md-padding" style="text-align: center">
 

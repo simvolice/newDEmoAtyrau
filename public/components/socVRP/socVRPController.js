@@ -9,6 +9,17 @@ angular.module('app').controller('SocVRPCtrl', function ($scope, $timeout, $mdDi
     var chartDohod = null;
     var chartTab2 = null;
     var chartTab3 = null;
+    var chartnew1 = null;
+    var chartnew2 = null;
+    var chartnew3 = null;
+    var chartnew4 = null;
+    var chartnew5 = null;
+    var chartnew6 = null;
+    var chartnew7 = null;
+    var chartnew8 = null;
+
+
+
     $scope.menuItems = [2010,
         2011,
         2012,
@@ -137,6 +148,150 @@ angular.module('app').controller('SocVRPCtrl', function ($scope, $timeout, $mdDi
             },
 
         });
+
+
+
+
+        chartnew1 = bb.generate({
+
+            bindto: "#chartnew1",
+
+            data: {
+                columns: [
+                    ['Номинальный валовый региональный продукт (млрд. тенге)', 3613.4, 3977.4, 4340.6, 4216.8, 3315.1, 3842.1],
+                    ['ИФО валового регионального продукта', 97.7, 104.0, 102.5, 102.8, 103, 116.3],
+
+                ],
+
+                type: 'bar',
+
+                types: {
+
+                    'ИФО валового регионального продукта': "line"
+
+                },
+
+
+                labels: {
+                    format: function (x, id) {
+
+
+                        if (id === 'ИФО валового регионального продукта') {
+
+                            return d3.format(",.2d")(x) + "%";
+
+                        } else {
+                            return d3.format(",.2d")(x);
+
+                        }
+
+
+                    }
+
+
+                }
+            },
+            bar: {
+                width: {
+                    ratio: 0.5 // this makes bar width 50% of length between ticks
+                }
+                // or
+                //width: 100 // this makes bar width 100px
+            },
+            grid: {
+                x: {
+                    show: false
+                },
+                y: {
+                    show: true
+                }
+            },
+
+            axis: {
+
+                x: {
+                    type: 'category',
+                    categories: [2012, 2013, 2014, 2015, "9 мес. 2016", "9 мес. 2017"]
+                },
+                y: {
+                    show: true
+                }
+            },
+
+            tooltip: {
+                show: true
+            },
+            legend: {
+                show: true
+            },
+
+        });
+
+        chartnew2 = bb.generate({
+
+            bindto: "#chartnew2",
+
+            data: {
+                columns: [
+                    ['ВРП на душу населения (тыс. тенге)', 7083.0, 7553.3, 7171.2, 5526.7, 6274.3],
+
+                ],
+
+                type: 'bar',
+
+
+
+                labels: {
+                    format: function (x, id) {
+
+
+
+                            return d3.format(",.2d")(x);
+
+
+
+
+                    }
+
+
+                }
+            },
+            bar: {
+                width: {
+                    ratio: 0.5 // this makes bar width 50% of length between ticks
+                }
+                // or
+                //width: 100 // this makes bar width 100px
+            },
+            grid: {
+                x: {
+                    show: false
+                },
+                y: {
+                    show: true
+                }
+            },
+
+            axis: {
+
+                x: {
+                    type: 'category',
+                    categories: [2013, 2014, 2015, "9 мес. 2016", "9 мес. 2017"]
+                },
+                y: {
+                    show: true
+                }
+            },
+
+            tooltip: {
+                show: true
+            },
+            legend: {
+                show: true
+            },
+
+        });
+
 
 
 
@@ -850,7 +1005,533 @@ angular.module('app').controller('SocVRPCtrl', function ($scope, $timeout, $mdDi
 
 
 
+        } else if (id === 4) {
+
+
+
+
+            chartnew3 = bb.generate({
+
+                bindto: "#chartnew3",
+
+                data: {
+                    columns: [
+                        ['data1', 918.2,
+                            1182.8,
+                            1308.3,
+                            1344.3,
+                            1522.3,
+                            1975.5,
+                            2032.7,
+                            2071.1,
+                            2190.0,
+                            2463.4,
+                            2789.2,
+                            2793.9,
+                            3712.1,
+                            4865.3,
+                            5200.7,
+                            10601.3
+
+                        ],
+
+                        ['data2', 102.9,
+                            101.0,
+                            101.8,
+                            103.7,
+                            102.2,
+                            102.6,
+                            102.4,
+                            102.6,
+                            102.6,
+                            102.4,
+                            98.0,
+                            95.2,
+                            99.9,
+                            99.4,
+                            100.8,
+                            101.9,
+
+
+                        ],
+
+                    ],
+                    type: 'bar',
+                    types: {
+
+                        "data2": "line"
+
+
+                    },
+
+                    labels: {
+                        format: function (x, id) {
+
+
+                            if (id === "data2") {
+
+                                return d3.format(",.2d")(x) + "%";
+
+                            } else {
+                                return d3.format(",.2d")(x);
+
+                            }
+
+
+                        }
+
+
+                    }
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 // this makes bar width 50% of length between ticks
+                    }
+                    // or
+                    //width: 100 // this makes bar width 100px
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: false
+                    }
+                },
+
+                axis: {
+                    rotated: true,
+                    x: {
+                        type: 'category',
+                        categories: [
+
+                            "СЕВЕРО-КАЗАХСТАНСКАЯ",
+                            "ЖАМБЫЛСКАЯ",
+                            "КЫЗЫЛОРДИНСКАЯ",
+                            "АКМОЛИНСКАЯ",
+                            "КОСТАНАЙСКАЯ",
+                            "ПАВЛОДАРСКАЯ",
+                            "ЗАПАДНО-КАЗАХСТАНСКАЯ",
+                            "АКТЮБИНСКАЯ",
+                            "АЛМАТИНСКАЯ",
+                            "МАНГИСТАУСКАЯ",
+                            "ЮЖНО-КАЗАХСТАНСКАЯ",
+                            "ВОСТОЧНО-КАЗАХСТАНСКАЯ",
+                            "КАРАГАНДИНСКАЯ",
+                            "Г.АСТАНА",
+                            "АТЫРАУСКАЯ",
+                            "Г.АЛМАТЫ",
+
+                        ]
+                    },
+                    y: {
+
+                        show: false
+
+                    }
+                },
+
+                tooltip: {
+                    show: true
+                },
+                legend: {
+                    show: false
+                },
+
+            });
+
+
+
+
+
+
+
+
+
+
+        }else if (id === 5) {
+
+
+
+
+            chartnew4 = bb.generate({
+
+                bindto: "#chartnew4",
+
+                data: {
+                    columns: [
+                        ['ВРП на душу населения (тыс. тенге)', 1818.2,
+                            2464.9,
+                            1114.2,
+                            8653.1,
+                            3179.8,
+                            1062.7,
+                            2682.6,
+                            1727.0,
+                            1701.1,
+                            3880.6,
+                            975.3,
+                            2606.9,
+                            1621.0,
+                            2006.0,
+                            5273.3,
+                            6138.5,
+
+
+                        ]
+
+                    ],
+                    type: 'bar',
+
+                    labels: {
+                        format: function (x, id) {
+
+
+
+                                return d3.format(",.2d")(x);
+
+
+
+
+                        }
+
+
+                    }
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 // this makes bar width 50% of length between ticks
+                    }
+                    // or
+                    //width: 100 // this makes bar width 100px
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: false
+                    }
+                },
+
+                axis: {
+
+                    x: {
+                        type: 'category',
+                        categories: [
+
+                            "АКМОЛИНСКАЯ",
+                            "АКТЮБИНСКАЯ",
+                            "АЛМАТИНСКАЯ",
+                            "АТЫРАУСКАЯ",
+                            "ЗАПАДНО-КАЗАХСТАНСКАЯ",
+                            "ЖАМБЫЛСКАЯ",
+                            "КАРАГАНДИНСКАЯ",
+                            "КОСТАНАЙСКАЯ",
+                            "КЫЗЫЛОРДИНСКАЯ",
+                            "МАНГИСТАУСКАЯ",
+                            "ЮЖНО-КАЗАХСТАНСКАЯ",
+                            "ПАВЛОДАРСКАЯ",
+                            "СЕВЕРО-КАЗАХСТАНСКАЯ",
+                            "ВОСТОЧНО-КАЗАХСТАНСКАЯ",
+                            "Г.АСТАНА",
+                            "Г.АЛМАТЫ"
+
+                        ]
+                    },
+                    y: {
+
+                        show: false
+
+                    }
+                },
+
+                tooltip: {
+                    show: true
+                },
+                legend: {
+                    show: false
+                },
+
+            });
+
+
+
+
+
+
+
+
+
+
+        }else if (id === 6) {
+
+
+
+
+            chartnew5 = bb.generate({
+
+                bindto: "#chartnew5",
+
+                data: {
+                    columns: [
+                        ['ВРП (млрд. тенге)', 2807.1,
+                            3315.1,
+                            3842.1,
+                        ],
+                        ['ИФО %', 101.1,
+                        103.0,
+                        116.3,
+                        ],
+
+                    ],
+
+                    type: 'bar',
+
+                    types: {
+
+                        'ИФО %': "line"
+
+                    },
+
+
+                    labels: {
+                        format: function (x, id) {
+
+
+                            if (id === 'ИФО %') {
+
+                                return d3.format(",.2d")(x) + "%";
+
+                            } else {
+                                return d3.format(",.2d")(x);
+
+                            }
+
+
+                        }
+
+
+                    }
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 // this makes bar width 50% of length between ticks
+                    }
+                    // or
+                    //width: 100 // this makes bar width 100px
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+
+                axis: {
+
+                    x: {
+                        type: 'category',
+                        categories: [2015, 2016, 2017]
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+
+                tooltip: {
+                    show: true
+                },
+                legend: {
+                    show: true
+                },
+
+            });
+
+            chartnew6 = bb.generate({
+
+                bindto: "#chartnew6",
+
+                data: {
+                    columns: [
+                        ['ВРП на душу населения (тыс. тенге)', 4786.4,
+                            5526.7,
+                            6274.3,
+                        ],
+
+                    ],
+
+                    type: 'bar',
+
+
+
+                    labels: {
+                        format: function (x, id) {
+
+
+
+                            return d3.format(",.2d")(x);
+
+
+
+
+                        }
+
+
+                    }
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 // this makes bar width 50% of length between ticks
+                    }
+                    // or
+                    //width: 100 // this makes bar width 100px
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+
+                axis: {
+
+                    x: {
+                        type: 'category',
+                        categories: [2015, 2016, 2017]
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+
+                tooltip: {
+                    show: true
+                },
+                legend: {
+                    show: true
+                },
+
+            });
+
+
+
+
+
+
+
+
+
+        }else if (id === 7) {
+
+
+
+
+            chartnew7 = bb.generate({
+                data: {
+                    columns: [
+                        ["Промышленность", 2004385.1],
+                        ["Прочая деятельность", 319982.3],
+                        ["Оптовая и розничная торговля", 154335.0],
+                        ["Транспорт и складирование", 200156.3],
+                        ["Сельское, лесное и рыбное хозяйство",	44129.3],
+                        ["Профессиональная, научная и техническая деятельность", 329310.5],
+                        ["Деятельность в области административного и вспомогательного обслуживания", 166737.2],
+                        ["Чистые налоги", 316889.2],
+                        ["Строительство", 306196.2]
+
+                    ],
+                    type: "donut"
+
+                },
+                donut: {
+                    title: "3 842 121,1\n" +
+                    "млн. тенге\n"
+                },
+                tooltip: {
+                    format: {
+                        value: function (x, id) {
+
+
+                            return d3.format(",.2d")(x);
+
+
+                        }
+
+                    }
+
+
+                },
+
+                bindto: "#chartnew7"
+            });
+
+
+
+
+
+
+
+
+        }else if (id === 8) {
+
+
+
+
+            chartnew8 = bb.generate({
+                data: {
+                    columns: [
+                        ["Промышленность", 2556628.9],
+                        ["Прочая деятельность", 339983.8],
+                        ["Оптовая и розничная торговля", 175978.5],
+                        ["Транспорт и складирование", 336882.9],
+                        ["Операции с недвижимым имуществом",	167665.0],
+                        ["Профессиональная, научная и техническая деятельность", 636296.2],
+                        ["Деятельность в области административного и вспомогательного обслуживания", 164476.8],
+                        ["Чистые налоги", 337632.5],
+                        ["Строительство", 485128.6]
+
+                    ],
+                    type: "donut"
+
+                },
+                donut: {
+                    title: "319 982,3\n" +
+                    "млн. тенге\n"
+                },
+                tooltip: {
+                    format: {
+                        value: function (x, id) {
+
+
+                            return d3.format(",.2d")(x);
+
+
+                        }
+
+                    }
+
+
+                },
+
+                bindto: "#chartnew8"
+            });
+
+
+
+
+
+
+
+
         }
+
+
+
 
 
 
