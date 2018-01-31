@@ -3234,7 +3234,7 @@ angular.module('app').controller('SocVRPCtrl', function ($scope, $timeout, $mdDi
     $('.drawer').on('drawer.closed', function(){
 
 
-        chartDohod.resize();
+        chartnew3.resize();
 
 
     });
@@ -3244,7 +3244,7 @@ angular.module('app').controller('SocVRPCtrl', function ($scope, $timeout, $mdDi
 
 
 
-        chartDohod.resize();
+        chartnew3.resize();
 
     });
 

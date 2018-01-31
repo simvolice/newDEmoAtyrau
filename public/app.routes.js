@@ -275,6 +275,20 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
       })
 
+      .state('socinfl', {
+          url: '/socinfl',
+          templateUrl: 'components/socInflyciy/socInflView.html'
+
+      })
+
+
+
+
+      .state('socinnov', {
+          url: '/socinnov',
+          templateUrl: 'components/socInnovacii/socInnovView.html'
+
+      })
 
 
 });
