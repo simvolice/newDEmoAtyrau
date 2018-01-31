@@ -7,12 +7,12 @@
 angular.module('app').controller('CleanBudgetCtrl', function ($scope, $timeout) {
 
     var chartDohod = null;
-    $scope.menuItems = ['ТАЗА БЮДЖЕТТІК КРЕДИТ БЕРУ', 'БЮДЖЕТТІК КРЕДИТТЕР', 'БЮДЖЕТТІК КРЕДИТТЕРДІ ӨТЕУ', "Жалпы"];
+    $scope.menuItems = ['ЧИСТОЕ БЮДЖЕТНОЕ КРЕДИТОВАНИЕ', 'ПОГАШЕНИЕ БЮДЖЕТНЫХ КРЕДИТОВ', 'БЮДЖЕТНЫЕ КРЕДИТЫ'];
 
 
 
 
-    $scope.activeMenu = $scope.menuItems[3];
+    $scope.activeMenu = $scope.menuItems[0];
 
 
 
@@ -45,7 +45,7 @@ angular.module('app').controller('CleanBudgetCtrl', function ($scope, $timeout) 
 
             data: {
                 columns: [
-                    ['data1', 3544546, 1989724,	3303792, 3679844],
+                    ['data1', 1676386, 761234, 1141795, -271231],
 
                 ],
                 type: 'bar',
@@ -108,38 +108,26 @@ angular.module('app').controller('CleanBudgetCtrl', function ($scope, $timeout) 
 
         $scope.activeMenu = param;
 
-        if (param === "ТАЗА БЮДЖЕТТІК КРЕДИТ БЕРУ") {
+        if (param === "ЧИСТОЕ БЮДЖЕТНОЕ КРЕДИТОВАНИЕ") {
 
 
 
 
             chartDohod.load({
                 columns: [
-                    ['data1', 1563608, 761234,	1141795, 226283],
+                    ['data1', 1676386, 761234, 1141795, -271231]
 
                 ]
             });
 
 
 
-        } else if (param === "БЮДЖЕТТІК КРЕДИТТЕР") {
+        } else if (param === "БЮДЖЕТНЫЕ КРЕДИТЫ") {
 
 
             chartDohod.load({
                 columns: [
-                    ['data1', 1772273, 994862,	1651896, 1613639],
-
-                ]
-            });
-
-
-
-
-        } else if (param === "БЮДЖЕТТІК КРЕДИТТЕРДІ ӨТЕУ") {
-
-            chartDohod.load({
-                columns: [
-                    ['data1', 208665, 233628, 510101, 1839922],
+                    ['data1', 1885051, 994862, 1651896, 1632005],
 
                 ]
             });
@@ -147,12 +135,11 @@ angular.module('app').controller('CleanBudgetCtrl', function ($scope, $timeout) 
 
 
 
-
-        }else if (param === "Жалпы") {
+        } else if (param === "ПОГАШЕНИЕ БЮДЖЕТНЫХ КРЕДИТОВ") {
 
             chartDohod.load({
                 columns: [
-                    ['data1', 3544546, 1989724,	3303792, 3679844],
+                    ['data1', 208665, 233628	,510101	,1903236],
 
                 ]
             });
