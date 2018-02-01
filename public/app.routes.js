@@ -184,7 +184,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
           url: '/socvrpctrl',
           templateUrl: 'components/socVRP/socVRPView.html',
 
-
+      })
 
       .state('socSportCtrl', {
           url: '/socsportctrl',
@@ -265,6 +265,13 @@ app.config(function($stateProvider, $urlRouterProvider) {
       .state('socZHkhCtrl', {
           url: '/soczhkhctrl',
           templateUrl: 'components/socZHkh/socZHkhView.html'
+
+      })
+
+
+      .state('socBuildingCtrl', {
+          url: '/socbuildingctrl',
+          templateUrl: 'components/socBuilding/socBuildingView.html'
 
       })
 });

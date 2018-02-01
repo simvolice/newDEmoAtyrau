@@ -225,7 +225,7 @@ angular.module('app').controller('socZHkhCtrl', function ($scope, $timeout) {
                     format: {
 
                         "data1": d3.format(",d"),
-                        "data2": d3.format(",d"),
+                        "data2": d3.format(",d")
 
 
                     }
@@ -814,6 +814,8 @@ angular.module('app').controller('socZHkhCtrl', function ($scope, $timeout) {
             },
             "bindto": "#chart10"
         });
+
+
 
     $('.drawer').on('drawer.closed', function(){
 
