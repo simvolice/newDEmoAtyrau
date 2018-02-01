@@ -1014,6 +1014,11 @@ angular.module('app').controller('SocVRPCtrl', function ($scope, $timeout, $mdDi
 
                 bindto: "#chartnew3",
 
+                size: {
+                    height: 340,
+
+                },
+
                 data: {
                     columns: [
                         ['data1', 918.2,
@@ -1035,7 +1040,7 @@ angular.module('app').controller('SocVRPCtrl', function ($scope, $timeout, $mdDi
 
                         ],
 
-                        ['data2', 102.9,
+                        ['Процентовка', 102.9,
                             101.0,
                             101.8,
                             103.7,
@@ -1059,7 +1064,7 @@ angular.module('app').controller('SocVRPCtrl', function ($scope, $timeout, $mdDi
                     type: 'bar',
                     types: {
 
-                        "data2": "line"
+                        "Процентовка": "line"
 
 
                     },
@@ -1068,12 +1073,12 @@ angular.module('app').controller('SocVRPCtrl', function ($scope, $timeout, $mdDi
                         format: function (x, id) {
 
 
-                            if (id === "data2") {
+                            if (id === "Процентовка") {
 
-                                return d3.format(",.2d")(x) + "%";
+                                return d3.format(",.2f")(x) + "%";
 
                             } else {
-                                return d3.format(",.2d")(x);
+                                return d3.format(",.2f")(x);
 
                             }
 
@@ -1141,8 +1146,13 @@ angular.module('app').controller('SocVRPCtrl', function ($scope, $timeout, $mdDi
             });
 
 
+            $timeout(function () {
 
 
+                chartnew3.resize();
+
+
+            }, 750);
 
 
 

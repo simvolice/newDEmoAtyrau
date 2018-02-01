@@ -392,6 +392,15 @@ angular.module('app').controller('SocPromCtrl', function ($scope, $timeout, $mdD
     }, 350);
 
 
+    $timeout(function () {
+
+
+        chartnew1.resize();
+
+
+    }, 750);
+
+
 
 
 

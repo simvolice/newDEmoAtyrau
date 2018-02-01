@@ -1031,6 +1031,12 @@ polyline{
 }
 
 
+.bb-target-Процентовка {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
 .bg__color__active {
 
     background-color: #CCCCCC;

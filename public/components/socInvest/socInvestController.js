@@ -1273,7 +1273,13 @@ angular.module('app').controller('SocInvestCtrl', function ($scope, $timeout, $m
 
 
 
+            $timeout(function () {
 
+
+                chartnew2.resize();
+
+
+            }, 750);
 
 
 
@@ -1573,6 +1579,16 @@ angular.module('app').controller('SocInvestCtrl', function ($scope, $timeout, $m
                 },
 
             });
+
+
+            $timeout(function () {
+
+
+                chartnew7.resize();
+
+
+            }, 750);
+
 
 
 
