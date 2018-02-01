@@ -348,6 +348,20 @@ angular.module('app').controller('SocTransportCtrl', function ($scope, $timeout,
             var accessToken = 'sk.eyJ1IjoibXVsbGFudXIiLCJhIjoiY2o5NjFjMDZmMW8waDMybXd1OW5vN2VpeiJ9.WY-_nrUvUgXbYET6wpyHEg';
             // Add tiles from Mapbox Style API (https://www.mapbox.com/developers/api/styles/)
             // Tiles are 512x512 pixels and are offset by 1 zoom level
+
+
+
+
+            var mapboxTileLayerDark = L.tileLayer(
+                'https://api.mapbox.com/styles/v1/mullanur/cjd4gjzt358hn2ss0ql7myq2v/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibXVsbGFudXIiLCJhIjoiY2o5NjFiZjQ2MXR3YTM1cWJhazg3cWRibyJ9.NwJfO3sFsVFGVNoqU7V-fg', {
+
+                    tileSize: 512,
+                    zoomOffset: -1,
+                    attribution: '© <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> © <a href="http://efflife.kz">EFFLIFE.KZ</a>'
+                });
+
+
+
             var mapboxTileLayer = L.tileLayer(
                 'https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/{z}/{x}/{y}?access_token=' + accessToken, {
 
@@ -378,10 +392,11 @@ angular.module('app').controller('SocTransportCtrl', function ($scope, $timeout,
             var map = L.map('map', {
                 center: [47.158615, 50.984952],
                 zoom: 7,
-                layers: [mapboxTileLayer]
+                layers: [mapboxTileLayerDark]
             });
 
             legend.addTo(map);
+
 
 
             d3.json("outOnlyRoad.geojson", function (collection) {
