@@ -728,24 +728,18 @@
 
         var ch12 = bb.generate({
 
-            "data": {
-                "columns": [
-                    [
-                        "data1",
-                        16,
-                        18,
-                        17
-                    ]
+            data: {
+                columns: [
+
+                    ["data1", 16, 18, 17]
 
                 ],
 
-                types:{
-                    data1:"bar"
-                },
+                type: "bar",
                 labels: true
             },
             "axis": {
-                "rotated": false,
+
                 x: {
 
                     show: true,

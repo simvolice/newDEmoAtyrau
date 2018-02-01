@@ -1,0 +1,370 @@
+<div class="row" ng-controller="SocInflCtrl">
+    <div class="col-md-12">
+        <md-content layout="column" flex class="custom__md-content__categ">
+
+
+
+            <md-card>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="title text-center" style="text-transform: uppercase">Инфляция</h3>
+
+                    </div>
+
+                </div>
+
+            </md-card>
+
+
+
+
+
+
+
+            <md-card>
+
+                <md-tabs md-dynamic-height md-border-bottom>
+
+
+
+                    <md-tab label="Инфляция за 2017 год по областям">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+                                <div class="col-md-12">
+
+
+                                   <div id="chartnew1"></div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+
+
+                    <md-tab label="Инфляция атырауской области по годам" ng-click="tabClk(2)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+                                <div class="col-md-12">
+
+
+                                    <div id="chartnew2"></div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+
+                    <md-tab label="Инфляция атырауской области" ng-click="tabClk(3)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+                                <div class="col-md-12">
+
+
+                                    <div id="chartnew3"></div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+
+                    <md-tab label="Индекс цен атырауской области на продовольственные товары" ng-click="tabClk(4)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+                                <div class="col-md-6">
+
+
+                                    <div id="chartnew4"></div>
+                                </div>
+
+                                <div class="col-md-6">
+
+
+                                    <div id="chartnew5"></div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+
+
+                    <md-tab label="Индекс цен атырауской области на непродовольственные товары" ng-click="tabClk(5)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+                                <div class="col-md-6">
+
+
+                                    <div id="chartnew6"></div>
+                                </div>
+
+                                <div class="col-md-6">
+
+
+                                    <div id="chartnew7"></div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+                    <md-tab label="Индекс цен атырауской области на платные услуги по годам" ng-click="tabClk(6)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+                                <div class="col-md-6">
+
+
+                                    <div id="chartnew8"></div>
+                                </div>
+
+                                <div class="col-md-6">
+
+
+                                    <div id="chartnew9"></div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+                    <md-tab label="Динамика цен на нефть (смесь Brent) долларов сша за баррель" ng-click="tabClk(7)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+                                <div class="col-md-6">
+
+
+                                    <div id="chartnew10"></div>
+                                </div>
+
+                                <div class="col-md-6">
+
+
+                                    <div id="chartnew11"></div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+
+
+
+                    <md-tab label="Динамика курсов валют" ng-click="tabClk(8)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+                                <div class="col-md-6">
+
+
+                                    <div id="chartnew12"></div>
+                                </div>
+
+                                <div class="col-md-6">
+
+
+                                    <div id="chartnew13"></div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+
+                    <md-tab label="Динамика курсов валют (Российский рубль)" ng-click="tabClk(9)">
+                        <md-content class="md-padding" style="text-align: center">
+
+                            <div class="row" style="margin-bottom: 20px">
+
+                                <div class="col-md-6">
+
+
+                                    <div id="chartnew14"></div>
+                                </div>
+
+                                <div class="col-md-6">
+
+
+                                    <div id="chartnew15"></div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </md-content>
+                    </md-tab>
+
+
+
+                </md-tabs>
+
+
+
+
+            </md-card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </md-content>
+    </div>
+
+
+
+
+
+</div>

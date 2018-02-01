@@ -11,6 +11,23 @@ angular.module('app').controller('SocPromCtrl', function ($scope, $timeout, $mdD
     var chartTab3 = null;
     var chartlist = null;
     var chartTab4 = null;
+    var chartnew1 = null;
+    var chartnew2 = null;
+    var chartnew3 = null;
+    var chartnew4 = null;
+    var chartnew5 = null;
+    var chartnew6 = null;
+    var chartnew7 = null;
+    var chartnew8 = null;
+    var chartnew9 = null;
+    var chartnew10 = null;
+    var chartnew11 = null;
+    var chartnew12 = null;
+    var chartnew13 = null;
+
+
+
+
     $scope.menuItems = [2010,
         2011,
         2012,
@@ -146,7 +163,113 @@ angular.module('app').controller('SocPromCtrl', function ($scope, $timeout, $mdD
 
 
 
-       bb.generate({
+        chartnew1 = bb.generate({
+
+            bindto: "#chartnew1",
+
+            data: {
+                columns: [
+                    ['Объем и ифо промышленной продукции по областям за 2016 год (млрд. тенге)', 455.6,
+                        1291.1,
+                        681.9,
+                        4495.5,
+                        1506.6,
+                        772.1,
+                        454.4,
+                        341.3,
+                        1567.0,
+                        1947.7,
+                        599.4,
+                        669.2,
+                        1887.6,
+                        1370.4,
+                        198.0,
+                        789.1,
+
+                    ]
+
+
+
+                ],
+                type: 'bar',
+
+                labels: {
+                    format: function (val, id) {
+
+
+                            if (id === "data2") {
+
+                                return d3.format(",.2f")(val) + " %";
+
+                            } else {
+
+                                return d3.format(",.2f")(val);
+                            }
+                        }
+
+
+
+
+                }
+            },
+            bar: {
+                width: {
+                    ratio: 0.5 // this makes bar width 50% of length between ticks
+                }
+                // or
+                //width: 100 // this makes bar width 100px
+            },
+            grid: {
+                x: {
+                    show: false
+                },
+                y: {
+                    show: false
+                }
+            },
+
+            axis: {
+                rotated: true,
+                x: {
+                    type: 'category',
+                    categories: [
+
+                        "АКМОЛИНСКАЯ",
+                        "АКТЮБИНСКАЯ",
+                        "АЛМАТИНСКАЯ",
+                        "АТЫРАУСКАЯ",
+                        "ВОСТОЧНО-КАЗАХСТАНСКАЯ",
+                        "Г.АЛМАТЫ",
+                        "Г.АСТАНА",
+                        "ЖАМБЫЛСКАЯ",
+                        "ЗАПАДНО-КАЗАХСТАНСКАЯ",
+                        "КАРАГАНДИНСКАЯ",
+                        "КОСТАНАЙСКАЯ",
+                        "КЫЗЫЛОРДИНСКАЯ",
+                        "МАНГИСТАУСКАЯ",
+                        "ПАВЛОДАРСКАЯ",
+                        "СЕВЕРО-КАЗАХСТАНСКАЯ",
+                        "ЮЖНО-КАЗАХСТАНСКАЯ"
+                    ]
+                },
+                y: {
+
+                    show: false
+
+                }
+            },
+
+            tooltip: {
+                show: true
+            },
+            legend: {
+                show: false
+            },
+
+        });
+
+
+        bb.generate({
 
             bindto: "#chart2",
 
@@ -1192,7 +1315,928 @@ angular.module('app').controller('SocPromCtrl', function ($scope, $timeout, $mdD
 
 
 
+        } else if (id === 5) {
+
+
+
+            chartnew2 = bb.generate({
+                data: {
+                    columns: [
+                        ["Промышленность", 0],
+                        ["Горнодобывающая", 4588.5],
+                        ["Обрабатывающая", 446.6],
+                        ["Электроснабжение", 33.6],
+                        ["Водоснабжение",	22.2],
+
+
+                    ],
+                    type: "donut"
+
+                },
+                donut: {
+                    title: "5 090,96\n" +
+                    "млрд. тенге\n"
+                },
+                tooltip: {
+                    format: {
+                        value: function (x, id) {
+
+
+                            return d3.format(",.2d")(x);
+
+
+                        }
+
+                    }
+
+
+                },
+
+                bindto: "#chartnew2"
+            });
+
+
+            chartnew3 = bb.generate({
+
+                bindto: "#chartnew3",
+
+                data: {
+                    columns: [
+                        ['Объем промышленной продукции (млрд. тенге)', 3052.8,
+                            3967.9,
+                            5091.0
+
+                        ],
+                        ['ИФО %', 101.0,
+                        102.1,
+                        121.4,
+
+                        ],
+
+                    ],
+
+                    type: 'bar',
+
+                    types: {
+
+                        'ИФО %': "line"
+
+                    },
+
+
+                    labels: {
+                        format: function (x, id) {
+
+
+                            if (id === 'ИФО %') {
+
+                                return d3.format(",.2d")(x) + "%";
+
+                            } else {
+                                return d3.format(",.2d")(x);
+
+                            }
+
+
+                        }
+
+
+                    }
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 // this makes bar width 50% of length between ticks
+                    }
+                    // or
+                    //width: 100 // this makes bar width 100px
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+
+                axis: {
+
+                    x: {
+                        type: 'category',
+                        categories: [2015, 2016, 2017]
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+
+                tooltip: {
+                    show: true
+                },
+                legend: {
+                    show: true
+                },
+
+            });
+
+
+
+
+
+
+        }else if (id === 6) {
+
+
+
+            chartnew4 = bb.generate({
+                data: {
+                    columns: [
+                        ["Промышленность", 4495],
+                        ["Горнодобывающая промышленность", 3948.90],
+                        ["Обрабатывающая промышленность", 489.33],
+                        ["Электроснабжение", 35.57],
+                        ["Водоснабжение",	21.69],
+
+
+                    ],
+                    type: "donut"
+
+                },
+                donut: {
+                    title: "4 495,49\n" +
+                    "млрд. тенге\n"
+                },
+                tooltip: {
+                    format: {
+                        value: function (x, id) {
+
+
+                            return d3.format(",.2d")(x);
+
+
+                        }
+
+                    }
+
+
+                },
+
+                bindto: "#chartnew4"
+            });
+
+
+            chartnew5 = bb.generate({
+
+                bindto: "#chartnew5",
+
+                data: {
+                    columns: [
+                        ['Объем промышленной продукции (млрд. тенге)', 4194.6,
+                            4614.2,
+                            4915.0,
+                            3442.9,
+                            4495.5
+
+
+                        ],
+                        ['ИФО %', 95.9,
+                        108.8,
+                        99.7,
+                        101.0,
+                        102.2,
+
+
+                        ],
+
+                    ],
+
+                    type: 'bar',
+
+                    types: {
+
+                        'ИФО %': "line"
+
+                    },
+
+
+                    labels: {
+                        format: function (x, id) {
+
+
+                            if (id === 'ИФО %') {
+
+                                return d3.format(",.2d")(x) + "%";
+
+                            } else {
+                                return d3.format(",.2d")(x);
+
+                            }
+
+
+                        }
+
+
+                    }
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 // this makes bar width 50% of length between ticks
+                    }
+                    // or
+                    //width: 100 // this makes bar width 100px
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+
+                axis: {
+
+                    x: {
+                        type: 'category',
+                        categories: [2012,
+                            2013,
+                            2014,
+                            2015,
+                            2016
+                        ]
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+
+                tooltip: {
+                    show: true
+                },
+                legend: {
+                    show: true
+                },
+
+            });
+
+
+
+
+
+
+        }else if (id === 7) {
+
+
+
+            chartnew6 = bb.generate({
+                data: {
+                    columns: [
+                        ["Промышленность", 3948.90],
+                        ["Технические услуги в области горнодобывающей промышленности", 131.3],
+                        ["Прочие отрасли горнодобывающей промышленности", 54.4],
+                        ["Добыча сырой нефти", 3759.4]
+
+
+
+                    ],
+                    type: "donut"
+
+                },
+                donut: {
+                    title: "3 948,9\n" +
+                    "млрд. тенге\n"
+                },
+                tooltip: {
+                    format: {
+                        value: function (x, id) {
+
+
+                            return d3.format(",.2d")(x);
+
+
+                        }
+
+                    }
+
+
+                },
+
+                bindto: "#chartnew6"
+            });
+
+
+            chartnew7 = bb.generate({
+
+                bindto: "#chartnew7",
+
+                data: {
+                    columns: [
+                        ['Объем промышленной продукции (млрд. тенге)', 2832.6,
+                            3988.2,
+                            3852.9,
+                            4245.2,
+                            4502.5,
+                            3052.5,
+                            3948.9
+
+
+
+                        ],
+                        ['ИФО %', 113.1,
+                        100.9,
+                        95.9,
+                        109.3,
+                        99.4,
+                        100.9,
+                        102.0,
+
+
+
+                        ],
+
+                    ],
+
+                    type: 'bar',
+
+                    types: {
+
+                        'ИФО %': "line"
+
+                    },
+
+
+                    labels: {
+                        format: function (x, id) {
+
+
+                            if (id === 'ИФО %') {
+
+                                return d3.format(",.2d")(x) + "%";
+
+                            } else {
+                                return d3.format(",.2d")(x);
+
+                            }
+
+
+                        }
+
+
+                    }
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 // this makes bar width 50% of length between ticks
+                    }
+                    // or
+                    //width: 100 // this makes bar width 100px
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+
+                axis: {
+
+                    x: {
+                        type: 'category',
+                        categories: [2010,
+                            2011,
+                            2012,
+                            2013,
+                            2014,
+                            2015,
+                            2016
+
+                        ]
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+
+                tooltip: {
+                    show: true
+                },
+                legend: {
+                    show: true
+                },
+
+            });
+
+
+
+
+
+
+        }else if (id === 8) {
+
+
+
+            chartnew8 = bb.generate({
+                data: {
+                    columns: [
+                        ["ТОО «Тенгизшевройл»", 27.5],
+                        ["АО «Эмбамунайгаз»", 2.8],
+                        ["«НКОК»", 1],
+                        ["Прочие компании", 2.4]
+
+
+
+                    ],
+                    type: "donut"
+
+                },
+                donut: {
+                    title: "33,7\n" +
+                    "     млн. тонн\n"
+                },
+                tooltip: {
+                    format: {
+                        value: function (x, id) {
+
+
+                            return d3.format(",.2d")(x);
+
+
+                        }
+
+                    }
+
+
+                },
+
+                bindto: "#chartnew8"
+            });
+
+
+            chartnew9 = bb.generate({
+
+                bindto: "#chartnew9",
+
+                data: {
+                    columns: [
+                        ['Добыча нефти (тыс. тонн)', 32244.3,
+                            31943.2,
+                            32390.3,
+                            33680.7
+
+                        ],
+                        ['Процентное соотношение', 0.0,
+                        -0.9,
+                        1.4,
+                        4.0,
+
+
+
+
+                        ],
+
+                    ],
+
+                    type: 'bar',
+
+                    types: {
+
+                        'Процентное соотношение': "line"
+
+                    },
+
+
+                    labels: {
+                        format: function (x, id) {
+
+
+                            if (id === 'Процентное соотношение') {
+
+                                return d3.format(",.2d")(x) + "%";
+
+                            } else {
+                                return d3.format(",.2d")(x);
+
+                            }
+
+
+                        }
+
+
+                    }
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 // this makes bar width 50% of length between ticks
+                    }
+                    // or
+                    //width: 100 // this makes bar width 100px
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+
+                axis: {
+
+                    x: {
+                        type: 'category',
+                        categories: [2013,
+                            2014,
+                            2015,
+                            2016
+
+
+                        ]
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+
+                tooltip: {
+                    show: true
+                },
+                legend: {
+                    show: true
+                },
+
+            });
+
+
+
+
+
+
+        }else if (id === 9) {
+
+
+
+            chartnew10 = bb.generate({
+                data: {
+                    columns: [
+
+                        ["Производство продуктов питания", 6.8],
+                        ["Производство кокса и продуктов нефтепереработки", 411.1],
+                        ["Производство продуктов химической промышленности", 6.2],
+                        ["Производство резиновых и пластмассовых изделий", 4.3],
+                        ["Производство прочей не металлической минеральной продукции", 7.3],
+                        ["Производство готовых металлических изделий, кроме машин и оборудования", 6.3],
+                        ["Машиностроение", 43.5],
+                        ["Производство прочей продукции", 3.8],
+
+
+
+                    ],
+                    type: "donut"
+
+                },
+                donut: {
+                    title: "489,3 \n" +
+                    " млрд. тенге\n"
+                },
+                tooltip: {
+                    format: {
+                        value: function (x, id) {
+
+
+                            return d3.format(",.2d")(x);
+
+
+                        }
+
+                    }
+
+
+                },
+
+                bindto: "#chartnew10"
+            });
+
+
+            chartnew11 = bb.generate({
+
+                bindto: "#chartnew11",
+
+                data: {
+                    columns: [
+                        ['Объем промышленной продукции (млрд. тенге)', 254.3,
+                            295.1,
+                            298.6,
+                            322.4,
+                            362.4,
+                            335.6,
+                            489.3
+
+                        ],
+                        ['ИФО', 113.0,
+                        98.7,
+                        94.2,
+                        104.2,
+                        99.7,
+                        98.3,
+                        104.6,
+
+
+
+                        ],
+
+                    ],
+
+                    type: 'bar',
+
+                    types: {
+
+                        'ИФО': "line"
+
+                    },
+
+
+                    labels: {
+                        format: function (x, id) {
+
+
+                            if (id === 'ИФО') {
+
+                                return d3.format(",.2d")(x) + "%";
+
+                            } else {
+                                return d3.format(",.2d")(x);
+
+                            }
+
+
+                        }
+
+
+                    }
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 // this makes bar width 50% of length between ticks
+                    }
+                    // or
+                    //width: 100 // this makes bar width 100px
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+
+                axis: {
+
+                    x: {
+                        type: 'category',
+                        categories: [2010,
+                            2011,
+                            2012,
+                            2013,
+                            2014,
+                            2015,
+                            2016
+
+
+
+                        ]
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+
+                tooltip: {
+                    show: true
+                },
+                legend: {
+                    show: true
+                },
+
+            });
+
+
+
+
+
+
+        }else if (id === 10) {
+
+
+
+            chartnew12 = bb.generate({
+
+                bindto: "#chartnew12",
+
+                data: {
+                    columns: [
+                        ['Объем промышленной продукции (млрд. тенге)', 27.9,
+                            28.9,
+                            33.0,
+                            34.9,
+                            35.6
+
+                        ],
+                        ['ИФО', 106.5,
+                        100.1,
+                        100.3,
+                        124.7,
+                        98.1,
+
+
+
+                        ],
+
+                    ],
+
+                    type: 'bar',
+
+                    types: {
+
+                        'ИФО': "line"
+
+                    },
+
+
+                    labels: {
+                        format: function (x, id) {
+
+
+                            if (id === 'ИФО') {
+
+                                return d3.format(",.2d")(x) + "%";
+
+                            } else {
+                                return d3.format(",.2d")(x);
+
+                            }
+
+
+                        }
+
+
+                    }
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 // this makes bar width 50% of length between ticks
+                    }
+                    // or
+                    //width: 100 // this makes bar width 100px
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+
+                axis: {
+
+                    x: {
+                        type: 'category',
+                        categories: [2012,
+                            2013,
+                            2014,
+                            2015,
+                            2016,
+
+
+
+
+                        ]
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+
+                tooltip: {
+                    show: true
+                },
+                legend: {
+                    show: true
+                },
+
+            });
+
+
+            chartnew13 = bb.generate({
+
+                bindto: "#chartnew13",
+
+                data: {
+                    columns: [
+                        ['Объем водоснабжения (млрд. тенге)', 15.1,
+                            17.8,
+                            17.1,
+                            19.8,
+                            21.7
+
+
+                        ],
+                        ['ИФО', 102.2,
+                        99.0,
+                        92.0,
+                        129.1,
+                        104.0,
+
+
+
+
+                        ],
+
+                    ],
+
+                    type: 'bar',
+
+                    types: {
+
+                        'ИФО': "line"
+
+                    },
+
+
+                    labels: {
+                        format: function (x, id) {
+
+
+                            if (id === 'ИФО') {
+
+                                return d3.format(",.2d")(x) + "%";
+
+                            } else {
+                                return d3.format(",.2d")(x);
+
+                            }
+
+
+                        }
+
+
+                    }
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 // this makes bar width 50% of length between ticks
+                    }
+                    // or
+                    //width: 100 // this makes bar width 100px
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+
+                axis: {
+
+                    x: {
+                        type: 'category',
+                        categories: [2012,
+                            2013,
+                            2014,
+                            2015,
+                            2016
+
+
+
+
+                        ]
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+
+                tooltip: {
+                    show: true
+                },
+                legend: {
+                    show: true
+                },
+
+            });
+
+
+
+
+
+
         }
+
 
 
 

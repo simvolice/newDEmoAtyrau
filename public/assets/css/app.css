@@ -4,7 +4,7 @@
 
 html,
 .custom__md-content__categ {
-    background-color: #CCCCCC !important;
+    background-color: #CCC;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
 }
@@ -1010,6 +1010,28 @@ polyline{
 
 }
 
+.bb-texts-test33 {
+    font-size: 15px;
+
+}
+
+.bb-texts-Объем-произведенной-инновационной-продукции--млн--тенге- {
+
+    font-size: 10px;
+
+}
+
+
+.bb-texts-Объем-реализованной-инновационной-продукции--млн--тенге- {
+
+    font-size: 10px;
+}
+
+.bb-target-Общие-затраты--млн--тенге- {
+    font-size: 12px;
+
+}
+
 
 .bg__color__active {
 
@@ -1061,9 +1083,6 @@ polyline{
 table .collapse.in {
     display:table-row;
 }
-
-
-
 
 .brd__left {
 
