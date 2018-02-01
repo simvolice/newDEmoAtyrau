@@ -1068,6 +1068,18 @@ angular.module('app').controller('socZHkhCtrl', function ($scope, $timeout) {
 
 
     });
+
+    $timeout(function () {
+
+
+        ch1.resize();
+        ch5.resize();
+        ch7.resize();
+        ch12.resize();
+        // chartnew3.resize();
+
+
+    }, 750);
 });
 
 
