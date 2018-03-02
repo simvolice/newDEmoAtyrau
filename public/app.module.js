@@ -4,14 +4,19 @@
 
 
 
-var app = angular.module('app', ['ngMaterial', "fixed.table.header", 'ui.router', 'md.data.table', 'ngMessages', 'ngResource', 'ngSanitize', 'pascalprecht.translate']);
+var app = angular.module('app', ['ngMaterial', "fixed.table.header", 'ui.router', 'md.data.table', 'ngMessages', 'ngResource', 'ngSanitize', 'pascalprecht.translate', "oc.lazyLoad"]);
 
 
 
 
 
 
-app.config(function ($locationProvider, $translateProvider, $mdDateLocaleProvider) {
+app.config(function ($locationProvider, $translateProvider, $mdDateLocaleProvider, $ocLazyLoadProvider) {
+
+
+    $ocLazyLoadProvider.config({
+        events: true
+    });
 
     moment.locale("ru");
     var localeDate = moment.localeData();

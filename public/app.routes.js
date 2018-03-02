@@ -289,6 +289,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
           templateUrl: 'components/socInnovacii/socInnovView.html'
 
       })
+      .state('proto', {
+          url: '/proto',
+          templateUrl: 'components/proto/proto.html'
 
+      })
 
 });

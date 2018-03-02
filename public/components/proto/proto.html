@@ -1,0 +1,170 @@
+<div class="row" ng-controller="protoCtrl">
+    <div class="col-md-12">
+        <md-content id="mainpage" layout="column" flex class="custom__md-content__categ">
+
+
+            <md-card id="title">
+                <div class="row" >
+                    <div class="col-md-12">
+
+
+                        <md-input-container class="md-block" flex-gt-sm>
+                            <label>Заголовок страницы</label>
+                            <input ng-model="title">
+                        </md-input-container>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="row">
+
+
+
+                    <div class="col-md-6">
+
+                        <md-select ng-model="weapon" placeholder="Выбрать таблицу" class="md-no-underline">
+                            <md-option value="Бюджет">Бюджет</md-option>
+                            <md-option value="Исполнение бюджета">Исполнение бюджета</md-option>
+                            <md-option value="Бюджетное планирование">Бюджетное планирование</md-option>
+                        </md-select>
+
+
+                    </div>
+
+
+                    <div class="col-md-6">
+                        
+                        <h6 class="title">Выбрать диаграмму</h6>
+
+                       <div class="row">
+                           <div class="col-md-3">
+
+
+
+
+
+
+
+                               <md-radio-group ng-model="group1">
+
+                                   <md-radio-button value="Apple1" class="md-primary"><img src="assets/img/chart1.PNG" alt="" height="100" width="130" style="cursor: pointer">
+                                   </md-radio-button>
+                                   <md-radio-button value="Banana2" class="md-primary"> <img src="assets/img/chart2.PNG" alt="" height="100" width="160"  style="cursor: pointer">
+                                   </md-radio-button>
+                                   <md-radio-button value="Mango3" class="md-primary"><img src="assets/img/chart3.PNG" alt="" height="100" width="150" style="cursor: pointer">
+
+                                   </md-radio-button>
+
+                               </md-radio-group>
+
+
+
+                           </div>
+
+                           <div class="col-md-3">
+
+
+
+                               <md-radio-group ng-model="group2">
+
+                                   <md-radio-button value="Apple4" class="md-primary">
+
+
+
+
+                                       <img src="assets/img/chart4.PNG" alt="" height="100" width="160" style="cursor: pointer">
+
+
+
+                                   </md-radio-button>
+
+
+
+                                   <md-radio-button value="Banana5" class="md-primary">
+
+
+                                       <img src="assets/img/chart5.PNG" alt="" height="100" width="150" style="cursor: pointer">
+
+
+
+                                   </md-radio-button>
+
+
+
+                                   <md-radio-button value="Mango6" class="md-primary">
+
+
+                                       <img src="assets/img/chart6.PNG" alt="" height="100" width="150" style="cursor: pointer">
+
+                                   </md-radio-button>
+
+                               </md-radio-group>
+
+
+
+                           </div>
+
+
+                           <div class="col-md-3">
+
+
+                               <md-radio-group ng-model="group3">
+
+                                   <md-radio-button value="Apple7" class="md-primary">
+
+
+
+                                       <img src="assets/img/chart7.PNG" alt="" height="100" width="150" style="cursor: pointer">
+
+
+
+                                   </md-radio-button>
+
+
+                               </md-radio-group>
+
+
+                           </div>
+
+
+
+                       </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <md-button class="md-raised md-primary">Сохранить</md-button>
+                    </div>
+
+                </div>
+            </md-card>
+
+
+
+
+
+
+
+        </md-content>
+    </div>
+
+
+
+
+
+</div>
